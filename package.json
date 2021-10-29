@@ -1,0 +1,11 @@
+{
+  "name": "mongorpc-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mongorpc/mongorpc-js.git",
+  "author": "Satish Babariya <satish.babariya@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-protoc-gen": "^0.15.0"
+  }
+}
