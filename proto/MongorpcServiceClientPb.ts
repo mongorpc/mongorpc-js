@@ -6,28 +6,27 @@
 
 // GENERATED CODE -- DO NOT EDIT!
 
-
 /* eslint-disable */
 // @ts-nocheck
 
+import * as grpcWeb from "grpc-web";
 
-import * as grpcWeb from 'grpc-web';
-
-import * as mongorpc_pb from './mongorpc_pb';
-
+import * as mongorpc_pb from "./mongorpc_pb";
 
 export class MongoRPCClient {
   client_: grpcWeb.AbstractClientBase;
   hostname_: string;
-  credentials_: null | { [index: string]: string; };
-  options_: null | { [index: string]: any; };
+  credentials_: null | { [index: string]: string };
+  options_: null | { [index: string]: any };
 
-  constructor (hostname: string,
-               credentials?: null | { [index: string]: string; },
-               options?: null | { [index: string]: any; }) {
+  constructor(
+    hostname: string,
+    credentials?: null | { [index: string]: string },
+    options?: null | { [index: string]: any }
+  ) {
     if (!options) options = {};
     if (!credentials) credentials = {};
-    options['format'] = 'text';
+    options["format"] = "text";
 
     this.client_ = new grpcWeb.GrpcWebClientBase(options);
     this.hostname_ = hostname;
@@ -36,7 +35,7 @@ export class MongoRPCClient {
   }
 
   methodInfoListCollections = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/ListCollections',
+    "/mongorpc.MongoRPC/ListCollections",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.ListCollectionsRequest,
     mongorpc_pb.ListCollectionsResponse,
@@ -48,38 +47,45 @@ export class MongoRPCClient {
 
   listCollections(
     request: mongorpc_pb.ListCollectionsRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.ListCollectionsResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.ListCollectionsResponse>;
 
   listCollections(
     request: mongorpc_pb.ListCollectionsRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.ListCollectionsResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.ListCollectionsResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.ListCollectionsResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.ListCollectionsResponse>;
 
   listCollections(
     request: mongorpc_pb.ListCollectionsRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.ListCollectionsResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.ListCollectionsResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/ListCollections',
+        this.hostname_ + "/mongorpc.MongoRPC/ListCollections",
         request,
         metadata || {},
         this.methodInfoListCollections,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/ListCollections',
-    request,
-    metadata || {},
-    this.methodInfoListCollections);
+      this.hostname_ + "/mongorpc.MongoRPC/ListCollections",
+      request,
+      metadata || {},
+      this.methodInfoListCollections
+    );
   }
 
   methodInfoGetDocument = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/GetDocument',
+    "/mongorpc.MongoRPC/GetDocument",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.GetDocumentRequest,
     mongorpc_pb.GetDocumentResponse,
@@ -91,38 +97,45 @@ export class MongoRPCClient {
 
   getDocument(
     request: mongorpc_pb.GetDocumentRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.GetDocumentResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.GetDocumentResponse>;
 
   getDocument(
     request: mongorpc_pb.GetDocumentRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.GetDocumentResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.GetDocumentResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.GetDocumentResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.GetDocumentResponse>;
 
   getDocument(
     request: mongorpc_pb.GetDocumentRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.GetDocumentResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.GetDocumentResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/GetDocument',
+        this.hostname_ + "/mongorpc.MongoRPC/GetDocument",
         request,
         metadata || {},
         this.methodInfoGetDocument,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/GetDocument',
-    request,
-    metadata || {},
-    this.methodInfoGetDocument);
+      this.hostname_ + "/mongorpc.MongoRPC/GetDocument",
+      request,
+      metadata || {},
+      this.methodInfoGetDocument
+    );
   }
 
   methodInfoListDocuments = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/ListDocuments',
+    "/mongorpc.MongoRPC/ListDocuments",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.ListDocumentsRequest,
     mongorpc_pb.ListDocumentsResponse,
@@ -134,38 +147,45 @@ export class MongoRPCClient {
 
   listDocuments(
     request: mongorpc_pb.ListDocumentsRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.ListDocumentsResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.ListDocumentsResponse>;
 
   listDocuments(
     request: mongorpc_pb.ListDocumentsRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.ListDocumentsResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.ListDocumentsResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.ListDocumentsResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.ListDocumentsResponse>;
 
   listDocuments(
     request: mongorpc_pb.ListDocumentsRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.ListDocumentsResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.ListDocumentsResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/ListDocuments',
+        this.hostname_ + "/mongorpc.MongoRPC/ListDocuments",
         request,
         metadata || {},
         this.methodInfoListDocuments,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/ListDocuments',
-    request,
-    metadata || {},
-    this.methodInfoListDocuments);
+      this.hostname_ + "/mongorpc.MongoRPC/ListDocuments",
+      request,
+      metadata || {},
+      this.methodInfoListDocuments
+    );
   }
 
   methodInfoCreateDocument = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/CreateDocument',
+    "/mongorpc.MongoRPC/CreateDocument",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.CreateDocumentRequest,
     mongorpc_pb.CreateDocumentResponse,
@@ -177,38 +197,45 @@ export class MongoRPCClient {
 
   createDocument(
     request: mongorpc_pb.CreateDocumentRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.CreateDocumentResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.CreateDocumentResponse>;
 
   createDocument(
     request: mongorpc_pb.CreateDocumentRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.CreateDocumentResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.CreateDocumentResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.CreateDocumentResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.CreateDocumentResponse>;
 
   createDocument(
     request: mongorpc_pb.CreateDocumentRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.CreateDocumentResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.CreateDocumentResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/CreateDocument',
+        this.hostname_ + "/mongorpc.MongoRPC/CreateDocument",
         request,
         metadata || {},
         this.methodInfoCreateDocument,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/CreateDocument',
-    request,
-    metadata || {},
-    this.methodInfoCreateDocument);
+      this.hostname_ + "/mongorpc.MongoRPC/CreateDocument",
+      request,
+      metadata || {},
+      this.methodInfoCreateDocument
+    );
   }
 
   methodInfoUpdateDocument = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/UpdateDocument',
+    "/mongorpc.MongoRPC/UpdateDocument",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.UpdateDocumentRequest,
     mongorpc_pb.UpdateDocumentResponse,
@@ -220,38 +247,45 @@ export class MongoRPCClient {
 
   updateDocument(
     request: mongorpc_pb.UpdateDocumentRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.UpdateDocumentResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.UpdateDocumentResponse>;
 
   updateDocument(
     request: mongorpc_pb.UpdateDocumentRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.UpdateDocumentResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.UpdateDocumentResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.UpdateDocumentResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.UpdateDocumentResponse>;
 
   updateDocument(
     request: mongorpc_pb.UpdateDocumentRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.UpdateDocumentResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.UpdateDocumentResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/UpdateDocument',
+        this.hostname_ + "/mongorpc.MongoRPC/UpdateDocument",
         request,
         metadata || {},
         this.methodInfoUpdateDocument,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/UpdateDocument',
-    request,
-    metadata || {},
-    this.methodInfoUpdateDocument);
+      this.hostname_ + "/mongorpc.MongoRPC/UpdateDocument",
+      request,
+      metadata || {},
+      this.methodInfoUpdateDocument
+    );
   }
 
   methodInfoDeleteDocument = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/DeleteDocument',
+    "/mongorpc.MongoRPC/DeleteDocument",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.DeleteDocumentRequest,
     mongorpc_pb.DeleteDocumentResponse,
@@ -263,38 +297,45 @@ export class MongoRPCClient {
 
   deleteDocument(
     request: mongorpc_pb.DeleteDocumentRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.DeleteDocumentResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.DeleteDocumentResponse>;
 
   deleteDocument(
     request: mongorpc_pb.DeleteDocumentRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.DeleteDocumentResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.DeleteDocumentResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.DeleteDocumentResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.DeleteDocumentResponse>;
 
   deleteDocument(
     request: mongorpc_pb.DeleteDocumentRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.DeleteDocumentResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.DeleteDocumentResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/DeleteDocument',
+        this.hostname_ + "/mongorpc.MongoRPC/DeleteDocument",
         request,
         metadata || {},
         this.methodInfoDeleteDocument,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/DeleteDocument',
-    request,
-    metadata || {},
-    this.methodInfoDeleteDocument);
+      this.hostname_ + "/mongorpc.MongoRPC/DeleteDocument",
+      request,
+      metadata || {},
+      this.methodInfoDeleteDocument
+    );
   }
 
   methodInfoCountDocuments = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/CountDocuments',
+    "/mongorpc.MongoRPC/CountDocuments",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.CountDocumentsRequest,
     mongorpc_pb.CountDocumentsResponse,
@@ -306,38 +347,45 @@ export class MongoRPCClient {
 
   countDocuments(
     request: mongorpc_pb.CountDocumentsRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.CountDocumentsResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.CountDocumentsResponse>;
 
   countDocuments(
     request: mongorpc_pb.CountDocumentsRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.CountDocumentsResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.CountDocumentsResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.CountDocumentsResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.CountDocumentsResponse>;
 
   countDocuments(
     request: mongorpc_pb.CountDocumentsRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.CountDocumentsResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.CountDocumentsResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/CountDocuments',
+        this.hostname_ + "/mongorpc.MongoRPC/CountDocuments",
         request,
         metadata || {},
         this.methodInfoCountDocuments,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/CountDocuments',
-    request,
-    metadata || {},
-    this.methodInfoCountDocuments);
+      this.hostname_ + "/mongorpc.MongoRPC/CountDocuments",
+      request,
+      metadata || {},
+      this.methodInfoCountDocuments
+    );
   }
 
   methodInfoListen = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/Listen',
+    "/mongorpc.MongoRPC/Listen",
     grpcWeb.MethodType.SERVER_STREAMING,
     mongorpc_pb.ListenRequest,
     mongorpc_pb.ListenResponse,
@@ -347,19 +395,17 @@ export class MongoRPCClient {
     mongorpc_pb.ListenResponse.deserializeBinary
   );
 
-  listen(
-    request: mongorpc_pb.ListenRequest,
-    metadata?: grpcWeb.Metadata) {
+  listen(request: mongorpc_pb.ListenRequest, metadata?: grpcWeb.Metadata) {
     return this.client_.serverStreaming(
-      this.hostname_ +
-        '/mongorpc.MongoRPC/Listen',
+      this.hostname_ + "/mongorpc.MongoRPC/Listen",
       request,
       metadata || {},
-      this.methodInfoListen);
+      this.methodInfoListen
+    );
   }
 
   methodInfoCreateIndex = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/CreateIndex',
+    "/mongorpc.MongoRPC/CreateIndex",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.CreateIndexRequest,
     mongorpc_pb.CreateIndexResponse,
@@ -371,38 +417,45 @@ export class MongoRPCClient {
 
   createIndex(
     request: mongorpc_pb.CreateIndexRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.CreateIndexResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.CreateIndexResponse>;
 
   createIndex(
     request: mongorpc_pb.CreateIndexRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.CreateIndexResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.CreateIndexResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.CreateIndexResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.CreateIndexResponse>;
 
   createIndex(
     request: mongorpc_pb.CreateIndexRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.CreateIndexResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.CreateIndexResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/CreateIndex',
+        this.hostname_ + "/mongorpc.MongoRPC/CreateIndex",
         request,
         metadata || {},
         this.methodInfoCreateIndex,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/CreateIndex',
-    request,
-    metadata || {},
-    this.methodInfoCreateIndex);
+      this.hostname_ + "/mongorpc.MongoRPC/CreateIndex",
+      request,
+      metadata || {},
+      this.methodInfoCreateIndex
+    );
   }
 
   methodInfoListIndexes = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/ListIndexes',
+    "/mongorpc.MongoRPC/ListIndexes",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.ListIndexesRequest,
     mongorpc_pb.ListIndexesResponse,
@@ -414,38 +467,45 @@ export class MongoRPCClient {
 
   listIndexes(
     request: mongorpc_pb.ListIndexesRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.ListIndexesResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.ListIndexesResponse>;
 
   listIndexes(
     request: mongorpc_pb.ListIndexesRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.ListIndexesResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.ListIndexesResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.ListIndexesResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.ListIndexesResponse>;
 
   listIndexes(
     request: mongorpc_pb.ListIndexesRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.ListIndexesResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.ListIndexesResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/ListIndexes',
+        this.hostname_ + "/mongorpc.MongoRPC/ListIndexes",
         request,
         metadata || {},
         this.methodInfoListIndexes,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/ListIndexes',
-    request,
-    metadata || {},
-    this.methodInfoListIndexes);
+      this.hostname_ + "/mongorpc.MongoRPC/ListIndexes",
+      request,
+      metadata || {},
+      this.methodInfoListIndexes
+    );
   }
 
   methodInfoDeleteIndex = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/DeleteIndex',
+    "/mongorpc.MongoRPC/DeleteIndex",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.DeleteIndexRequest,
     mongorpc_pb.DeleteIndexResponse,
@@ -457,38 +517,45 @@ export class MongoRPCClient {
 
   deleteIndex(
     request: mongorpc_pb.DeleteIndexRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.DeleteIndexResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.DeleteIndexResponse>;
 
   deleteIndex(
     request: mongorpc_pb.DeleteIndexRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.DeleteIndexResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.DeleteIndexResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.DeleteIndexResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.DeleteIndexResponse>;
 
   deleteIndex(
     request: mongorpc_pb.DeleteIndexRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.DeleteIndexResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.DeleteIndexResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/DeleteIndex',
+        this.hostname_ + "/mongorpc.MongoRPC/DeleteIndex",
         request,
         metadata || {},
         this.methodInfoDeleteIndex,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/DeleteIndex',
-    request,
-    metadata || {},
-    this.methodInfoDeleteIndex);
+      this.hostname_ + "/mongorpc.MongoRPC/DeleteIndex",
+      request,
+      metadata || {},
+      this.methodInfoDeleteIndex
+    );
   }
 
   methodInfoReindex = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/Reindex',
+    "/mongorpc.MongoRPC/Reindex",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.ReindexRequest,
     mongorpc_pb.ReindexResponse,
@@ -500,38 +567,45 @@ export class MongoRPCClient {
 
   reindex(
     request: mongorpc_pb.ReindexRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.ReindexResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.ReindexResponse>;
 
   reindex(
     request: mongorpc_pb.ReindexRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.ReindexResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.ReindexResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.ReindexResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.ReindexResponse>;
 
   reindex(
     request: mongorpc_pb.ReindexRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.ReindexResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.ReindexResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/Reindex',
+        this.hostname_ + "/mongorpc.MongoRPC/Reindex",
         request,
         metadata || {},
         this.methodInfoReindex,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/Reindex',
-    request,
-    metadata || {},
-    this.methodInfoReindex);
+      this.hostname_ + "/mongorpc.MongoRPC/Reindex",
+      request,
+      metadata || {},
+      this.methodInfoReindex
+    );
   }
 
   methodInfoPing = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/Ping',
+    "/mongorpc.MongoRPC/Ping",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.Empty,
     mongorpc_pb.Empty,
@@ -543,38 +617,39 @@ export class MongoRPCClient {
 
   ping(
     request: mongorpc_pb.Empty,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.Empty>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.Empty>;
 
   ping(
     request: mongorpc_pb.Empty,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.Empty) => void): grpcWeb.ClientReadableStream<mongorpc_pb.Empty>;
+    callback: (err: grpcWeb.RpcError, response: mongorpc_pb.Empty) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.Empty>;
 
   ping(
     request: mongorpc_pb.Empty,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.Empty) => void) {
+    callback?: (err: grpcWeb.RpcError, response: mongorpc_pb.Empty) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/Ping',
+        this.hostname_ + "/mongorpc.MongoRPC/Ping",
         request,
         metadata || {},
         this.methodInfoPing,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/Ping',
-    request,
-    metadata || {},
-    this.methodInfoPing);
+      this.hostname_ + "/mongorpc.MongoRPC/Ping",
+      request,
+      metadata || {},
+      this.methodInfoPing
+    );
   }
 
   methodInfoCollectionStats = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/CollectionStats',
+    "/mongorpc.MongoRPC/CollectionStats",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.CollectionStatsRequest,
     mongorpc_pb.CollectionStatsResponse,
@@ -586,38 +661,45 @@ export class MongoRPCClient {
 
   collectionStats(
     request: mongorpc_pb.CollectionStatsRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.CollectionStatsResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.CollectionStatsResponse>;
 
   collectionStats(
     request: mongorpc_pb.CollectionStatsRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.CollectionStatsResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.CollectionStatsResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.CollectionStatsResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.CollectionStatsResponse>;
 
   collectionStats(
     request: mongorpc_pb.CollectionStatsRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.CollectionStatsResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.CollectionStatsResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/CollectionStats',
+        this.hostname_ + "/mongorpc.MongoRPC/CollectionStats",
         request,
         metadata || {},
         this.methodInfoCollectionStats,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/CollectionStats',
-    request,
-    metadata || {},
-    this.methodInfoCollectionStats);
+      this.hostname_ + "/mongorpc.MongoRPC/CollectionStats",
+      request,
+      metadata || {},
+      this.methodInfoCollectionStats
+    );
   }
 
   methodInfoCreateCollection = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/CreateCollection',
+    "/mongorpc.MongoRPC/CreateCollection",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.CreateCollectionRequest,
     mongorpc_pb.CreateCollectionResponse,
@@ -629,38 +711,45 @@ export class MongoRPCClient {
 
   createCollection(
     request: mongorpc_pb.CreateCollectionRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.CreateCollectionResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.CreateCollectionResponse>;
 
   createCollection(
     request: mongorpc_pb.CreateCollectionRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.CreateCollectionResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.CreateCollectionResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.CreateCollectionResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.CreateCollectionResponse>;
 
   createCollection(
     request: mongorpc_pb.CreateCollectionRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.CreateCollectionResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.CreateCollectionResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/CreateCollection',
+        this.hostname_ + "/mongorpc.MongoRPC/CreateCollection",
         request,
         metadata || {},
         this.methodInfoCreateCollection,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/CreateCollection',
-    request,
-    metadata || {},
-    this.methodInfoCreateCollection);
+      this.hostname_ + "/mongorpc.MongoRPC/CreateCollection",
+      request,
+      metadata || {},
+      this.methodInfoCreateCollection
+    );
   }
 
   methodInfoRenameCollection = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/RenameCollection',
+    "/mongorpc.MongoRPC/RenameCollection",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.RenameCollectionRequest,
     mongorpc_pb.RenameCollectionResponse,
@@ -672,38 +761,45 @@ export class MongoRPCClient {
 
   renameCollection(
     request: mongorpc_pb.RenameCollectionRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.RenameCollectionResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.RenameCollectionResponse>;
 
   renameCollection(
     request: mongorpc_pb.RenameCollectionRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.RenameCollectionResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.RenameCollectionResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.RenameCollectionResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.RenameCollectionResponse>;
 
   renameCollection(
     request: mongorpc_pb.RenameCollectionRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.RenameCollectionResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.RenameCollectionResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/RenameCollection',
+        this.hostname_ + "/mongorpc.MongoRPC/RenameCollection",
         request,
         metadata || {},
         this.methodInfoRenameCollection,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/RenameCollection',
-    request,
-    metadata || {},
-    this.methodInfoRenameCollection);
+      this.hostname_ + "/mongorpc.MongoRPC/RenameCollection",
+      request,
+      metadata || {},
+      this.methodInfoRenameCollection
+    );
   }
 
   methodInfoDeleteCollection = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/DeleteCollection',
+    "/mongorpc.MongoRPC/DeleteCollection",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.DeleteCollectionRequest,
     mongorpc_pb.DeleteCollectionResponse,
@@ -715,38 +811,45 @@ export class MongoRPCClient {
 
   deleteCollection(
     request: mongorpc_pb.DeleteCollectionRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.DeleteCollectionResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.DeleteCollectionResponse>;
 
   deleteCollection(
     request: mongorpc_pb.DeleteCollectionRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.DeleteCollectionResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.DeleteCollectionResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.DeleteCollectionResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.DeleteCollectionResponse>;
 
   deleteCollection(
     request: mongorpc_pb.DeleteCollectionRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.DeleteCollectionResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.DeleteCollectionResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/DeleteCollection',
+        this.hostname_ + "/mongorpc.MongoRPC/DeleteCollection",
         request,
         metadata || {},
         this.methodInfoDeleteCollection,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/DeleteCollection',
-    request,
-    metadata || {},
-    this.methodInfoDeleteCollection);
+      this.hostname_ + "/mongorpc.MongoRPC/DeleteCollection",
+      request,
+      metadata || {},
+      this.methodInfoDeleteCollection
+    );
   }
 
   methodInfoHealthCheck = new grpcWeb.MethodDescriptor(
-    '/mongorpc.MongoRPC/HealthCheck',
+    "/mongorpc.MongoRPC/HealthCheck",
     grpcWeb.MethodType.UNARY,
     mongorpc_pb.HealthCheckRequest,
     mongorpc_pb.HealthCheckResponse,
@@ -758,35 +861,40 @@ export class MongoRPCClient {
 
   healthCheck(
     request: mongorpc_pb.HealthCheckRequest,
-    metadata: grpcWeb.Metadata | null): Promise<mongorpc_pb.HealthCheckResponse>;
+    metadata: grpcWeb.Metadata | null
+  ): Promise<mongorpc_pb.HealthCheckResponse>;
 
   healthCheck(
     request: mongorpc_pb.HealthCheckRequest,
     metadata: grpcWeb.Metadata | null,
-    callback: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.HealthCheckResponse) => void): grpcWeb.ClientReadableStream<mongorpc_pb.HealthCheckResponse>;
+    callback: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.HealthCheckResponse
+    ) => void
+  ): grpcWeb.ClientReadableStream<mongorpc_pb.HealthCheckResponse>;
 
   healthCheck(
     request: mongorpc_pb.HealthCheckRequest,
     metadata: grpcWeb.Metadata | null,
-    callback?: (err: grpcWeb.RpcError,
-               response: mongorpc_pb.HealthCheckResponse) => void) {
+    callback?: (
+      err: grpcWeb.RpcError,
+      response: mongorpc_pb.HealthCheckResponse
+    ) => void
+  ) {
     if (callback !== undefined) {
       return this.client_.rpcCall(
-        this.hostname_ +
-          '/mongorpc.MongoRPC/HealthCheck',
+        this.hostname_ + "/mongorpc.MongoRPC/HealthCheck",
         request,
         metadata || {},
         this.methodInfoHealthCheck,
-        callback);
+        callback
+      );
     }
     return this.client_.unaryCall(
-    this.hostname_ +
-      '/mongorpc.MongoRPC/HealthCheck',
-    request,
-    metadata || {},
-    this.methodInfoHealthCheck);
+      this.hostname_ + "/mongorpc.MongoRPC/HealthCheck",
+      request,
+      metadata || {},
+      this.methodInfoHealthCheck
+    );
   }
-
 }
-

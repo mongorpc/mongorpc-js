@@ -11,12 +11,11 @@
 /* eslint-disable */
 // @ts-nocheck
 
-goog.provide('proto.mongorpc.NullValue');
+goog.provide("proto.mongorpc.NullValue");
 
 /**
  * @enum {number}
  */
 proto.mongorpc.NullValue = {
-  NULL_VALUE: 0
+  NULL_VALUE: 0,
 };
-

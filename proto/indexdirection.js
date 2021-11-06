@@ -11,13 +11,12 @@
 /* eslint-disable */
 // @ts-nocheck
 
-goog.provide('proto.mongorpc.IndexDirection');
+goog.provide("proto.mongorpc.IndexDirection");
 
 /**
  * @enum {number}
  */
 proto.mongorpc.IndexDirection = {
   ASCENDING: 0,
-  DESCENDING: 1
+  DESCENDING: 1,
 };
-
