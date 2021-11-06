@@ -14,9 +14,6 @@
   ],
   "scripts": {
     "build": "tsc --build",
-    "test": "jest",
-    "dev": "ts-node examples/plain/main.ts",
-    "release": "yarn publish --access public"
   },
   "devDependencies": {
     "typescript": "^4.4.4"
