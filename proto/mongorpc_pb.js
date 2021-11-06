@@ -2201,10 +2201,10 @@ proto.mongorpc.Value.prototype.hasArrayValue = function() {
 
 /**
  * optional bytes bytes_value = 5;
- * @return {string}
+ * @return {!(string|Uint8Array)}
  */
 proto.mongorpc.Value.prototype.getBytesValue = function() {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
 };
 
 
