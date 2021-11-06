@@ -1,8 +1,5 @@
 import { MongoRPCClient } from "../proto/MongorpcServiceClientPb";
-
 import { Database } from "./database";
-import { Collection } from "./collection";
-import { Document } from "./document";
 
 class MongoRPC {
   private client: MongoRPCClient;
@@ -16,4 +13,4 @@ class MongoRPC {
   }
 }
 
-export { MongoRPC, Database, Collection, Document };
+export { MongoRPC };
