@@ -11,6 +11,7 @@ wget https://raw.githubusercontent.com/mongorpc/mongorpc/main/proto/mongorpc.pro
 # protoc -I=. mongorpc.proto --js_out=import_style=commonjs:.
 
 protoc -I=. mongorpc.proto \
+  --js_out=import_style=commonjs:pb \
   --js_out=import_style=commonjs+dts:pb \
   --grpc-web_out=import_style=commonjs+dts,mode=grpcwebtext:pb
 
