@@ -1,7 +1,7 @@
 # mongorpc-js
 
 ```ts
-const client = new MongoRPC("localhost:27051");
+const client = new MongoRPC("http://localhost:8080");
 
 const document = await client
   .database("sample_mflix")
