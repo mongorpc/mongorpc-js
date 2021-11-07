@@ -11,73 +11,69 @@
 /* eslint-disable */
 // @ts-nocheck
 
-var jspb = require("google-protobuf");
+var jspb = require('google-protobuf');
 var goog = jspb;
-var global = Function("return this")();
+var global = Function('return this')();
 
-goog.exportSymbol("proto.mongorpc.ArrayValue", null, global);
-goog.exportSymbol("proto.mongorpc.CollectionStatsRequest", null, global);
-goog.exportSymbol("proto.mongorpc.CollectionStatsResponse", null, global);
-goog.exportSymbol("proto.mongorpc.CountDocumentsRequest", null, global);
-goog.exportSymbol("proto.mongorpc.CountDocumentsResponse", null, global);
-goog.exportSymbol("proto.mongorpc.CreateCollectionRequest", null, global);
-goog.exportSymbol("proto.mongorpc.CreateCollectionResponse", null, global);
-goog.exportSymbol("proto.mongorpc.CreateDocumentRequest", null, global);
-goog.exportSymbol("proto.mongorpc.CreateDocumentResponse", null, global);
-goog.exportSymbol("proto.mongorpc.CreateIndexRequest", null, global);
-goog.exportSymbol("proto.mongorpc.CreateIndexResponse", null, global);
-goog.exportSymbol("proto.mongorpc.DeleteCollectionRequest", null, global);
-goog.exportSymbol("proto.mongorpc.DeleteCollectionResponse", null, global);
-goog.exportSymbol("proto.mongorpc.DeleteDocumentRequest", null, global);
-goog.exportSymbol("proto.mongorpc.DeleteDocumentResponse", null, global);
-goog.exportSymbol("proto.mongorpc.DeleteIndexRequest", null, global);
-goog.exportSymbol("proto.mongorpc.DeleteIndexResponse", null, global);
-goog.exportSymbol("proto.mongorpc.Empty", null, global);
-goog.exportSymbol("proto.mongorpc.Equal", null, global);
-goog.exportSymbol("proto.mongorpc.Exists", null, global);
-goog.exportSymbol("proto.mongorpc.Filter", null, global);
-goog.exportSymbol("proto.mongorpc.Filter.OperatorCase", null, global);
-goog.exportSymbol("proto.mongorpc.GetDocumentRequest", null, global);
-goog.exportSymbol("proto.mongorpc.GetDocumentResponse", null, global);
-goog.exportSymbol("proto.mongorpc.Greater", null, global);
-goog.exportSymbol("proto.mongorpc.GreaterEqual", null, global);
-goog.exportSymbol("proto.mongorpc.HealthCheckRequest", null, global);
-goog.exportSymbol("proto.mongorpc.HealthCheckResponse", null, global);
-goog.exportSymbol(
-  "proto.mongorpc.HealthCheckResponse.ServingStatus",
-  null,
-  global
-);
-goog.exportSymbol("proto.mongorpc.In", null, global);
-goog.exportSymbol("proto.mongorpc.Index", null, global);
-goog.exportSymbol("proto.mongorpc.IndexDirection", null, global);
-goog.exportSymbol("proto.mongorpc.IndexKey", null, global);
-goog.exportSymbol("proto.mongorpc.Less", null, global);
-goog.exportSymbol("proto.mongorpc.LessEqual", null, global);
-goog.exportSymbol("proto.mongorpc.ListCollectionsRequest", null, global);
-goog.exportSymbol("proto.mongorpc.ListCollectionsResponse", null, global);
-goog.exportSymbol("proto.mongorpc.ListDocumentsRequest", null, global);
-goog.exportSymbol("proto.mongorpc.ListDocumentsResponse", null, global);
-goog.exportSymbol("proto.mongorpc.ListIndexesRequest", null, global);
-goog.exportSymbol("proto.mongorpc.ListIndexesResponse", null, global);
-goog.exportSymbol("proto.mongorpc.ListenRequest", null, global);
-goog.exportSymbol("proto.mongorpc.ListenResponse", null, global);
-goog.exportSymbol("proto.mongorpc.MapValue", null, global);
-goog.exportSymbol("proto.mongorpc.NotEqual", null, global);
-goog.exportSymbol("proto.mongorpc.NotExists", null, global);
-goog.exportSymbol("proto.mongorpc.NotIn", null, global);
-goog.exportSymbol("proto.mongorpc.NullValue", null, global);
-goog.exportSymbol("proto.mongorpc.ObjectID", null, global);
-goog.exportSymbol("proto.mongorpc.ReindexRequest", null, global);
-goog.exportSymbol("proto.mongorpc.ReindexResponse", null, global);
-goog.exportSymbol("proto.mongorpc.RenameCollectionRequest", null, global);
-goog.exportSymbol("proto.mongorpc.RenameCollectionResponse", null, global);
-goog.exportSymbol("proto.mongorpc.Sort", null, global);
-goog.exportSymbol("proto.mongorpc.Timestamp", null, global);
-goog.exportSymbol("proto.mongorpc.UpdateDocumentRequest", null, global);
-goog.exportSymbol("proto.mongorpc.UpdateDocumentResponse", null, global);
-goog.exportSymbol("proto.mongorpc.Value", null, global);
-goog.exportSymbol("proto.mongorpc.Value.TypeCase", null, global);
+goog.exportSymbol('proto.mongorpc.ArrayValue', null, global);
+goog.exportSymbol('proto.mongorpc.CollectionStatsRequest', null, global);
+goog.exportSymbol('proto.mongorpc.CollectionStatsResponse', null, global);
+goog.exportSymbol('proto.mongorpc.CountDocumentsRequest', null, global);
+goog.exportSymbol('proto.mongorpc.CountDocumentsResponse', null, global);
+goog.exportSymbol('proto.mongorpc.CreateCollectionRequest', null, global);
+goog.exportSymbol('proto.mongorpc.CreateCollectionResponse', null, global);
+goog.exportSymbol('proto.mongorpc.CreateDocumentRequest', null, global);
+goog.exportSymbol('proto.mongorpc.CreateDocumentResponse', null, global);
+goog.exportSymbol('proto.mongorpc.CreateIndexRequest', null, global);
+goog.exportSymbol('proto.mongorpc.CreateIndexResponse', null, global);
+goog.exportSymbol('proto.mongorpc.DeleteCollectionRequest', null, global);
+goog.exportSymbol('proto.mongorpc.DeleteCollectionResponse', null, global);
+goog.exportSymbol('proto.mongorpc.DeleteDocumentRequest', null, global);
+goog.exportSymbol('proto.mongorpc.DeleteDocumentResponse', null, global);
+goog.exportSymbol('proto.mongorpc.DeleteIndexRequest', null, global);
+goog.exportSymbol('proto.mongorpc.DeleteIndexResponse', null, global);
+goog.exportSymbol('proto.mongorpc.Empty', null, global);
+goog.exportSymbol('proto.mongorpc.Equal', null, global);
+goog.exportSymbol('proto.mongorpc.Exists', null, global);
+goog.exportSymbol('proto.mongorpc.Filter', null, global);
+goog.exportSymbol('proto.mongorpc.Filter.OperatorCase', null, global);
+goog.exportSymbol('proto.mongorpc.GetDocumentRequest', null, global);
+goog.exportSymbol('proto.mongorpc.GetDocumentResponse', null, global);
+goog.exportSymbol('proto.mongorpc.Greater', null, global);
+goog.exportSymbol('proto.mongorpc.GreaterEqual', null, global);
+goog.exportSymbol('proto.mongorpc.HealthCheckRequest', null, global);
+goog.exportSymbol('proto.mongorpc.HealthCheckResponse', null, global);
+goog.exportSymbol('proto.mongorpc.HealthCheckResponse.ServingStatus', null, global);
+goog.exportSymbol('proto.mongorpc.In', null, global);
+goog.exportSymbol('proto.mongorpc.Index', null, global);
+goog.exportSymbol('proto.mongorpc.IndexDirection', null, global);
+goog.exportSymbol('proto.mongorpc.IndexKey', null, global);
+goog.exportSymbol('proto.mongorpc.Less', null, global);
+goog.exportSymbol('proto.mongorpc.LessEqual', null, global);
+goog.exportSymbol('proto.mongorpc.ListCollectionsRequest', null, global);
+goog.exportSymbol('proto.mongorpc.ListCollectionsResponse', null, global);
+goog.exportSymbol('proto.mongorpc.ListDocumentsRequest', null, global);
+goog.exportSymbol('proto.mongorpc.ListDocumentsResponse', null, global);
+goog.exportSymbol('proto.mongorpc.ListIndexesRequest', null, global);
+goog.exportSymbol('proto.mongorpc.ListIndexesResponse', null, global);
+goog.exportSymbol('proto.mongorpc.ListenRequest', null, global);
+goog.exportSymbol('proto.mongorpc.ListenResponse', null, global);
+goog.exportSymbol('proto.mongorpc.MapValue', null, global);
+goog.exportSymbol('proto.mongorpc.NotEqual', null, global);
+goog.exportSymbol('proto.mongorpc.NotExists', null, global);
+goog.exportSymbol('proto.mongorpc.NotIn', null, global);
+goog.exportSymbol('proto.mongorpc.NullValue', null, global);
+goog.exportSymbol('proto.mongorpc.ObjectID', null, global);
+goog.exportSymbol('proto.mongorpc.ReindexRequest', null, global);
+goog.exportSymbol('proto.mongorpc.ReindexResponse', null, global);
+goog.exportSymbol('proto.mongorpc.RenameCollectionRequest', null, global);
+goog.exportSymbol('proto.mongorpc.RenameCollectionResponse', null, global);
+goog.exportSymbol('proto.mongorpc.Sort', null, global);
+goog.exportSymbol('proto.mongorpc.Timestamp', null, global);
+goog.exportSymbol('proto.mongorpc.UpdateDocumentRequest', null, global);
+goog.exportSymbol('proto.mongorpc.UpdateDocumentResponse', null, global);
+goog.exportSymbol('proto.mongorpc.Value', null, global);
+goog.exportSymbol('proto.mongorpc.Value.TypeCase', null, global);
 /**
  * Generated by JsPbCodeGenerator.
  * @param {Array=} opt_data Optional initial data array, typically from a
@@ -88,15 +84,8 @@ goog.exportSymbol("proto.mongorpc.Value.TypeCase", null, global);
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.ArrayValue = function (opt_data) {
-  jspb.Message.initialize(
-    this,
-    opt_data,
-    0,
-    -1,
-    proto.mongorpc.ArrayValue.repeatedFields_,
-    null
-  );
+proto.mongorpc.ArrayValue = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mongorpc.ArrayValue.repeatedFields_, null);
 };
 goog.inherits(proto.mongorpc.ArrayValue, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -104,7 +93,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.ArrayValue.displayName = "proto.mongorpc.ArrayValue";
+  proto.mongorpc.ArrayValue.displayName = 'proto.mongorpc.ArrayValue';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -116,7 +105,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.MapValue = function (opt_data) {
+proto.mongorpc.MapValue = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.MapValue, jspb.Message);
@@ -125,7 +114,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.MapValue.displayName = "proto.mongorpc.MapValue";
+  proto.mongorpc.MapValue.displayName = 'proto.mongorpc.MapValue';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -137,7 +126,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.Timestamp = function (opt_data) {
+proto.mongorpc.Timestamp = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.Timestamp, jspb.Message);
@@ -146,7 +135,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.Timestamp.displayName = "proto.mongorpc.Timestamp";
+  proto.mongorpc.Timestamp.displayName = 'proto.mongorpc.Timestamp';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -158,7 +147,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.ObjectID = function (opt_data) {
+proto.mongorpc.ObjectID = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.ObjectID, jspb.Message);
@@ -167,7 +156,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.ObjectID.displayName = "proto.mongorpc.ObjectID";
+  proto.mongorpc.ObjectID.displayName = 'proto.mongorpc.ObjectID';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -179,15 +168,8 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.Value = function (opt_data) {
-  jspb.Message.initialize(
-    this,
-    opt_data,
-    0,
-    -1,
-    null,
-    proto.mongorpc.Value.oneofGroups_
-  );
+proto.mongorpc.Value = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.mongorpc.Value.oneofGroups_);
 };
 goog.inherits(proto.mongorpc.Value, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -195,7 +177,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.Value.displayName = "proto.mongorpc.Value";
+  proto.mongorpc.Value.displayName = 'proto.mongorpc.Value';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -207,7 +189,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.Sort = function (opt_data) {
+proto.mongorpc.Sort = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.Sort, jspb.Message);
@@ -216,7 +198,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.Sort.displayName = "proto.mongorpc.Sort";
+  proto.mongorpc.Sort.displayName = 'proto.mongorpc.Sort';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -228,7 +210,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.Equal = function (opt_data) {
+proto.mongorpc.Equal = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.Equal, jspb.Message);
@@ -237,7 +219,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.Equal.displayName = "proto.mongorpc.Equal";
+  proto.mongorpc.Equal.displayName = 'proto.mongorpc.Equal';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -249,7 +231,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.NotEqual = function (opt_data) {
+proto.mongorpc.NotEqual = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.NotEqual, jspb.Message);
@@ -258,7 +240,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.NotEqual.displayName = "proto.mongorpc.NotEqual";
+  proto.mongorpc.NotEqual.displayName = 'proto.mongorpc.NotEqual';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -270,7 +252,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.Less = function (opt_data) {
+proto.mongorpc.Less = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.Less, jspb.Message);
@@ -279,7 +261,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.Less.displayName = "proto.mongorpc.Less";
+  proto.mongorpc.Less.displayName = 'proto.mongorpc.Less';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -291,7 +273,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.LessEqual = function (opt_data) {
+proto.mongorpc.LessEqual = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.LessEqual, jspb.Message);
@@ -300,7 +282,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.LessEqual.displayName = "proto.mongorpc.LessEqual";
+  proto.mongorpc.LessEqual.displayName = 'proto.mongorpc.LessEqual';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -312,7 +294,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.Greater = function (opt_data) {
+proto.mongorpc.Greater = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.Greater, jspb.Message);
@@ -321,7 +303,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.Greater.displayName = "proto.mongorpc.Greater";
+  proto.mongorpc.Greater.displayName = 'proto.mongorpc.Greater';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -333,7 +315,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.GreaterEqual = function (opt_data) {
+proto.mongorpc.GreaterEqual = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.GreaterEqual, jspb.Message);
@@ -342,7 +324,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.GreaterEqual.displayName = "proto.mongorpc.GreaterEqual";
+  proto.mongorpc.GreaterEqual.displayName = 'proto.mongorpc.GreaterEqual';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -354,15 +336,8 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.In = function (opt_data) {
-  jspb.Message.initialize(
-    this,
-    opt_data,
-    0,
-    -1,
-    proto.mongorpc.In.repeatedFields_,
-    null
-  );
+proto.mongorpc.In = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mongorpc.In.repeatedFields_, null);
 };
 goog.inherits(proto.mongorpc.In, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -370,7 +345,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.In.displayName = "proto.mongorpc.In";
+  proto.mongorpc.In.displayName = 'proto.mongorpc.In';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -382,15 +357,8 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.NotIn = function (opt_data) {
-  jspb.Message.initialize(
-    this,
-    opt_data,
-    0,
-    -1,
-    proto.mongorpc.NotIn.repeatedFields_,
-    null
-  );
+proto.mongorpc.NotIn = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mongorpc.NotIn.repeatedFields_, null);
 };
 goog.inherits(proto.mongorpc.NotIn, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -398,7 +366,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.NotIn.displayName = "proto.mongorpc.NotIn";
+  proto.mongorpc.NotIn.displayName = 'proto.mongorpc.NotIn';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -410,7 +378,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.Exists = function (opt_data) {
+proto.mongorpc.Exists = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.Exists, jspb.Message);
@@ -419,7 +387,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.Exists.displayName = "proto.mongorpc.Exists";
+  proto.mongorpc.Exists.displayName = 'proto.mongorpc.Exists';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -431,7 +399,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.NotExists = function (opt_data) {
+proto.mongorpc.NotExists = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.NotExists, jspb.Message);
@@ -440,7 +408,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.NotExists.displayName = "proto.mongorpc.NotExists";
+  proto.mongorpc.NotExists.displayName = 'proto.mongorpc.NotExists';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -452,15 +420,8 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.Filter = function (opt_data) {
-  jspb.Message.initialize(
-    this,
-    opt_data,
-    0,
-    -1,
-    null,
-    proto.mongorpc.Filter.oneofGroups_
-  );
+proto.mongorpc.Filter = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, null, proto.mongorpc.Filter.oneofGroups_);
 };
 goog.inherits(proto.mongorpc.Filter, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -468,7 +429,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.Filter.displayName = "proto.mongorpc.Filter";
+  proto.mongorpc.Filter.displayName = 'proto.mongorpc.Filter';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -480,7 +441,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.ListCollectionsRequest = function (opt_data) {
+proto.mongorpc.ListCollectionsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.ListCollectionsRequest, jspb.Message);
@@ -489,8 +450,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.ListCollectionsRequest.displayName =
-    "proto.mongorpc.ListCollectionsRequest";
+  proto.mongorpc.ListCollectionsRequest.displayName = 'proto.mongorpc.ListCollectionsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -502,7 +462,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.ListCollectionsResponse = function (opt_data) {
+proto.mongorpc.ListCollectionsResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.ListCollectionsResponse, jspb.Message);
@@ -511,8 +471,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.ListCollectionsResponse.displayName =
-    "proto.mongorpc.ListCollectionsResponse";
+  proto.mongorpc.ListCollectionsResponse.displayName = 'proto.mongorpc.ListCollectionsResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -524,7 +483,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.GetDocumentRequest = function (opt_data) {
+proto.mongorpc.GetDocumentRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.GetDocumentRequest, jspb.Message);
@@ -533,8 +492,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.GetDocumentRequest.displayName =
-    "proto.mongorpc.GetDocumentRequest";
+  proto.mongorpc.GetDocumentRequest.displayName = 'proto.mongorpc.GetDocumentRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -546,7 +504,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.GetDocumentResponse = function (opt_data) {
+proto.mongorpc.GetDocumentResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.GetDocumentResponse, jspb.Message);
@@ -555,8 +513,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.GetDocumentResponse.displayName =
-    "proto.mongorpc.GetDocumentResponse";
+  proto.mongorpc.GetDocumentResponse.displayName = 'proto.mongorpc.GetDocumentResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -568,15 +525,8 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.ListDocumentsRequest = function (opt_data) {
-  jspb.Message.initialize(
-    this,
-    opt_data,
-    0,
-    -1,
-    proto.mongorpc.ListDocumentsRequest.repeatedFields_,
-    null
-  );
+proto.mongorpc.ListDocumentsRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mongorpc.ListDocumentsRequest.repeatedFields_, null);
 };
 goog.inherits(proto.mongorpc.ListDocumentsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -584,8 +534,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.ListDocumentsRequest.displayName =
-    "proto.mongorpc.ListDocumentsRequest";
+  proto.mongorpc.ListDocumentsRequest.displayName = 'proto.mongorpc.ListDocumentsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -597,7 +546,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.ListDocumentsResponse = function (opt_data) {
+proto.mongorpc.ListDocumentsResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.ListDocumentsResponse, jspb.Message);
@@ -606,8 +555,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.ListDocumentsResponse.displayName =
-    "proto.mongorpc.ListDocumentsResponse";
+  proto.mongorpc.ListDocumentsResponse.displayName = 'proto.mongorpc.ListDocumentsResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -619,7 +567,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.CreateDocumentRequest = function (opt_data) {
+proto.mongorpc.CreateDocumentRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.CreateDocumentRequest, jspb.Message);
@@ -628,8 +576,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.CreateDocumentRequest.displayName =
-    "proto.mongorpc.CreateDocumentRequest";
+  proto.mongorpc.CreateDocumentRequest.displayName = 'proto.mongorpc.CreateDocumentRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -641,7 +588,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.CreateDocumentResponse = function (opt_data) {
+proto.mongorpc.CreateDocumentResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.CreateDocumentResponse, jspb.Message);
@@ -650,8 +597,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.CreateDocumentResponse.displayName =
-    "proto.mongorpc.CreateDocumentResponse";
+  proto.mongorpc.CreateDocumentResponse.displayName = 'proto.mongorpc.CreateDocumentResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -663,7 +609,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.UpdateDocumentRequest = function (opt_data) {
+proto.mongorpc.UpdateDocumentRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.UpdateDocumentRequest, jspb.Message);
@@ -672,8 +618,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.UpdateDocumentRequest.displayName =
-    "proto.mongorpc.UpdateDocumentRequest";
+  proto.mongorpc.UpdateDocumentRequest.displayName = 'proto.mongorpc.UpdateDocumentRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -685,7 +630,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.UpdateDocumentResponse = function (opt_data) {
+proto.mongorpc.UpdateDocumentResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.UpdateDocumentResponse, jspb.Message);
@@ -694,8 +639,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.UpdateDocumentResponse.displayName =
-    "proto.mongorpc.UpdateDocumentResponse";
+  proto.mongorpc.UpdateDocumentResponse.displayName = 'proto.mongorpc.UpdateDocumentResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -707,7 +651,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.DeleteDocumentRequest = function (opt_data) {
+proto.mongorpc.DeleteDocumentRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.DeleteDocumentRequest, jspb.Message);
@@ -716,8 +660,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.DeleteDocumentRequest.displayName =
-    "proto.mongorpc.DeleteDocumentRequest";
+  proto.mongorpc.DeleteDocumentRequest.displayName = 'proto.mongorpc.DeleteDocumentRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -729,7 +672,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.DeleteDocumentResponse = function (opt_data) {
+proto.mongorpc.DeleteDocumentResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.DeleteDocumentResponse, jspb.Message);
@@ -738,8 +681,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.DeleteDocumentResponse.displayName =
-    "proto.mongorpc.DeleteDocumentResponse";
+  proto.mongorpc.DeleteDocumentResponse.displayName = 'proto.mongorpc.DeleteDocumentResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -751,15 +693,8 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.ListenRequest = function (opt_data) {
-  jspb.Message.initialize(
-    this,
-    opt_data,
-    0,
-    -1,
-    proto.mongorpc.ListenRequest.repeatedFields_,
-    null
-  );
+proto.mongorpc.ListenRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mongorpc.ListenRequest.repeatedFields_, null);
 };
 goog.inherits(proto.mongorpc.ListenRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -767,7 +702,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.ListenRequest.displayName = "proto.mongorpc.ListenRequest";
+  proto.mongorpc.ListenRequest.displayName = 'proto.mongorpc.ListenRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -779,7 +714,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.ListenResponse = function (opt_data) {
+proto.mongorpc.ListenResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.ListenResponse, jspb.Message);
@@ -788,7 +723,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.ListenResponse.displayName = "proto.mongorpc.ListenResponse";
+  proto.mongorpc.ListenResponse.displayName = 'proto.mongorpc.ListenResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -800,15 +735,8 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.Index = function (opt_data) {
-  jspb.Message.initialize(
-    this,
-    opt_data,
-    0,
-    -1,
-    proto.mongorpc.Index.repeatedFields_,
-    null
-  );
+proto.mongorpc.Index = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mongorpc.Index.repeatedFields_, null);
 };
 goog.inherits(proto.mongorpc.Index, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -816,7 +744,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.Index.displayName = "proto.mongorpc.Index";
+  proto.mongorpc.Index.displayName = 'proto.mongorpc.Index';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -828,7 +756,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.IndexKey = function (opt_data) {
+proto.mongorpc.IndexKey = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.IndexKey, jspb.Message);
@@ -837,7 +765,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.IndexKey.displayName = "proto.mongorpc.IndexKey";
+  proto.mongorpc.IndexKey.displayName = 'proto.mongorpc.IndexKey';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -849,7 +777,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.CreateIndexRequest = function (opt_data) {
+proto.mongorpc.CreateIndexRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.CreateIndexRequest, jspb.Message);
@@ -858,8 +786,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.CreateIndexRequest.displayName =
-    "proto.mongorpc.CreateIndexRequest";
+  proto.mongorpc.CreateIndexRequest.displayName = 'proto.mongorpc.CreateIndexRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -871,7 +798,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.CreateIndexResponse = function (opt_data) {
+proto.mongorpc.CreateIndexResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.CreateIndexResponse, jspb.Message);
@@ -880,8 +807,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.CreateIndexResponse.displayName =
-    "proto.mongorpc.CreateIndexResponse";
+  proto.mongorpc.CreateIndexResponse.displayName = 'proto.mongorpc.CreateIndexResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -893,7 +819,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.ListIndexesRequest = function (opt_data) {
+proto.mongorpc.ListIndexesRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.ListIndexesRequest, jspb.Message);
@@ -902,8 +828,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.ListIndexesRequest.displayName =
-    "proto.mongorpc.ListIndexesRequest";
+  proto.mongorpc.ListIndexesRequest.displayName = 'proto.mongorpc.ListIndexesRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -915,15 +840,8 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.ListIndexesResponse = function (opt_data) {
-  jspb.Message.initialize(
-    this,
-    opt_data,
-    0,
-    -1,
-    proto.mongorpc.ListIndexesResponse.repeatedFields_,
-    null
-  );
+proto.mongorpc.ListIndexesResponse = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mongorpc.ListIndexesResponse.repeatedFields_, null);
 };
 goog.inherits(proto.mongorpc.ListIndexesResponse, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -931,8 +849,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.ListIndexesResponse.displayName =
-    "proto.mongorpc.ListIndexesResponse";
+  proto.mongorpc.ListIndexesResponse.displayName = 'proto.mongorpc.ListIndexesResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -944,7 +861,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.DeleteIndexRequest = function (opt_data) {
+proto.mongorpc.DeleteIndexRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.DeleteIndexRequest, jspb.Message);
@@ -953,8 +870,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.DeleteIndexRequest.displayName =
-    "proto.mongorpc.DeleteIndexRequest";
+  proto.mongorpc.DeleteIndexRequest.displayName = 'proto.mongorpc.DeleteIndexRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -966,7 +882,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.DeleteIndexResponse = function (opt_data) {
+proto.mongorpc.DeleteIndexResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.DeleteIndexResponse, jspb.Message);
@@ -975,8 +891,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.DeleteIndexResponse.displayName =
-    "proto.mongorpc.DeleteIndexResponse";
+  proto.mongorpc.DeleteIndexResponse.displayName = 'proto.mongorpc.DeleteIndexResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -988,7 +903,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.ReindexRequest = function (opt_data) {
+proto.mongorpc.ReindexRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.ReindexRequest, jspb.Message);
@@ -997,7 +912,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.ReindexRequest.displayName = "proto.mongorpc.ReindexRequest";
+  proto.mongorpc.ReindexRequest.displayName = 'proto.mongorpc.ReindexRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1009,7 +924,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.ReindexResponse = function (opt_data) {
+proto.mongorpc.ReindexResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.ReindexResponse, jspb.Message);
@@ -1018,7 +933,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.ReindexResponse.displayName = "proto.mongorpc.ReindexResponse";
+  proto.mongorpc.ReindexResponse.displayName = 'proto.mongorpc.ReindexResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1030,15 +945,8 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.CountDocumentsRequest = function (opt_data) {
-  jspb.Message.initialize(
-    this,
-    opt_data,
-    0,
-    -1,
-    proto.mongorpc.CountDocumentsRequest.repeatedFields_,
-    null
-  );
+proto.mongorpc.CountDocumentsRequest = function(opt_data) {
+  jspb.Message.initialize(this, opt_data, 0, -1, proto.mongorpc.CountDocumentsRequest.repeatedFields_, null);
 };
 goog.inherits(proto.mongorpc.CountDocumentsRequest, jspb.Message);
 if (goog.DEBUG && !COMPILED) {
@@ -1046,8 +954,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.CountDocumentsRequest.displayName =
-    "proto.mongorpc.CountDocumentsRequest";
+  proto.mongorpc.CountDocumentsRequest.displayName = 'proto.mongorpc.CountDocumentsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1059,7 +966,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.CountDocumentsResponse = function (opt_data) {
+proto.mongorpc.CountDocumentsResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.CountDocumentsResponse, jspb.Message);
@@ -1068,8 +975,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.CountDocumentsResponse.displayName =
-    "proto.mongorpc.CountDocumentsResponse";
+  proto.mongorpc.CountDocumentsResponse.displayName = 'proto.mongorpc.CountDocumentsResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1081,7 +987,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.Empty = function (opt_data) {
+proto.mongorpc.Empty = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.Empty, jspb.Message);
@@ -1090,7 +996,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.Empty.displayName = "proto.mongorpc.Empty";
+  proto.mongorpc.Empty.displayName = 'proto.mongorpc.Empty';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1102,7 +1008,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.CollectionStatsRequest = function (opt_data) {
+proto.mongorpc.CollectionStatsRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.CollectionStatsRequest, jspb.Message);
@@ -1111,8 +1017,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.CollectionStatsRequest.displayName =
-    "proto.mongorpc.CollectionStatsRequest";
+  proto.mongorpc.CollectionStatsRequest.displayName = 'proto.mongorpc.CollectionStatsRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1124,7 +1029,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.CollectionStatsResponse = function (opt_data) {
+proto.mongorpc.CollectionStatsResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.CollectionStatsResponse, jspb.Message);
@@ -1133,8 +1038,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.CollectionStatsResponse.displayName =
-    "proto.mongorpc.CollectionStatsResponse";
+  proto.mongorpc.CollectionStatsResponse.displayName = 'proto.mongorpc.CollectionStatsResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1146,7 +1050,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.CreateCollectionRequest = function (opt_data) {
+proto.mongorpc.CreateCollectionRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.CreateCollectionRequest, jspb.Message);
@@ -1155,8 +1059,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.CreateCollectionRequest.displayName =
-    "proto.mongorpc.CreateCollectionRequest";
+  proto.mongorpc.CreateCollectionRequest.displayName = 'proto.mongorpc.CreateCollectionRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1168,7 +1071,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.CreateCollectionResponse = function (opt_data) {
+proto.mongorpc.CreateCollectionResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.CreateCollectionResponse, jspb.Message);
@@ -1177,8 +1080,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.CreateCollectionResponse.displayName =
-    "proto.mongorpc.CreateCollectionResponse";
+  proto.mongorpc.CreateCollectionResponse.displayName = 'proto.mongorpc.CreateCollectionResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1190,7 +1092,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.RenameCollectionRequest = function (opt_data) {
+proto.mongorpc.RenameCollectionRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.RenameCollectionRequest, jspb.Message);
@@ -1199,8 +1101,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.RenameCollectionRequest.displayName =
-    "proto.mongorpc.RenameCollectionRequest";
+  proto.mongorpc.RenameCollectionRequest.displayName = 'proto.mongorpc.RenameCollectionRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1212,7 +1113,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.RenameCollectionResponse = function (opt_data) {
+proto.mongorpc.RenameCollectionResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.RenameCollectionResponse, jspb.Message);
@@ -1221,8 +1122,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.RenameCollectionResponse.displayName =
-    "proto.mongorpc.RenameCollectionResponse";
+  proto.mongorpc.RenameCollectionResponse.displayName = 'proto.mongorpc.RenameCollectionResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1234,7 +1134,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.DeleteCollectionRequest = function (opt_data) {
+proto.mongorpc.DeleteCollectionRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.DeleteCollectionRequest, jspb.Message);
@@ -1243,8 +1143,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.DeleteCollectionRequest.displayName =
-    "proto.mongorpc.DeleteCollectionRequest";
+  proto.mongorpc.DeleteCollectionRequest.displayName = 'proto.mongorpc.DeleteCollectionRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1256,7 +1155,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.DeleteCollectionResponse = function (opt_data) {
+proto.mongorpc.DeleteCollectionResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.DeleteCollectionResponse, jspb.Message);
@@ -1265,8 +1164,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.DeleteCollectionResponse.displayName =
-    "proto.mongorpc.DeleteCollectionResponse";
+  proto.mongorpc.DeleteCollectionResponse.displayName = 'proto.mongorpc.DeleteCollectionResponse';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1278,7 +1176,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.HealthCheckRequest = function (opt_data) {
+proto.mongorpc.HealthCheckRequest = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.HealthCheckRequest, jspb.Message);
@@ -1287,8 +1185,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.HealthCheckRequest.displayName =
-    "proto.mongorpc.HealthCheckRequest";
+  proto.mongorpc.HealthCheckRequest.displayName = 'proto.mongorpc.HealthCheckRequest';
 }
 /**
  * Generated by JsPbCodeGenerator.
@@ -1300,7 +1197,7 @@ if (goog.DEBUG && !COMPILED) {
  * @extends {jspb.Message}
  * @constructor
  */
-proto.mongorpc.HealthCheckResponse = function (opt_data) {
+proto.mongorpc.HealthCheckResponse = function(opt_data) {
   jspb.Message.initialize(this, opt_data, 0, -1, null, null);
 };
 goog.inherits(proto.mongorpc.HealthCheckResponse, jspb.Message);
@@ -1309,8 +1206,7 @@ if (goog.DEBUG && !COMPILED) {
    * @public
    * @override
    */
-  proto.mongorpc.HealthCheckResponse.displayName =
-    "proto.mongorpc.HealthCheckResponse";
+  proto.mongorpc.HealthCheckResponse.displayName = 'proto.mongorpc.HealthCheckResponse';
 }
 
 /**
@@ -1320,61 +1216,60 @@ if (goog.DEBUG && !COMPILED) {
  */
 proto.mongorpc.ArrayValue.repeatedFields_ = [1];
 
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.ArrayValue.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.ArrayValue.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.ArrayValue.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.ArrayValue.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.ArrayValue} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.ArrayValue.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    valuesList: jspb.Message.toObjectList(msg.getValuesList(),
+    proto.mongorpc.Value.toObject, includeInstance)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.ArrayValue} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.ArrayValue.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        valuesList: jspb.Message.toObjectList(
-          msg.getValuesList(),
-          proto.mongorpc.Value.toObject,
-          includeInstance
-        ),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.ArrayValue}
  */
-proto.mongorpc.ArrayValue.deserializeBinary = function (bytes) {
+proto.mongorpc.ArrayValue.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.ArrayValue();
+  var msg = new proto.mongorpc.ArrayValue;
   return proto.mongorpc.ArrayValue.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -1383,38 +1278,37 @@ proto.mongorpc.ArrayValue.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.ArrayValue}
  */
-proto.mongorpc.ArrayValue.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.ArrayValue.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.addValues(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.addValues(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.ArrayValue.prototype.serializeBinary = function () {
+proto.mongorpc.ArrayValue.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.ArrayValue.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -1423,7 +1317,7 @@ proto.mongorpc.ArrayValue.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.ArrayValue.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.ArrayValue.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getValuesList();
   if (f.length > 0) {
@@ -1435,101 +1329,99 @@ proto.mongorpc.ArrayValue.serializeBinaryToWriter = function (message, writer) {
   }
 };
 
+
 /**
  * repeated Value values = 1;
  * @return {!Array<!proto.mongorpc.Value>}
  */
-proto.mongorpc.ArrayValue.prototype.getValuesList = function () {
+proto.mongorpc.ArrayValue.prototype.getValuesList = function() {
   return /** @type{!Array<!proto.mongorpc.Value>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Value, 1)
-  );
+    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Value, 1));
 };
+
 
 /**
  * @param {!Array<!proto.mongorpc.Value>} value
  * @return {!proto.mongorpc.ArrayValue} returns this
- */
-proto.mongorpc.ArrayValue.prototype.setValuesList = function (value) {
+*/
+proto.mongorpc.ArrayValue.prototype.setValuesList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
+
 
 /**
  * @param {!proto.mongorpc.Value=} opt_value
  * @param {number=} opt_index
  * @return {!proto.mongorpc.Value}
  */
-proto.mongorpc.ArrayValue.prototype.addValues = function (
-  opt_value,
-  opt_index
-) {
-  return jspb.Message.addToRepeatedWrapperField(
-    this,
-    1,
-    opt_value,
-    proto.mongorpc.Value,
-    opt_index
-  );
+proto.mongorpc.ArrayValue.prototype.addValues = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mongorpc.Value, opt_index);
 };
+
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.mongorpc.ArrayValue} returns this
  */
-proto.mongorpc.ArrayValue.prototype.clearValuesList = function () {
+proto.mongorpc.ArrayValue.prototype.clearValuesList = function() {
   return this.setValuesList([]);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.MapValue.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.MapValue.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.MapValue.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.MapValue.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.MapValue} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.MapValue.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    fieldsMap: (f = msg.getFieldsMap()) ? f.toObject(includeInstance, proto.mongorpc.Value.toObject) : []
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.MapValue} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.MapValue.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        fieldsMap: (f = msg.getFieldsMap())
-          ? f.toObject(includeInstance, proto.mongorpc.Value.toObject)
-          : [],
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.MapValue}
  */
-proto.mongorpc.MapValue.deserializeBinary = function (bytes) {
+proto.mongorpc.MapValue.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.MapValue();
+  var msg = new proto.mongorpc.MapValue;
   return proto.mongorpc.MapValue.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -1538,44 +1430,38 @@ proto.mongorpc.MapValue.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.MapValue}
  */
-proto.mongorpc.MapValue.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.MapValue.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = msg.getFieldsMap();
-        reader.readMessage(value, function (message, reader) {
-          jspb.Map.deserializeBinary(
-            message,
-            reader,
-            jspb.BinaryReader.prototype.readString,
-            jspb.BinaryReader.prototype.readMessage,
-            proto.mongorpc.Value.deserializeBinaryFromReader,
-            "",
-            new proto.mongorpc.Value()
-          );
-        });
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = msg.getFieldsMap();
+      reader.readMessage(value, function(message, reader) {
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readMessage, proto.mongorpc.Value.deserializeBinaryFromReader, "", new proto.mongorpc.Value());
+         });
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.MapValue.prototype.serializeBinary = function () {
+proto.mongorpc.MapValue.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.MapValue.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -1584,19 +1470,14 @@ proto.mongorpc.MapValue.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.MapValue.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.MapValue.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getFieldsMap(true);
   if (f && f.getLength() > 0) {
-    f.serializeBinary(
-      1,
-      writer,
-      jspb.BinaryWriter.prototype.writeString,
-      jspb.BinaryWriter.prototype.writeMessage,
-      proto.mongorpc.Value.serializeBinaryToWriter
-    );
+    f.serializeBinary(1, writer, jspb.BinaryWriter.prototype.writeString, jspb.BinaryWriter.prototype.writeMessage, proto.mongorpc.Value.serializeBinaryToWriter);
   }
 };
+
 
 /**
  * map<string, Value> fields = 1;
@@ -1604,71 +1485,77 @@ proto.mongorpc.MapValue.serializeBinaryToWriter = function (message, writer) {
  * empty, instead returning `undefined`
  * @return {!jspb.Map<string,!proto.mongorpc.Value>}
  */
-proto.mongorpc.MapValue.prototype.getFieldsMap = function (opt_noLazyCreate) {
+proto.mongorpc.MapValue.prototype.getFieldsMap = function(opt_noLazyCreate) {
   return /** @type {!jspb.Map<string,!proto.mongorpc.Value>} */ (
-    jspb.Message.getMapField(this, 1, opt_noLazyCreate, proto.mongorpc.Value)
-  );
+      jspb.Message.getMapField(this, 1, opt_noLazyCreate,
+      proto.mongorpc.Value));
 };
+
 
 /**
  * Clears values from the map. The map will be non-null.
  * @return {!proto.mongorpc.MapValue} returns this
  */
-proto.mongorpc.MapValue.prototype.clearFieldsMap = function () {
+proto.mongorpc.MapValue.prototype.clearFieldsMap = function() {
   this.getFieldsMap().clear();
-  return this;
-};
+  return this;};
+
+
+
+
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.Timestamp.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.Timestamp.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.Timestamp.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.Timestamp.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.Timestamp} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.Timestamp.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    seconds: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    nanos: jspb.Message.getFieldWithDefault(msg, 2, 0)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.Timestamp} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.Timestamp.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        seconds: jspb.Message.getFieldWithDefault(msg, 1, 0),
-        nanos: jspb.Message.getFieldWithDefault(msg, 2, 0),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.Timestamp}
  */
-proto.mongorpc.Timestamp.deserializeBinary = function (bytes) {
+proto.mongorpc.Timestamp.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.Timestamp();
+  var msg = new proto.mongorpc.Timestamp;
   return proto.mongorpc.Timestamp.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -1677,38 +1564,40 @@ proto.mongorpc.Timestamp.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.Timestamp}
  */
-proto.mongorpc.Timestamp.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.Timestamp.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setSeconds(value);
-        break;
-      case 2:
-        var value = /** @type {number} */ (reader.readInt32());
-        msg.setNanos(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setSeconds(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setNanos(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.Timestamp.prototype.serializeBinary = function () {
+proto.mongorpc.Timestamp.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.Timestamp.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -1717,99 +1606,115 @@ proto.mongorpc.Timestamp.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.Timestamp.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.Timestamp.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getSeconds();
   if (f !== 0) {
-    writer.writeInt64(1, f);
+    writer.writeInt64(
+      1,
+      f
+    );
   }
   f = message.getNanos();
   if (f !== 0) {
-    writer.writeInt32(2, f);
+    writer.writeInt32(
+      2,
+      f
+    );
   }
 };
+
 
 /**
  * optional int64 seconds = 1;
  * @return {number}
  */
-proto.mongorpc.Timestamp.prototype.getSeconds = function () {
+proto.mongorpc.Timestamp.prototype.getSeconds = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.Timestamp} returns this
  */
-proto.mongorpc.Timestamp.prototype.setSeconds = function (value) {
+proto.mongorpc.Timestamp.prototype.setSeconds = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
+
 
 /**
  * optional int32 nanos = 2;
  * @return {number}
  */
-proto.mongorpc.Timestamp.prototype.getNanos = function () {
+proto.mongorpc.Timestamp.prototype.getNanos = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.Timestamp} returns this
  */
-proto.mongorpc.Timestamp.prototype.setNanos = function (value) {
+proto.mongorpc.Timestamp.prototype.setNanos = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.ObjectID.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.ObjectID.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.ObjectID.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.ObjectID.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.ObjectID} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.ObjectID.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    id: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.ObjectID} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.ObjectID.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        id: jspb.Message.getFieldWithDefault(msg, 1, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.ObjectID}
  */
-proto.mongorpc.ObjectID.deserializeBinary = function (bytes) {
+proto.mongorpc.ObjectID.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.ObjectID();
+  var msg = new proto.mongorpc.ObjectID;
   return proto.mongorpc.ObjectID.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -1818,34 +1723,36 @@ proto.mongorpc.ObjectID.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.ObjectID}
  */
-proto.mongorpc.ObjectID.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.ObjectID.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setId(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setId(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.ObjectID.prototype.serializeBinary = function () {
+proto.mongorpc.ObjectID.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.ObjectID.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -1854,29 +1761,36 @@ proto.mongorpc.ObjectID.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.ObjectID.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.ObjectID.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getId();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional string id = 1;
  * @return {string}
  */
-proto.mongorpc.ObjectID.prototype.getId = function () {
+proto.mongorpc.ObjectID.prototype.getId = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ObjectID} returns this
  */
-proto.mongorpc.ObjectID.prototype.setId = function (value) {
+proto.mongorpc.ObjectID.prototype.setId = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
+
 
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -1886,7 +1800,7 @@ proto.mongorpc.ObjectID.prototype.setId = function (value) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.mongorpc.Value.oneofGroups_ = [[1, 2, 3, 4, 5, 8, 9, 10, 23, 7]];
+proto.mongorpc.Value.oneofGroups_ = [[1,2,3,4,5,8,9,10,23,7]];
 
 /**
  * @enum {number}
@@ -1902,84 +1816,78 @@ proto.mongorpc.Value.TypeCase = {
   DATE_VALUE: 9,
   NULL_VALUE: 10,
   INTEGER_VALUE: 23,
-  OBJECT_ID_VALUE: 7,
+  OBJECT_ID_VALUE: 7
 };
 
 /**
  * @return {proto.mongorpc.Value.TypeCase}
  */
-proto.mongorpc.Value.prototype.getTypeCase = function () {
-  return /** @type {proto.mongorpc.Value.TypeCase} */ (
-    jspb.Message.computeOneofCase(this, proto.mongorpc.Value.oneofGroups_[0])
-  );
+proto.mongorpc.Value.prototype.getTypeCase = function() {
+  return /** @type {proto.mongorpc.Value.TypeCase} */(jspb.Message.computeOneofCase(this, proto.mongorpc.Value.oneofGroups_[0]));
 };
 
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.Value.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.Value.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.Value.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.Value.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.Value} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.Value.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    doubleValue: jspb.Message.getFloatingPointFieldWithDefault(msg, 1, 0.0),
+    stringValue: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    mapValue: (f = msg.getMapValue()) && proto.mongorpc.MapValue.toObject(includeInstance, f),
+    arrayValue: (f = msg.getArrayValue()) && proto.mongorpc.ArrayValue.toObject(includeInstance, f),
+    bytesValue: msg.getBytesValue_asB64(),
+    boolValue: jspb.Message.getBooleanFieldWithDefault(msg, 8, false),
+    dateValue: (f = msg.getDateValue()) && proto.mongorpc.Timestamp.toObject(includeInstance, f),
+    nullValue: jspb.Message.getFieldWithDefault(msg, 10, 0),
+    integerValue: jspb.Message.getFieldWithDefault(msg, 23, 0),
+    objectIdValue: (f = msg.getObjectIdValue()) && proto.mongorpc.ObjectID.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.Value} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.Value.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        doubleValue: jspb.Message.getFloatingPointFieldWithDefault(msg, 1, 0.0),
-        stringValue: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        mapValue:
-          (f = msg.getMapValue()) &&
-          proto.mongorpc.MapValue.toObject(includeInstance, f),
-        arrayValue:
-          (f = msg.getArrayValue()) &&
-          proto.mongorpc.ArrayValue.toObject(includeInstance, f),
-        bytesValue: msg.getBytesValue_asB64(),
-        boolValue: jspb.Message.getBooleanFieldWithDefault(msg, 8, false),
-        dateValue:
-          (f = msg.getDateValue()) &&
-          proto.mongorpc.Timestamp.toObject(includeInstance, f),
-        nullValue: jspb.Message.getFieldWithDefault(msg, 10, 0),
-        integerValue: jspb.Message.getFieldWithDefault(msg, 23, 0),
-        objectIdValue:
-          (f = msg.getObjectIdValue()) &&
-          proto.mongorpc.ObjectID.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.Value}
  */
-proto.mongorpc.Value.deserializeBinary = function (bytes) {
+proto.mongorpc.Value.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.Value();
+  var msg = new proto.mongorpc.Value;
   return proto.mongorpc.Value.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -1988,88 +1896,76 @@ proto.mongorpc.Value.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.Value}
  */
-proto.mongorpc.Value.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.Value.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {number} */ (reader.readDouble());
-        msg.setDoubleValue(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setStringValue(value);
-        break;
-      case 3:
-        var value = new proto.mongorpc.MapValue();
-        reader.readMessage(
-          value,
-          proto.mongorpc.MapValue.deserializeBinaryFromReader
-        );
-        msg.setMapValue(value);
-        break;
-      case 4:
-        var value = new proto.mongorpc.ArrayValue();
-        reader.readMessage(
-          value,
-          proto.mongorpc.ArrayValue.deserializeBinaryFromReader
-        );
-        msg.setArrayValue(value);
-        break;
-      case 5:
-        var value = /** @type {!Uint8Array} */ (reader.readBytes());
-        msg.setBytesValue(value);
-        break;
-      case 8:
-        var value = /** @type {boolean} */ (reader.readBool());
-        msg.setBoolValue(value);
-        break;
-      case 9:
-        var value = new proto.mongorpc.Timestamp();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Timestamp.deserializeBinaryFromReader
-        );
-        msg.setDateValue(value);
-        break;
-      case 10:
-        var value = /** @type {!proto.mongorpc.NullValue} */ (
-          reader.readEnum()
-        );
-        msg.setNullValue(value);
-        break;
-      case 23:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setIntegerValue(value);
-        break;
-      case 7:
-        var value = new proto.mongorpc.ObjectID();
-        reader.readMessage(
-          value,
-          proto.mongorpc.ObjectID.deserializeBinaryFromReader
-        );
-        msg.setObjectIdValue(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {number} */ (reader.readDouble());
+      msg.setDoubleValue(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setStringValue(value);
+      break;
+    case 3:
+      var value = new proto.mongorpc.MapValue;
+      reader.readMessage(value,proto.mongorpc.MapValue.deserializeBinaryFromReader);
+      msg.setMapValue(value);
+      break;
+    case 4:
+      var value = new proto.mongorpc.ArrayValue;
+      reader.readMessage(value,proto.mongorpc.ArrayValue.deserializeBinaryFromReader);
+      msg.setArrayValue(value);
+      break;
+    case 5:
+      var value = /** @type {!Uint8Array} */ (reader.readBytes());
+      msg.setBytesValue(value);
+      break;
+    case 8:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setBoolValue(value);
+      break;
+    case 9:
+      var value = new proto.mongorpc.Timestamp;
+      reader.readMessage(value,proto.mongorpc.Timestamp.deserializeBinaryFromReader);
+      msg.setDateValue(value);
+      break;
+    case 10:
+      var value = /** @type {!proto.mongorpc.NullValue} */ (reader.readEnum());
+      msg.setNullValue(value);
+      break;
+    case 23:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setIntegerValue(value);
+      break;
+    case 7:
+      var value = new proto.mongorpc.ObjectID;
+      reader.readMessage(value,proto.mongorpc.ObjectID.deserializeBinaryFromReader);
+      msg.setObjectIdValue(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.Value.prototype.serializeBinary = function () {
+proto.mongorpc.Value.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.Value.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2078,19 +1974,29 @@ proto.mongorpc.Value.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.Value.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.Value.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = /** @type {number} */ (jspb.Message.getField(message, 1));
   if (f != null) {
-    writer.writeDouble(1, f);
+    writer.writeDouble(
+      1,
+      f
+    );
   }
   f = /** @type {string} */ (jspb.Message.getField(message, 2));
   if (f != null) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getMapValue();
   if (f != null) {
-    writer.writeMessage(3, f, proto.mongorpc.MapValue.serializeBinaryToWriter);
+    writer.writeMessage(
+      3,
+      f,
+      proto.mongorpc.MapValue.serializeBinaryToWriter
+    );
   }
   f = message.getArrayValue();
   if (f != null) {
@@ -2102,212 +2008,216 @@ proto.mongorpc.Value.serializeBinaryToWriter = function (message, writer) {
   }
   f = /** @type {!(string|Uint8Array)} */ (jspb.Message.getField(message, 5));
   if (f != null) {
-    writer.writeBytes(5, f);
+    writer.writeBytes(
+      5,
+      f
+    );
   }
   f = /** @type {boolean} */ (jspb.Message.getField(message, 8));
   if (f != null) {
-    writer.writeBool(8, f);
+    writer.writeBool(
+      8,
+      f
+    );
   }
   f = message.getDateValue();
   if (f != null) {
-    writer.writeMessage(9, f, proto.mongorpc.Timestamp.serializeBinaryToWriter);
+    writer.writeMessage(
+      9,
+      f,
+      proto.mongorpc.Timestamp.serializeBinaryToWriter
+    );
   }
-  f = /** @type {!proto.mongorpc.NullValue} */ (
-    jspb.Message.getField(message, 10)
-  );
+  f = /** @type {!proto.mongorpc.NullValue} */ (jspb.Message.getField(message, 10));
   if (f != null) {
-    writer.writeEnum(10, f);
+    writer.writeEnum(
+      10,
+      f
+    );
   }
   f = /** @type {number} */ (jspb.Message.getField(message, 23));
   if (f != null) {
-    writer.writeInt64(23, f);
+    writer.writeInt64(
+      23,
+      f
+    );
   }
   f = message.getObjectIdValue();
   if (f != null) {
-    writer.writeMessage(7, f, proto.mongorpc.ObjectID.serializeBinaryToWriter);
+    writer.writeMessage(
+      7,
+      f,
+      proto.mongorpc.ObjectID.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional double double_value = 1;
  * @return {number}
  */
-proto.mongorpc.Value.prototype.getDoubleValue = function () {
-  return /** @type {number} */ (
-    jspb.Message.getFloatingPointFieldWithDefault(this, 1, 0.0)
-  );
+proto.mongorpc.Value.prototype.getDoubleValue = function() {
+  return /** @type {number} */ (jspb.Message.getFloatingPointFieldWithDefault(this, 1, 0.0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.setDoubleValue = function (value) {
-  return jspb.Message.setOneofField(
-    this,
-    1,
-    proto.mongorpc.Value.oneofGroups_[0],
-    value
-  );
+proto.mongorpc.Value.prototype.setDoubleValue = function(value) {
+  return jspb.Message.setOneofField(this, 1, proto.mongorpc.Value.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the field making it undefined.
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.clearDoubleValue = function () {
-  return jspb.Message.setOneofField(
-    this,
-    1,
-    proto.mongorpc.Value.oneofGroups_[0],
-    undefined
-  );
+proto.mongorpc.Value.prototype.clearDoubleValue = function() {
+  return jspb.Message.setOneofField(this, 1, proto.mongorpc.Value.oneofGroups_[0], undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Value.prototype.hasDoubleValue = function () {
+proto.mongorpc.Value.prototype.hasDoubleValue = function() {
   return jspb.Message.getField(this, 1) != null;
 };
+
 
 /**
  * optional string string_value = 2;
  * @return {string}
  */
-proto.mongorpc.Value.prototype.getStringValue = function () {
+proto.mongorpc.Value.prototype.getStringValue = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.setStringValue = function (value) {
-  return jspb.Message.setOneofField(
-    this,
-    2,
-    proto.mongorpc.Value.oneofGroups_[0],
-    value
-  );
+proto.mongorpc.Value.prototype.setStringValue = function(value) {
+  return jspb.Message.setOneofField(this, 2, proto.mongorpc.Value.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the field making it undefined.
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.clearStringValue = function () {
-  return jspb.Message.setOneofField(
-    this,
-    2,
-    proto.mongorpc.Value.oneofGroups_[0],
-    undefined
-  );
+proto.mongorpc.Value.prototype.clearStringValue = function() {
+  return jspb.Message.setOneofField(this, 2, proto.mongorpc.Value.oneofGroups_[0], undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Value.prototype.hasStringValue = function () {
+proto.mongorpc.Value.prototype.hasStringValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
+
 
 /**
  * optional MapValue map_value = 3;
  * @return {?proto.mongorpc.MapValue}
  */
-proto.mongorpc.Value.prototype.getMapValue = function () {
+proto.mongorpc.Value.prototype.getMapValue = function() {
   return /** @type{?proto.mongorpc.MapValue} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.MapValue, 3)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.MapValue, 3));
 };
+
 
 /**
  * @param {?proto.mongorpc.MapValue|undefined} value
  * @return {!proto.mongorpc.Value} returns this
- */
-proto.mongorpc.Value.prototype.setMapValue = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    3,
-    proto.mongorpc.Value.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Value.prototype.setMapValue = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 3, proto.mongorpc.Value.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.clearMapValue = function () {
+proto.mongorpc.Value.prototype.clearMapValue = function() {
   return this.setMapValue(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Value.prototype.hasMapValue = function () {
+proto.mongorpc.Value.prototype.hasMapValue = function() {
   return jspb.Message.getField(this, 3) != null;
 };
+
 
 /**
  * optional ArrayValue array_value = 4;
  * @return {?proto.mongorpc.ArrayValue}
  */
-proto.mongorpc.Value.prototype.getArrayValue = function () {
+proto.mongorpc.Value.prototype.getArrayValue = function() {
   return /** @type{?proto.mongorpc.ArrayValue} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.ArrayValue, 4)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.ArrayValue, 4));
 };
+
 
 /**
  * @param {?proto.mongorpc.ArrayValue|undefined} value
  * @return {!proto.mongorpc.Value} returns this
- */
-proto.mongorpc.Value.prototype.setArrayValue = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    4,
-    proto.mongorpc.Value.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Value.prototype.setArrayValue = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 4, proto.mongorpc.Value.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.clearArrayValue = function () {
+proto.mongorpc.Value.prototype.clearArrayValue = function() {
   return this.setArrayValue(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Value.prototype.hasArrayValue = function () {
+proto.mongorpc.Value.prototype.hasArrayValue = function() {
   return jspb.Message.getField(this, 4) != null;
 };
 
+
 /**
  * optional bytes bytes_value = 5;
- * @return {string}
+ * @return {!(string|Uint8Array)}
  */
-proto.mongorpc.Value.prototype.getBytesValue = function () {
-  return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
+proto.mongorpc.Value.prototype.getBytesValue = function() {
+  return /** @type {!(string|Uint8Array)} */ (jspb.Message.getFieldWithDefault(this, 5, ""));
 };
+
 
 /**
  * optional bytes bytes_value = 5;
  * This is a type-conversion wrapper around `getBytesValue()`
  * @return {string}
  */
-proto.mongorpc.Value.prototype.getBytesValue_asB64 = function () {
-  return /** @type {string} */ (jspb.Message.bytesAsB64(this.getBytesValue()));
+proto.mongorpc.Value.prototype.getBytesValue_asB64 = function() {
+  return /** @type {string} */ (jspb.Message.bytesAsB64(
+      this.getBytesValue()));
 };
+
 
 /**
  * optional bytes bytes_value = 5;
@@ -2316,304 +2226,276 @@ proto.mongorpc.Value.prototype.getBytesValue_asB64 = function () {
  * This is a type-conversion wrapper around `getBytesValue()`
  * @return {!Uint8Array}
  */
-proto.mongorpc.Value.prototype.getBytesValue_asU8 = function () {
-  return /** @type {!Uint8Array} */ (
-    jspb.Message.bytesAsU8(this.getBytesValue())
-  );
+proto.mongorpc.Value.prototype.getBytesValue_asU8 = function() {
+  return /** @type {!Uint8Array} */ (jspb.Message.bytesAsU8(
+      this.getBytesValue()));
 };
+
 
 /**
  * @param {!(string|Uint8Array)} value
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.setBytesValue = function (value) {
-  return jspb.Message.setOneofField(
-    this,
-    5,
-    proto.mongorpc.Value.oneofGroups_[0],
-    value
-  );
+proto.mongorpc.Value.prototype.setBytesValue = function(value) {
+  return jspb.Message.setOneofField(this, 5, proto.mongorpc.Value.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the field making it undefined.
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.clearBytesValue = function () {
-  return jspb.Message.setOneofField(
-    this,
-    5,
-    proto.mongorpc.Value.oneofGroups_[0],
-    undefined
-  );
+proto.mongorpc.Value.prototype.clearBytesValue = function() {
+  return jspb.Message.setOneofField(this, 5, proto.mongorpc.Value.oneofGroups_[0], undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Value.prototype.hasBytesValue = function () {
+proto.mongorpc.Value.prototype.hasBytesValue = function() {
   return jspb.Message.getField(this, 5) != null;
 };
+
 
 /**
  * optional bool bool_value = 8;
  * @return {boolean}
  */
-proto.mongorpc.Value.prototype.getBoolValue = function () {
-  return /** @type {boolean} */ (
-    jspb.Message.getBooleanFieldWithDefault(this, 8, false)
-  );
+proto.mongorpc.Value.prototype.getBoolValue = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 8, false));
 };
+
 
 /**
  * @param {boolean} value
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.setBoolValue = function (value) {
-  return jspb.Message.setOneofField(
-    this,
-    8,
-    proto.mongorpc.Value.oneofGroups_[0],
-    value
-  );
+proto.mongorpc.Value.prototype.setBoolValue = function(value) {
+  return jspb.Message.setOneofField(this, 8, proto.mongorpc.Value.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the field making it undefined.
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.clearBoolValue = function () {
-  return jspb.Message.setOneofField(
-    this,
-    8,
-    proto.mongorpc.Value.oneofGroups_[0],
-    undefined
-  );
+proto.mongorpc.Value.prototype.clearBoolValue = function() {
+  return jspb.Message.setOneofField(this, 8, proto.mongorpc.Value.oneofGroups_[0], undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Value.prototype.hasBoolValue = function () {
+proto.mongorpc.Value.prototype.hasBoolValue = function() {
   return jspb.Message.getField(this, 8) != null;
 };
+
 
 /**
  * optional Timestamp date_value = 9;
  * @return {?proto.mongorpc.Timestamp}
  */
-proto.mongorpc.Value.prototype.getDateValue = function () {
+proto.mongorpc.Value.prototype.getDateValue = function() {
   return /** @type{?proto.mongorpc.Timestamp} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Timestamp, 9)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Timestamp, 9));
 };
+
 
 /**
  * @param {?proto.mongorpc.Timestamp|undefined} value
  * @return {!proto.mongorpc.Value} returns this
- */
-proto.mongorpc.Value.prototype.setDateValue = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    9,
-    proto.mongorpc.Value.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Value.prototype.setDateValue = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 9, proto.mongorpc.Value.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.clearDateValue = function () {
+proto.mongorpc.Value.prototype.clearDateValue = function() {
   return this.setDateValue(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Value.prototype.hasDateValue = function () {
+proto.mongorpc.Value.prototype.hasDateValue = function() {
   return jspb.Message.getField(this, 9) != null;
 };
+
 
 /**
  * optional NullValue null_value = 10;
  * @return {!proto.mongorpc.NullValue}
  */
-proto.mongorpc.Value.prototype.getNullValue = function () {
-  return /** @type {!proto.mongorpc.NullValue} */ (
-    jspb.Message.getFieldWithDefault(this, 10, 0)
-  );
+proto.mongorpc.Value.prototype.getNullValue = function() {
+  return /** @type {!proto.mongorpc.NullValue} */ (jspb.Message.getFieldWithDefault(this, 10, 0));
 };
+
 
 /**
  * @param {!proto.mongorpc.NullValue} value
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.setNullValue = function (value) {
-  return jspb.Message.setOneofField(
-    this,
-    10,
-    proto.mongorpc.Value.oneofGroups_[0],
-    value
-  );
+proto.mongorpc.Value.prototype.setNullValue = function(value) {
+  return jspb.Message.setOneofField(this, 10, proto.mongorpc.Value.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the field making it undefined.
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.clearNullValue = function () {
-  return jspb.Message.setOneofField(
-    this,
-    10,
-    proto.mongorpc.Value.oneofGroups_[0],
-    undefined
-  );
+proto.mongorpc.Value.prototype.clearNullValue = function() {
+  return jspb.Message.setOneofField(this, 10, proto.mongorpc.Value.oneofGroups_[0], undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Value.prototype.hasNullValue = function () {
+proto.mongorpc.Value.prototype.hasNullValue = function() {
   return jspb.Message.getField(this, 10) != null;
 };
+
 
 /**
  * optional int64 integer_value = 23;
  * @return {number}
  */
-proto.mongorpc.Value.prototype.getIntegerValue = function () {
+proto.mongorpc.Value.prototype.getIntegerValue = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 23, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.setIntegerValue = function (value) {
-  return jspb.Message.setOneofField(
-    this,
-    23,
-    proto.mongorpc.Value.oneofGroups_[0],
-    value
-  );
+proto.mongorpc.Value.prototype.setIntegerValue = function(value) {
+  return jspb.Message.setOneofField(this, 23, proto.mongorpc.Value.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the field making it undefined.
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.clearIntegerValue = function () {
-  return jspb.Message.setOneofField(
-    this,
-    23,
-    proto.mongorpc.Value.oneofGroups_[0],
-    undefined
-  );
+proto.mongorpc.Value.prototype.clearIntegerValue = function() {
+  return jspb.Message.setOneofField(this, 23, proto.mongorpc.Value.oneofGroups_[0], undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Value.prototype.hasIntegerValue = function () {
+proto.mongorpc.Value.prototype.hasIntegerValue = function() {
   return jspb.Message.getField(this, 23) != null;
 };
+
 
 /**
  * optional ObjectID object_id_value = 7;
  * @return {?proto.mongorpc.ObjectID}
  */
-proto.mongorpc.Value.prototype.getObjectIdValue = function () {
+proto.mongorpc.Value.prototype.getObjectIdValue = function() {
   return /** @type{?proto.mongorpc.ObjectID} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.ObjectID, 7)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.ObjectID, 7));
 };
+
 
 /**
  * @param {?proto.mongorpc.ObjectID|undefined} value
  * @return {!proto.mongorpc.Value} returns this
- */
-proto.mongorpc.Value.prototype.setObjectIdValue = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    7,
-    proto.mongorpc.Value.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Value.prototype.setObjectIdValue = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 7, proto.mongorpc.Value.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Value} returns this
  */
-proto.mongorpc.Value.prototype.clearObjectIdValue = function () {
+proto.mongorpc.Value.prototype.clearObjectIdValue = function() {
   return this.setObjectIdValue(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Value.prototype.hasObjectIdValue = function () {
+proto.mongorpc.Value.prototype.hasObjectIdValue = function() {
   return jspb.Message.getField(this, 7) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.Sort.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.Sort.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.Sort.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.Sort.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.Sort} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.Sort.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    field: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    ascending: jspb.Message.getBooleanFieldWithDefault(msg, 2, false)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.Sort} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.Sort.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        field: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        ascending: jspb.Message.getBooleanFieldWithDefault(msg, 2, false),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.Sort}
  */
-proto.mongorpc.Sort.deserializeBinary = function (bytes) {
+proto.mongorpc.Sort.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.Sort();
+  var msg = new proto.mongorpc.Sort;
   return proto.mongorpc.Sort.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2622,38 +2504,40 @@ proto.mongorpc.Sort.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.Sort}
  */
-proto.mongorpc.Sort.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.Sort.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setField(value);
-        break;
-      case 2:
-        var value = /** @type {boolean} */ (reader.readBool());
-        msg.setAscending(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setField(value);
+      break;
+    case 2:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setAscending(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.Sort.prototype.serializeBinary = function () {
+proto.mongorpc.Sort.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.Sort.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2662,104 +2546,116 @@ proto.mongorpc.Sort.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.Sort.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.Sort.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getField();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getAscending();
   if (f) {
-    writer.writeBool(2, f);
+    writer.writeBool(
+      2,
+      f
+    );
   }
 };
+
 
 /**
  * optional string field = 1;
  * @return {string}
  */
-proto.mongorpc.Sort.prototype.getField = function () {
+proto.mongorpc.Sort.prototype.getField = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.Sort} returns this
  */
-proto.mongorpc.Sort.prototype.setField = function (value) {
+proto.mongorpc.Sort.prototype.setField = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional bool ascending = 2;
  * @return {boolean}
  */
-proto.mongorpc.Sort.prototype.getAscending = function () {
-  return /** @type {boolean} */ (
-    jspb.Message.getBooleanFieldWithDefault(this, 2, false)
-  );
+proto.mongorpc.Sort.prototype.getAscending = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 2, false));
 };
+
 
 /**
  * @param {boolean} value
  * @return {!proto.mongorpc.Sort} returns this
  */
-proto.mongorpc.Sort.prototype.setAscending = function (value) {
+proto.mongorpc.Sort.prototype.setAscending = function(value) {
   return jspb.Message.setProto3BooleanField(this, 2, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.Equal.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.Equal.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.Equal.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.Equal.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.Equal} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.Equal.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    field: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    value: (f = msg.getValue()) && proto.mongorpc.Value.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.Equal} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.Equal.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        field: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        value:
-          (f = msg.getValue()) &&
-          proto.mongorpc.Value.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.Equal}
  */
-proto.mongorpc.Equal.deserializeBinary = function (bytes) {
+proto.mongorpc.Equal.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.Equal();
+  var msg = new proto.mongorpc.Equal;
   return proto.mongorpc.Equal.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2768,42 +2664,41 @@ proto.mongorpc.Equal.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.Equal}
  */
-proto.mongorpc.Equal.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.Equal.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setField(value);
-        break;
-      case 2:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.setValue(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setField(value);
+      break;
+    case 2:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.setValue(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.Equal.prototype.serializeBinary = function () {
+proto.mongorpc.Equal.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.Equal.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2812,120 +2707,136 @@ proto.mongorpc.Equal.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.Equal.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.Equal.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getField();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getValue();
   if (f != null) {
-    writer.writeMessage(2, f, proto.mongorpc.Value.serializeBinaryToWriter);
+    writer.writeMessage(
+      2,
+      f,
+      proto.mongorpc.Value.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional string field = 1;
  * @return {string}
  */
-proto.mongorpc.Equal.prototype.getField = function () {
+proto.mongorpc.Equal.prototype.getField = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.Equal} returns this
  */
-proto.mongorpc.Equal.prototype.setField = function (value) {
+proto.mongorpc.Equal.prototype.setField = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional Value value = 2;
  * @return {?proto.mongorpc.Value}
  */
-proto.mongorpc.Equal.prototype.getValue = function () {
+proto.mongorpc.Equal.prototype.getValue = function() {
   return /** @type{?proto.mongorpc.Value} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2));
 };
+
 
 /**
  * @param {?proto.mongorpc.Value|undefined} value
  * @return {!proto.mongorpc.Equal} returns this
- */
-proto.mongorpc.Equal.prototype.setValue = function (value) {
+*/
+proto.mongorpc.Equal.prototype.setValue = function(value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Equal} returns this
  */
-proto.mongorpc.Equal.prototype.clearValue = function () {
+proto.mongorpc.Equal.prototype.clearValue = function() {
   return this.setValue(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Equal.prototype.hasValue = function () {
+proto.mongorpc.Equal.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.NotEqual.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.NotEqual.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.NotEqual.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.NotEqual.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.NotEqual} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.NotEqual.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    field: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    value: (f = msg.getValue()) && proto.mongorpc.Value.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.NotEqual} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.NotEqual.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        field: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        value:
-          (f = msg.getValue()) &&
-          proto.mongorpc.Value.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.NotEqual}
  */
-proto.mongorpc.NotEqual.deserializeBinary = function (bytes) {
+proto.mongorpc.NotEqual.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.NotEqual();
+  var msg = new proto.mongorpc.NotEqual;
   return proto.mongorpc.NotEqual.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -2934,42 +2845,41 @@ proto.mongorpc.NotEqual.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.NotEqual}
  */
-proto.mongorpc.NotEqual.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.NotEqual.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setField(value);
-        break;
-      case 2:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.setValue(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setField(value);
+      break;
+    case 2:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.setValue(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.NotEqual.prototype.serializeBinary = function () {
+proto.mongorpc.NotEqual.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.NotEqual.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -2978,120 +2888,136 @@ proto.mongorpc.NotEqual.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.NotEqual.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.NotEqual.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getField();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getValue();
   if (f != null) {
-    writer.writeMessage(2, f, proto.mongorpc.Value.serializeBinaryToWriter);
+    writer.writeMessage(
+      2,
+      f,
+      proto.mongorpc.Value.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional string field = 1;
  * @return {string}
  */
-proto.mongorpc.NotEqual.prototype.getField = function () {
+proto.mongorpc.NotEqual.prototype.getField = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.NotEqual} returns this
  */
-proto.mongorpc.NotEqual.prototype.setField = function (value) {
+proto.mongorpc.NotEqual.prototype.setField = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional Value value = 2;
  * @return {?proto.mongorpc.Value}
  */
-proto.mongorpc.NotEqual.prototype.getValue = function () {
+proto.mongorpc.NotEqual.prototype.getValue = function() {
   return /** @type{?proto.mongorpc.Value} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2));
 };
+
 
 /**
  * @param {?proto.mongorpc.Value|undefined} value
  * @return {!proto.mongorpc.NotEqual} returns this
- */
-proto.mongorpc.NotEqual.prototype.setValue = function (value) {
+*/
+proto.mongorpc.NotEqual.prototype.setValue = function(value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.NotEqual} returns this
  */
-proto.mongorpc.NotEqual.prototype.clearValue = function () {
+proto.mongorpc.NotEqual.prototype.clearValue = function() {
   return this.setValue(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.NotEqual.prototype.hasValue = function () {
+proto.mongorpc.NotEqual.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.Less.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.Less.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.Less.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.Less.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.Less} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.Less.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    field: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    value: (f = msg.getValue()) && proto.mongorpc.Value.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.Less} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.Less.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        field: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        value:
-          (f = msg.getValue()) &&
-          proto.mongorpc.Value.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.Less}
  */
-proto.mongorpc.Less.deserializeBinary = function (bytes) {
+proto.mongorpc.Less.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.Less();
+  var msg = new proto.mongorpc.Less;
   return proto.mongorpc.Less.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -3100,42 +3026,41 @@ proto.mongorpc.Less.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.Less}
  */
-proto.mongorpc.Less.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.Less.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setField(value);
-        break;
-      case 2:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.setValue(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setField(value);
+      break;
+    case 2:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.setValue(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.Less.prototype.serializeBinary = function () {
+proto.mongorpc.Less.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.Less.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -3144,120 +3069,136 @@ proto.mongorpc.Less.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.Less.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.Less.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getField();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getValue();
   if (f != null) {
-    writer.writeMessage(2, f, proto.mongorpc.Value.serializeBinaryToWriter);
+    writer.writeMessage(
+      2,
+      f,
+      proto.mongorpc.Value.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional string field = 1;
  * @return {string}
  */
-proto.mongorpc.Less.prototype.getField = function () {
+proto.mongorpc.Less.prototype.getField = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.Less} returns this
  */
-proto.mongorpc.Less.prototype.setField = function (value) {
+proto.mongorpc.Less.prototype.setField = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional Value value = 2;
  * @return {?proto.mongorpc.Value}
  */
-proto.mongorpc.Less.prototype.getValue = function () {
+proto.mongorpc.Less.prototype.getValue = function() {
   return /** @type{?proto.mongorpc.Value} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2));
 };
+
 
 /**
  * @param {?proto.mongorpc.Value|undefined} value
  * @return {!proto.mongorpc.Less} returns this
- */
-proto.mongorpc.Less.prototype.setValue = function (value) {
+*/
+proto.mongorpc.Less.prototype.setValue = function(value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Less} returns this
  */
-proto.mongorpc.Less.prototype.clearValue = function () {
+proto.mongorpc.Less.prototype.clearValue = function() {
   return this.setValue(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Less.prototype.hasValue = function () {
+proto.mongorpc.Less.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.LessEqual.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.LessEqual.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.LessEqual.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.LessEqual.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.LessEqual} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.LessEqual.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    field: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    value: (f = msg.getValue()) && proto.mongorpc.Value.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.LessEqual} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.LessEqual.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        field: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        value:
-          (f = msg.getValue()) &&
-          proto.mongorpc.Value.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.LessEqual}
  */
-proto.mongorpc.LessEqual.deserializeBinary = function (bytes) {
+proto.mongorpc.LessEqual.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.LessEqual();
+  var msg = new proto.mongorpc.LessEqual;
   return proto.mongorpc.LessEqual.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -3266,42 +3207,41 @@ proto.mongorpc.LessEqual.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.LessEqual}
  */
-proto.mongorpc.LessEqual.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.LessEqual.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setField(value);
-        break;
-      case 2:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.setValue(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setField(value);
+      break;
+    case 2:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.setValue(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.LessEqual.prototype.serializeBinary = function () {
+proto.mongorpc.LessEqual.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.LessEqual.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -3310,120 +3250,136 @@ proto.mongorpc.LessEqual.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.LessEqual.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.LessEqual.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getField();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getValue();
   if (f != null) {
-    writer.writeMessage(2, f, proto.mongorpc.Value.serializeBinaryToWriter);
+    writer.writeMessage(
+      2,
+      f,
+      proto.mongorpc.Value.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional string field = 1;
  * @return {string}
  */
-proto.mongorpc.LessEqual.prototype.getField = function () {
+proto.mongorpc.LessEqual.prototype.getField = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.LessEqual} returns this
  */
-proto.mongorpc.LessEqual.prototype.setField = function (value) {
+proto.mongorpc.LessEqual.prototype.setField = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional Value value = 2;
  * @return {?proto.mongorpc.Value}
  */
-proto.mongorpc.LessEqual.prototype.getValue = function () {
+proto.mongorpc.LessEqual.prototype.getValue = function() {
   return /** @type{?proto.mongorpc.Value} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2));
 };
+
 
 /**
  * @param {?proto.mongorpc.Value|undefined} value
  * @return {!proto.mongorpc.LessEqual} returns this
- */
-proto.mongorpc.LessEqual.prototype.setValue = function (value) {
+*/
+proto.mongorpc.LessEqual.prototype.setValue = function(value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.LessEqual} returns this
  */
-proto.mongorpc.LessEqual.prototype.clearValue = function () {
+proto.mongorpc.LessEqual.prototype.clearValue = function() {
   return this.setValue(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.LessEqual.prototype.hasValue = function () {
+proto.mongorpc.LessEqual.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.Greater.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.Greater.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.Greater.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.Greater.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.Greater} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.Greater.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    field: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    value: (f = msg.getValue()) && proto.mongorpc.Value.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.Greater} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.Greater.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        field: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        value:
-          (f = msg.getValue()) &&
-          proto.mongorpc.Value.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.Greater}
  */
-proto.mongorpc.Greater.deserializeBinary = function (bytes) {
+proto.mongorpc.Greater.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.Greater();
+  var msg = new proto.mongorpc.Greater;
   return proto.mongorpc.Greater.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -3432,42 +3388,41 @@ proto.mongorpc.Greater.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.Greater}
  */
-proto.mongorpc.Greater.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.Greater.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setField(value);
-        break;
-      case 2:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.setValue(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setField(value);
+      break;
+    case 2:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.setValue(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.Greater.prototype.serializeBinary = function () {
+proto.mongorpc.Greater.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.Greater.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -3476,122 +3431,136 @@ proto.mongorpc.Greater.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.Greater.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.Greater.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getField();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getValue();
   if (f != null) {
-    writer.writeMessage(2, f, proto.mongorpc.Value.serializeBinaryToWriter);
+    writer.writeMessage(
+      2,
+      f,
+      proto.mongorpc.Value.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional string field = 1;
  * @return {string}
  */
-proto.mongorpc.Greater.prototype.getField = function () {
+proto.mongorpc.Greater.prototype.getField = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.Greater} returns this
  */
-proto.mongorpc.Greater.prototype.setField = function (value) {
+proto.mongorpc.Greater.prototype.setField = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional Value value = 2;
  * @return {?proto.mongorpc.Value}
  */
-proto.mongorpc.Greater.prototype.getValue = function () {
+proto.mongorpc.Greater.prototype.getValue = function() {
   return /** @type{?proto.mongorpc.Value} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2));
 };
+
 
 /**
  * @param {?proto.mongorpc.Value|undefined} value
  * @return {!proto.mongorpc.Greater} returns this
- */
-proto.mongorpc.Greater.prototype.setValue = function (value) {
+*/
+proto.mongorpc.Greater.prototype.setValue = function(value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Greater} returns this
  */
-proto.mongorpc.Greater.prototype.clearValue = function () {
+proto.mongorpc.Greater.prototype.clearValue = function() {
   return this.setValue(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Greater.prototype.hasValue = function () {
+proto.mongorpc.Greater.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.GreaterEqual.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.GreaterEqual.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.GreaterEqual.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.GreaterEqual.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.GreaterEqual} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.GreaterEqual.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    field: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    value: (f = msg.getValue()) && proto.mongorpc.Value.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.GreaterEqual} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.GreaterEqual.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        field: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        value:
-          (f = msg.getValue()) &&
-          proto.mongorpc.Value.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.GreaterEqual}
  */
-proto.mongorpc.GreaterEqual.deserializeBinary = function (bytes) {
+proto.mongorpc.GreaterEqual.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.GreaterEqual();
+  var msg = new proto.mongorpc.GreaterEqual;
   return proto.mongorpc.GreaterEqual.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -3600,45 +3569,41 @@ proto.mongorpc.GreaterEqual.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.GreaterEqual}
  */
-proto.mongorpc.GreaterEqual.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.GreaterEqual.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setField(value);
-        break;
-      case 2:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.setValue(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setField(value);
+      break;
+    case 2:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.setValue(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.GreaterEqual.prototype.serializeBinary = function () {
+proto.mongorpc.GreaterEqual.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.GreaterEqual.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -3647,70 +3612,81 @@ proto.mongorpc.GreaterEqual.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.GreaterEqual.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.GreaterEqual.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getField();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getValue();
   if (f != null) {
-    writer.writeMessage(2, f, proto.mongorpc.Value.serializeBinaryToWriter);
+    writer.writeMessage(
+      2,
+      f,
+      proto.mongorpc.Value.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional string field = 1;
  * @return {string}
  */
-proto.mongorpc.GreaterEqual.prototype.getField = function () {
+proto.mongorpc.GreaterEqual.prototype.getField = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.GreaterEqual} returns this
  */
-proto.mongorpc.GreaterEqual.prototype.setField = function (value) {
+proto.mongorpc.GreaterEqual.prototype.setField = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional Value value = 2;
  * @return {?proto.mongorpc.Value}
  */
-proto.mongorpc.GreaterEqual.prototype.getValue = function () {
+proto.mongorpc.GreaterEqual.prototype.getValue = function() {
   return /** @type{?proto.mongorpc.Value} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2));
 };
+
 
 /**
  * @param {?proto.mongorpc.Value|undefined} value
  * @return {!proto.mongorpc.GreaterEqual} returns this
- */
-proto.mongorpc.GreaterEqual.prototype.setValue = function (value) {
+*/
+proto.mongorpc.GreaterEqual.prototype.setValue = function(value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.GreaterEqual} returns this
  */
-proto.mongorpc.GreaterEqual.prototype.clearValue = function () {
+proto.mongorpc.GreaterEqual.prototype.clearValue = function() {
   return this.setValue(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.GreaterEqual.prototype.hasValue = function () {
+proto.mongorpc.GreaterEqual.prototype.hasValue = function() {
   return jspb.Message.getField(this, 2) != null;
 };
+
+
 
 /**
  * List of repeated fields within this message type.
@@ -3719,60 +3695,61 @@ proto.mongorpc.GreaterEqual.prototype.hasValue = function () {
  */
 proto.mongorpc.In.repeatedFields_ = [2];
 
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.In.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.In.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.In.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.In.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.In} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.In.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    field: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    valuesList: jspb.Message.toObjectList(msg.getValuesList(),
+    proto.mongorpc.Value.toObject, includeInstance)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.In} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.In.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        field: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        valuesList: jspb.Message.toObjectList(
-          msg.getValuesList(),
-          proto.mongorpc.Value.toObject,
-          includeInstance
-        ),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.In}
  */
-proto.mongorpc.In.deserializeBinary = function (bytes) {
+proto.mongorpc.In.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.In();
+  var msg = new proto.mongorpc.In;
   return proto.mongorpc.In.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -3781,42 +3758,41 @@ proto.mongorpc.In.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.In}
  */
-proto.mongorpc.In.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.In.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setField(value);
-        break;
-      case 2:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.addValues(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setField(value);
+      break;
+    case 2:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.addValues(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.In.prototype.serializeBinary = function () {
+proto.mongorpc.In.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.In.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -3825,11 +3801,14 @@ proto.mongorpc.In.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.In.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.In.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getField();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getValuesList();
   if (f.length > 0) {
@@ -3841,62 +3820,63 @@ proto.mongorpc.In.serializeBinaryToWriter = function (message, writer) {
   }
 };
 
+
 /**
  * optional string field = 1;
  * @return {string}
  */
-proto.mongorpc.In.prototype.getField = function () {
+proto.mongorpc.In.prototype.getField = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.In} returns this
  */
-proto.mongorpc.In.prototype.setField = function (value) {
+proto.mongorpc.In.prototype.setField = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * repeated Value values = 2;
  * @return {!Array<!proto.mongorpc.Value>}
  */
-proto.mongorpc.In.prototype.getValuesList = function () {
+proto.mongorpc.In.prototype.getValuesList = function() {
   return /** @type{!Array<!proto.mongorpc.Value>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Value, 2)
-  );
+    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Value, 2));
 };
+
 
 /**
  * @param {!Array<!proto.mongorpc.Value>} value
  * @return {!proto.mongorpc.In} returns this
- */
-proto.mongorpc.In.prototype.setValuesList = function (value) {
+*/
+proto.mongorpc.In.prototype.setValuesList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
+
 
 /**
  * @param {!proto.mongorpc.Value=} opt_value
  * @param {number=} opt_index
  * @return {!proto.mongorpc.Value}
  */
-proto.mongorpc.In.prototype.addValues = function (opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(
-    this,
-    2,
-    opt_value,
-    proto.mongorpc.Value,
-    opt_index
-  );
+proto.mongorpc.In.prototype.addValues = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.mongorpc.Value, opt_index);
 };
+
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.mongorpc.In} returns this
  */
-proto.mongorpc.In.prototype.clearValuesList = function () {
+proto.mongorpc.In.prototype.clearValuesList = function() {
   return this.setValuesList([]);
 };
+
+
 
 /**
  * List of repeated fields within this message type.
@@ -3905,60 +3885,61 @@ proto.mongorpc.In.prototype.clearValuesList = function () {
  */
 proto.mongorpc.NotIn.repeatedFields_ = [2];
 
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.NotIn.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.NotIn.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.NotIn.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.NotIn.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.NotIn} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.NotIn.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    field: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    valuesList: jspb.Message.toObjectList(msg.getValuesList(),
+    proto.mongorpc.Value.toObject, includeInstance)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.NotIn} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.NotIn.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        field: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        valuesList: jspb.Message.toObjectList(
-          msg.getValuesList(),
-          proto.mongorpc.Value.toObject,
-          includeInstance
-        ),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.NotIn}
  */
-proto.mongorpc.NotIn.deserializeBinary = function (bytes) {
+proto.mongorpc.NotIn.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.NotIn();
+  var msg = new proto.mongorpc.NotIn;
   return proto.mongorpc.NotIn.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -3967,42 +3948,41 @@ proto.mongorpc.NotIn.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.NotIn}
  */
-proto.mongorpc.NotIn.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.NotIn.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setField(value);
-        break;
-      case 2:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.addValues(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setField(value);
+      break;
+    case 2:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.addValues(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.NotIn.prototype.serializeBinary = function () {
+proto.mongorpc.NotIn.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.NotIn.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -4011,11 +3991,14 @@ proto.mongorpc.NotIn.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.NotIn.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.NotIn.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getField();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getValuesList();
   if (f.length > 0) {
@@ -4027,112 +4010,117 @@ proto.mongorpc.NotIn.serializeBinaryToWriter = function (message, writer) {
   }
 };
 
+
 /**
  * optional string field = 1;
  * @return {string}
  */
-proto.mongorpc.NotIn.prototype.getField = function () {
+proto.mongorpc.NotIn.prototype.getField = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.NotIn} returns this
  */
-proto.mongorpc.NotIn.prototype.setField = function (value) {
+proto.mongorpc.NotIn.prototype.setField = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * repeated Value values = 2;
  * @return {!Array<!proto.mongorpc.Value>}
  */
-proto.mongorpc.NotIn.prototype.getValuesList = function () {
+proto.mongorpc.NotIn.prototype.getValuesList = function() {
   return /** @type{!Array<!proto.mongorpc.Value>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Value, 2)
-  );
+    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Value, 2));
 };
+
 
 /**
  * @param {!Array<!proto.mongorpc.Value>} value
  * @return {!proto.mongorpc.NotIn} returns this
- */
-proto.mongorpc.NotIn.prototype.setValuesList = function (value) {
+*/
+proto.mongorpc.NotIn.prototype.setValuesList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
+
 
 /**
  * @param {!proto.mongorpc.Value=} opt_value
  * @param {number=} opt_index
  * @return {!proto.mongorpc.Value}
  */
-proto.mongorpc.NotIn.prototype.addValues = function (opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(
-    this,
-    2,
-    opt_value,
-    proto.mongorpc.Value,
-    opt_index
-  );
+proto.mongorpc.NotIn.prototype.addValues = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.mongorpc.Value, opt_index);
 };
+
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.mongorpc.NotIn} returns this
  */
-proto.mongorpc.NotIn.prototype.clearValuesList = function () {
+proto.mongorpc.NotIn.prototype.clearValuesList = function() {
   return this.setValuesList([]);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.Exists.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.Exists.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.Exists.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.Exists.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.Exists} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.Exists.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    field: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.Exists} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.Exists.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        field: jspb.Message.getFieldWithDefault(msg, 1, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.Exists}
  */
-proto.mongorpc.Exists.deserializeBinary = function (bytes) {
+proto.mongorpc.Exists.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.Exists();
+  var msg = new proto.mongorpc.Exists;
   return proto.mongorpc.Exists.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -4141,34 +4129,36 @@ proto.mongorpc.Exists.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.Exists}
  */
-proto.mongorpc.Exists.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.Exists.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setField(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setField(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.Exists.prototype.serializeBinary = function () {
+proto.mongorpc.Exists.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.Exists.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -4177,79 +4167,90 @@ proto.mongorpc.Exists.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.Exists.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.Exists.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getField();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional string field = 1;
  * @return {string}
  */
-proto.mongorpc.Exists.prototype.getField = function () {
+proto.mongorpc.Exists.prototype.getField = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.Exists} returns this
  */
-proto.mongorpc.Exists.prototype.setField = function (value) {
+proto.mongorpc.Exists.prototype.setField = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.NotExists.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.NotExists.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.NotExists.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.NotExists.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.NotExists} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.NotExists.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    field: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.NotExists} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.NotExists.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        field: jspb.Message.getFieldWithDefault(msg, 1, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.NotExists}
  */
-proto.mongorpc.NotExists.deserializeBinary = function (bytes) {
+proto.mongorpc.NotExists.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.NotExists();
+  var msg = new proto.mongorpc.NotExists;
   return proto.mongorpc.NotExists.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -4258,34 +4259,36 @@ proto.mongorpc.NotExists.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.NotExists}
  */
-proto.mongorpc.NotExists.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.NotExists.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setField(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setField(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.NotExists.prototype.serializeBinary = function () {
+proto.mongorpc.NotExists.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.NotExists.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -4294,29 +4297,36 @@ proto.mongorpc.NotExists.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.NotExists.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.NotExists.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getField();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional string field = 1;
  * @return {string}
  */
-proto.mongorpc.NotExists.prototype.getField = function () {
+proto.mongorpc.NotExists.prototype.getField = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.NotExists} returns this
  */
-proto.mongorpc.NotExists.prototype.setField = function (value) {
+proto.mongorpc.NotExists.prototype.setField = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
+
 
 /**
  * Oneof group definitions for this message. Each group defines the field
@@ -4326,7 +4336,7 @@ proto.mongorpc.NotExists.prototype.setField = function (value) {
  * @private {!Array<!Array<number>>}
  * @const
  */
-proto.mongorpc.Filter.oneofGroups_ = [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]];
+proto.mongorpc.Filter.oneofGroups_ = [[1,2,3,4,5,6,7,8,9,10]];
 
 /**
  * @enum {number}
@@ -4342,95 +4352,78 @@ proto.mongorpc.Filter.OperatorCase = {
   IN: 7,
   NOT_IN: 8,
   EXISTS: 9,
-  NOT_EXISTS: 10,
+  NOT_EXISTS: 10
 };
 
 /**
  * @return {proto.mongorpc.Filter.OperatorCase}
  */
-proto.mongorpc.Filter.prototype.getOperatorCase = function () {
-  return /** @type {proto.mongorpc.Filter.OperatorCase} */ (
-    jspb.Message.computeOneofCase(this, proto.mongorpc.Filter.oneofGroups_[0])
-  );
+proto.mongorpc.Filter.prototype.getOperatorCase = function() {
+  return /** @type {proto.mongorpc.Filter.OperatorCase} */(jspb.Message.computeOneofCase(this, proto.mongorpc.Filter.oneofGroups_[0]));
 };
 
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.Filter.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.Filter.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.Filter.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.Filter.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.Filter} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.Filter.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    equal: (f = msg.getEqual()) && proto.mongorpc.Equal.toObject(includeInstance, f),
+    notEqual: (f = msg.getNotEqual()) && proto.mongorpc.NotEqual.toObject(includeInstance, f),
+    less: (f = msg.getLess()) && proto.mongorpc.Less.toObject(includeInstance, f),
+    lessEqual: (f = msg.getLessEqual()) && proto.mongorpc.LessEqual.toObject(includeInstance, f),
+    greater: (f = msg.getGreater()) && proto.mongorpc.Greater.toObject(includeInstance, f),
+    greaterEqual: (f = msg.getGreaterEqual()) && proto.mongorpc.GreaterEqual.toObject(includeInstance, f),
+    pb_in: (f = msg.getIn()) && proto.mongorpc.In.toObject(includeInstance, f),
+    notIn: (f = msg.getNotIn()) && proto.mongorpc.NotIn.toObject(includeInstance, f),
+    exists: (f = msg.getExists()) && proto.mongorpc.Exists.toObject(includeInstance, f),
+    notExists: (f = msg.getNotExists()) && proto.mongorpc.NotExists.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.Filter} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.Filter.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        equal:
-          (f = msg.getEqual()) &&
-          proto.mongorpc.Equal.toObject(includeInstance, f),
-        notEqual:
-          (f = msg.getNotEqual()) &&
-          proto.mongorpc.NotEqual.toObject(includeInstance, f),
-        less:
-          (f = msg.getLess()) &&
-          proto.mongorpc.Less.toObject(includeInstance, f),
-        lessEqual:
-          (f = msg.getLessEqual()) &&
-          proto.mongorpc.LessEqual.toObject(includeInstance, f),
-        greater:
-          (f = msg.getGreater()) &&
-          proto.mongorpc.Greater.toObject(includeInstance, f),
-        greaterEqual:
-          (f = msg.getGreaterEqual()) &&
-          proto.mongorpc.GreaterEqual.toObject(includeInstance, f),
-        pb_in:
-          (f = msg.getIn()) && proto.mongorpc.In.toObject(includeInstance, f),
-        notIn:
-          (f = msg.getNotIn()) &&
-          proto.mongorpc.NotIn.toObject(includeInstance, f),
-        exists:
-          (f = msg.getExists()) &&
-          proto.mongorpc.Exists.toObject(includeInstance, f),
-        notExists:
-          (f = msg.getNotExists()) &&
-          proto.mongorpc.NotExists.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.Filter}
  */
-proto.mongorpc.Filter.deserializeBinary = function (bytes) {
+proto.mongorpc.Filter.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.Filter();
+  var msg = new proto.mongorpc.Filter;
   return proto.mongorpc.Filter.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -4439,110 +4432,82 @@ proto.mongorpc.Filter.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.Filter}
  */
-proto.mongorpc.Filter.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.Filter.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = new proto.mongorpc.Equal();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Equal.deserializeBinaryFromReader
-        );
-        msg.setEqual(value);
-        break;
-      case 2:
-        var value = new proto.mongorpc.NotEqual();
-        reader.readMessage(
-          value,
-          proto.mongorpc.NotEqual.deserializeBinaryFromReader
-        );
-        msg.setNotEqual(value);
-        break;
-      case 3:
-        var value = new proto.mongorpc.Less();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Less.deserializeBinaryFromReader
-        );
-        msg.setLess(value);
-        break;
-      case 4:
-        var value = new proto.mongorpc.LessEqual();
-        reader.readMessage(
-          value,
-          proto.mongorpc.LessEqual.deserializeBinaryFromReader
-        );
-        msg.setLessEqual(value);
-        break;
-      case 5:
-        var value = new proto.mongorpc.Greater();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Greater.deserializeBinaryFromReader
-        );
-        msg.setGreater(value);
-        break;
-      case 6:
-        var value = new proto.mongorpc.GreaterEqual();
-        reader.readMessage(
-          value,
-          proto.mongorpc.GreaterEqual.deserializeBinaryFromReader
-        );
-        msg.setGreaterEqual(value);
-        break;
-      case 7:
-        var value = new proto.mongorpc.In();
-        reader.readMessage(
-          value,
-          proto.mongorpc.In.deserializeBinaryFromReader
-        );
-        msg.setIn(value);
-        break;
-      case 8:
-        var value = new proto.mongorpc.NotIn();
-        reader.readMessage(
-          value,
-          proto.mongorpc.NotIn.deserializeBinaryFromReader
-        );
-        msg.setNotIn(value);
-        break;
-      case 9:
-        var value = new proto.mongorpc.Exists();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Exists.deserializeBinaryFromReader
-        );
-        msg.setExists(value);
-        break;
-      case 10:
-        var value = new proto.mongorpc.NotExists();
-        reader.readMessage(
-          value,
-          proto.mongorpc.NotExists.deserializeBinaryFromReader
-        );
-        msg.setNotExists(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = new proto.mongorpc.Equal;
+      reader.readMessage(value,proto.mongorpc.Equal.deserializeBinaryFromReader);
+      msg.setEqual(value);
+      break;
+    case 2:
+      var value = new proto.mongorpc.NotEqual;
+      reader.readMessage(value,proto.mongorpc.NotEqual.deserializeBinaryFromReader);
+      msg.setNotEqual(value);
+      break;
+    case 3:
+      var value = new proto.mongorpc.Less;
+      reader.readMessage(value,proto.mongorpc.Less.deserializeBinaryFromReader);
+      msg.setLess(value);
+      break;
+    case 4:
+      var value = new proto.mongorpc.LessEqual;
+      reader.readMessage(value,proto.mongorpc.LessEqual.deserializeBinaryFromReader);
+      msg.setLessEqual(value);
+      break;
+    case 5:
+      var value = new proto.mongorpc.Greater;
+      reader.readMessage(value,proto.mongorpc.Greater.deserializeBinaryFromReader);
+      msg.setGreater(value);
+      break;
+    case 6:
+      var value = new proto.mongorpc.GreaterEqual;
+      reader.readMessage(value,proto.mongorpc.GreaterEqual.deserializeBinaryFromReader);
+      msg.setGreaterEqual(value);
+      break;
+    case 7:
+      var value = new proto.mongorpc.In;
+      reader.readMessage(value,proto.mongorpc.In.deserializeBinaryFromReader);
+      msg.setIn(value);
+      break;
+    case 8:
+      var value = new proto.mongorpc.NotIn;
+      reader.readMessage(value,proto.mongorpc.NotIn.deserializeBinaryFromReader);
+      msg.setNotIn(value);
+      break;
+    case 9:
+      var value = new proto.mongorpc.Exists;
+      reader.readMessage(value,proto.mongorpc.Exists.deserializeBinaryFromReader);
+      msg.setExists(value);
+      break;
+    case 10:
+      var value = new proto.mongorpc.NotExists;
+      reader.readMessage(value,proto.mongorpc.NotExists.deserializeBinaryFromReader);
+      msg.setNotExists(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.Filter.prototype.serializeBinary = function () {
+proto.mongorpc.Filter.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.Filter.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -4551,27 +4516,47 @@ proto.mongorpc.Filter.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.Filter.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.Filter.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getEqual();
   if (f != null) {
-    writer.writeMessage(1, f, proto.mongorpc.Equal.serializeBinaryToWriter);
+    writer.writeMessage(
+      1,
+      f,
+      proto.mongorpc.Equal.serializeBinaryToWriter
+    );
   }
   f = message.getNotEqual();
   if (f != null) {
-    writer.writeMessage(2, f, proto.mongorpc.NotEqual.serializeBinaryToWriter);
+    writer.writeMessage(
+      2,
+      f,
+      proto.mongorpc.NotEqual.serializeBinaryToWriter
+    );
   }
   f = message.getLess();
   if (f != null) {
-    writer.writeMessage(3, f, proto.mongorpc.Less.serializeBinaryToWriter);
+    writer.writeMessage(
+      3,
+      f,
+      proto.mongorpc.Less.serializeBinaryToWriter
+    );
   }
   f = message.getLessEqual();
   if (f != null) {
-    writer.writeMessage(4, f, proto.mongorpc.LessEqual.serializeBinaryToWriter);
+    writer.writeMessage(
+      4,
+      f,
+      proto.mongorpc.LessEqual.serializeBinaryToWriter
+    );
   }
   f = message.getGreater();
   if (f != null) {
-    writer.writeMessage(5, f, proto.mongorpc.Greater.serializeBinaryToWriter);
+    writer.writeMessage(
+      5,
+      f,
+      proto.mongorpc.Greater.serializeBinaryToWriter
+    );
   }
   f = message.getGreaterEqual();
   if (f != null) {
@@ -4583,15 +4568,27 @@ proto.mongorpc.Filter.serializeBinaryToWriter = function (message, writer) {
   }
   f = message.getIn();
   if (f != null) {
-    writer.writeMessage(7, f, proto.mongorpc.In.serializeBinaryToWriter);
+    writer.writeMessage(
+      7,
+      f,
+      proto.mongorpc.In.serializeBinaryToWriter
+    );
   }
   f = message.getNotIn();
   if (f != null) {
-    writer.writeMessage(8, f, proto.mongorpc.NotIn.serializeBinaryToWriter);
+    writer.writeMessage(
+      8,
+      f,
+      proto.mongorpc.NotIn.serializeBinaryToWriter
+    );
   }
   f = message.getExists();
   if (f != null) {
-    writer.writeMessage(9, f, proto.mongorpc.Exists.serializeBinaryToWriter);
+    writer.writeMessage(
+      9,
+      f,
+      proto.mongorpc.Exists.serializeBinaryToWriter
+    );
   }
   f = message.getNotExists();
   if (f != null) {
@@ -4603,456 +4600,431 @@ proto.mongorpc.Filter.serializeBinaryToWriter = function (message, writer) {
   }
 };
 
+
 /**
  * optional Equal equal = 1;
  * @return {?proto.mongorpc.Equal}
  */
-proto.mongorpc.Filter.prototype.getEqual = function () {
+proto.mongorpc.Filter.prototype.getEqual = function() {
   return /** @type{?proto.mongorpc.Equal} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Equal, 1)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Equal, 1));
 };
+
 
 /**
  * @param {?proto.mongorpc.Equal|undefined} value
  * @return {!proto.mongorpc.Filter} returns this
- */
-proto.mongorpc.Filter.prototype.setEqual = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    1,
-    proto.mongorpc.Filter.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Filter.prototype.setEqual = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 1, proto.mongorpc.Filter.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Filter} returns this
  */
-proto.mongorpc.Filter.prototype.clearEqual = function () {
+proto.mongorpc.Filter.prototype.clearEqual = function() {
   return this.setEqual(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Filter.prototype.hasEqual = function () {
+proto.mongorpc.Filter.prototype.hasEqual = function() {
   return jspb.Message.getField(this, 1) != null;
 };
+
 
 /**
  * optional NotEqual not_equal = 2;
  * @return {?proto.mongorpc.NotEqual}
  */
-proto.mongorpc.Filter.prototype.getNotEqual = function () {
+proto.mongorpc.Filter.prototype.getNotEqual = function() {
   return /** @type{?proto.mongorpc.NotEqual} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.NotEqual, 2)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.NotEqual, 2));
 };
+
 
 /**
  * @param {?proto.mongorpc.NotEqual|undefined} value
  * @return {!proto.mongorpc.Filter} returns this
- */
-proto.mongorpc.Filter.prototype.setNotEqual = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    2,
-    proto.mongorpc.Filter.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Filter.prototype.setNotEqual = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 2, proto.mongorpc.Filter.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Filter} returns this
  */
-proto.mongorpc.Filter.prototype.clearNotEqual = function () {
+proto.mongorpc.Filter.prototype.clearNotEqual = function() {
   return this.setNotEqual(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Filter.prototype.hasNotEqual = function () {
+proto.mongorpc.Filter.prototype.hasNotEqual = function() {
   return jspb.Message.getField(this, 2) != null;
 };
+
 
 /**
  * optional Less less = 3;
  * @return {?proto.mongorpc.Less}
  */
-proto.mongorpc.Filter.prototype.getLess = function () {
+proto.mongorpc.Filter.prototype.getLess = function() {
   return /** @type{?proto.mongorpc.Less} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Less, 3)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Less, 3));
 };
+
 
 /**
  * @param {?proto.mongorpc.Less|undefined} value
  * @return {!proto.mongorpc.Filter} returns this
- */
-proto.mongorpc.Filter.prototype.setLess = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    3,
-    proto.mongorpc.Filter.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Filter.prototype.setLess = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 3, proto.mongorpc.Filter.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Filter} returns this
  */
-proto.mongorpc.Filter.prototype.clearLess = function () {
+proto.mongorpc.Filter.prototype.clearLess = function() {
   return this.setLess(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Filter.prototype.hasLess = function () {
+proto.mongorpc.Filter.prototype.hasLess = function() {
   return jspb.Message.getField(this, 3) != null;
 };
+
 
 /**
  * optional LessEqual less_equal = 4;
  * @return {?proto.mongorpc.LessEqual}
  */
-proto.mongorpc.Filter.prototype.getLessEqual = function () {
+proto.mongorpc.Filter.prototype.getLessEqual = function() {
   return /** @type{?proto.mongorpc.LessEqual} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.LessEqual, 4)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.LessEqual, 4));
 };
+
 
 /**
  * @param {?proto.mongorpc.LessEqual|undefined} value
  * @return {!proto.mongorpc.Filter} returns this
- */
-proto.mongorpc.Filter.prototype.setLessEqual = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    4,
-    proto.mongorpc.Filter.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Filter.prototype.setLessEqual = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 4, proto.mongorpc.Filter.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Filter} returns this
  */
-proto.mongorpc.Filter.prototype.clearLessEqual = function () {
+proto.mongorpc.Filter.prototype.clearLessEqual = function() {
   return this.setLessEqual(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Filter.prototype.hasLessEqual = function () {
+proto.mongorpc.Filter.prototype.hasLessEqual = function() {
   return jspb.Message.getField(this, 4) != null;
 };
+
 
 /**
  * optional Greater greater = 5;
  * @return {?proto.mongorpc.Greater}
  */
-proto.mongorpc.Filter.prototype.getGreater = function () {
+proto.mongorpc.Filter.prototype.getGreater = function() {
   return /** @type{?proto.mongorpc.Greater} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Greater, 5)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Greater, 5));
 };
+
 
 /**
  * @param {?proto.mongorpc.Greater|undefined} value
  * @return {!proto.mongorpc.Filter} returns this
- */
-proto.mongorpc.Filter.prototype.setGreater = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    5,
-    proto.mongorpc.Filter.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Filter.prototype.setGreater = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 5, proto.mongorpc.Filter.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Filter} returns this
  */
-proto.mongorpc.Filter.prototype.clearGreater = function () {
+proto.mongorpc.Filter.prototype.clearGreater = function() {
   return this.setGreater(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Filter.prototype.hasGreater = function () {
+proto.mongorpc.Filter.prototype.hasGreater = function() {
   return jspb.Message.getField(this, 5) != null;
 };
+
 
 /**
  * optional GreaterEqual greater_equal = 6;
  * @return {?proto.mongorpc.GreaterEqual}
  */
-proto.mongorpc.Filter.prototype.getGreaterEqual = function () {
+proto.mongorpc.Filter.prototype.getGreaterEqual = function() {
   return /** @type{?proto.mongorpc.GreaterEqual} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.GreaterEqual, 6)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.GreaterEqual, 6));
 };
+
 
 /**
  * @param {?proto.mongorpc.GreaterEqual|undefined} value
  * @return {!proto.mongorpc.Filter} returns this
- */
-proto.mongorpc.Filter.prototype.setGreaterEqual = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    6,
-    proto.mongorpc.Filter.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Filter.prototype.setGreaterEqual = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 6, proto.mongorpc.Filter.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Filter} returns this
  */
-proto.mongorpc.Filter.prototype.clearGreaterEqual = function () {
+proto.mongorpc.Filter.prototype.clearGreaterEqual = function() {
   return this.setGreaterEqual(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Filter.prototype.hasGreaterEqual = function () {
+proto.mongorpc.Filter.prototype.hasGreaterEqual = function() {
   return jspb.Message.getField(this, 6) != null;
 };
+
 
 /**
  * optional In in = 7;
  * @return {?proto.mongorpc.In}
  */
-proto.mongorpc.Filter.prototype.getIn = function () {
+proto.mongorpc.Filter.prototype.getIn = function() {
   return /** @type{?proto.mongorpc.In} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.In, 7)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.In, 7));
 };
+
 
 /**
  * @param {?proto.mongorpc.In|undefined} value
  * @return {!proto.mongorpc.Filter} returns this
- */
-proto.mongorpc.Filter.prototype.setIn = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    7,
-    proto.mongorpc.Filter.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Filter.prototype.setIn = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 7, proto.mongorpc.Filter.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Filter} returns this
  */
-proto.mongorpc.Filter.prototype.clearIn = function () {
+proto.mongorpc.Filter.prototype.clearIn = function() {
   return this.setIn(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Filter.prototype.hasIn = function () {
+proto.mongorpc.Filter.prototype.hasIn = function() {
   return jspb.Message.getField(this, 7) != null;
 };
+
 
 /**
  * optional NotIn not_in = 8;
  * @return {?proto.mongorpc.NotIn}
  */
-proto.mongorpc.Filter.prototype.getNotIn = function () {
+proto.mongorpc.Filter.prototype.getNotIn = function() {
   return /** @type{?proto.mongorpc.NotIn} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.NotIn, 8)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.NotIn, 8));
 };
+
 
 /**
  * @param {?proto.mongorpc.NotIn|undefined} value
  * @return {!proto.mongorpc.Filter} returns this
- */
-proto.mongorpc.Filter.prototype.setNotIn = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    8,
-    proto.mongorpc.Filter.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Filter.prototype.setNotIn = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 8, proto.mongorpc.Filter.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Filter} returns this
  */
-proto.mongorpc.Filter.prototype.clearNotIn = function () {
+proto.mongorpc.Filter.prototype.clearNotIn = function() {
   return this.setNotIn(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Filter.prototype.hasNotIn = function () {
+proto.mongorpc.Filter.prototype.hasNotIn = function() {
   return jspb.Message.getField(this, 8) != null;
 };
+
 
 /**
  * optional Exists exists = 9;
  * @return {?proto.mongorpc.Exists}
  */
-proto.mongorpc.Filter.prototype.getExists = function () {
+proto.mongorpc.Filter.prototype.getExists = function() {
   return /** @type{?proto.mongorpc.Exists} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Exists, 9)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Exists, 9));
 };
+
 
 /**
  * @param {?proto.mongorpc.Exists|undefined} value
  * @return {!proto.mongorpc.Filter} returns this
- */
-proto.mongorpc.Filter.prototype.setExists = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    9,
-    proto.mongorpc.Filter.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Filter.prototype.setExists = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 9, proto.mongorpc.Filter.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Filter} returns this
  */
-proto.mongorpc.Filter.prototype.clearExists = function () {
+proto.mongorpc.Filter.prototype.clearExists = function() {
   return this.setExists(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Filter.prototype.hasExists = function () {
+proto.mongorpc.Filter.prototype.hasExists = function() {
   return jspb.Message.getField(this, 9) != null;
 };
+
 
 /**
  * optional NotExists not_exists = 10;
  * @return {?proto.mongorpc.NotExists}
  */
-proto.mongorpc.Filter.prototype.getNotExists = function () {
+proto.mongorpc.Filter.prototype.getNotExists = function() {
   return /** @type{?proto.mongorpc.NotExists} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.NotExists, 10)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.NotExists, 10));
 };
+
 
 /**
  * @param {?proto.mongorpc.NotExists|undefined} value
  * @return {!proto.mongorpc.Filter} returns this
- */
-proto.mongorpc.Filter.prototype.setNotExists = function (value) {
-  return jspb.Message.setOneofWrapperField(
-    this,
-    10,
-    proto.mongorpc.Filter.oneofGroups_[0],
-    value
-  );
+*/
+proto.mongorpc.Filter.prototype.setNotExists = function(value) {
+  return jspb.Message.setOneofWrapperField(this, 10, proto.mongorpc.Filter.oneofGroups_[0], value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.Filter} returns this
  */
-proto.mongorpc.Filter.prototype.clearNotExists = function () {
+proto.mongorpc.Filter.prototype.clearNotExists = function() {
   return this.setNotExists(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.Filter.prototype.hasNotExists = function () {
+proto.mongorpc.Filter.prototype.hasNotExists = function() {
   return jspb.Message.getField(this, 10) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.ListCollectionsRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.ListCollectionsRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.ListCollectionsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.ListCollectionsRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.ListCollectionsRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.ListCollectionsRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.ListCollectionsRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.ListCollectionsRequest.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.ListCollectionsRequest}
  */
-proto.mongorpc.ListCollectionsRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.ListCollectionsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.ListCollectionsRequest();
-  return proto.mongorpc.ListCollectionsRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.ListCollectionsRequest;
+  return proto.mongorpc.ListCollectionsRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -5061,37 +5033,36 @@ proto.mongorpc.ListCollectionsRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.ListCollectionsRequest}
  */
-proto.mongorpc.ListCollectionsRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.ListCollectionsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.ListCollectionsRequest.prototype.serializeBinary = function () {
+proto.mongorpc.ListCollectionsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.ListCollectionsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -5100,95 +5071,90 @@ proto.mongorpc.ListCollectionsRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.ListCollectionsRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.ListCollectionsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.ListCollectionsRequest.prototype.getDatabase = function () {
+proto.mongorpc.ListCollectionsRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ListCollectionsRequest} returns this
  */
-proto.mongorpc.ListCollectionsRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.ListCollectionsRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.ListCollectionsResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.ListCollectionsResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.ListCollectionsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.ListCollectionsResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.ListCollectionsResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.ListCollectionsResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    collections: (f = msg.getCollections()) && proto.mongorpc.ArrayValue.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.ListCollectionsResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.ListCollectionsResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        collections:
-          (f = msg.getCollections()) &&
-          proto.mongorpc.ArrayValue.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.ListCollectionsResponse}
  */
-proto.mongorpc.ListCollectionsResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.ListCollectionsResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.ListCollectionsResponse();
-  return proto.mongorpc.ListCollectionsResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.ListCollectionsResponse;
+  return proto.mongorpc.ListCollectionsResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -5197,41 +5163,37 @@ proto.mongorpc.ListCollectionsResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.ListCollectionsResponse}
  */
-proto.mongorpc.ListCollectionsResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.ListCollectionsResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = new proto.mongorpc.ArrayValue();
-        reader.readMessage(
-          value,
-          proto.mongorpc.ArrayValue.deserializeBinaryFromReader
-        );
-        msg.setCollections(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = new proto.mongorpc.ArrayValue;
+      reader.readMessage(value,proto.mongorpc.ArrayValue.deserializeBinaryFromReader);
+      msg.setCollections(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.ListCollectionsResponse.prototype.serializeBinary = function () {
+proto.mongorpc.ListCollectionsResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.ListCollectionsResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -5240,10 +5202,7 @@ proto.mongorpc.ListCollectionsResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.ListCollectionsResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.ListCollectionsResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCollections();
   if (f != null) {
@@ -5255,102 +5214,100 @@ proto.mongorpc.ListCollectionsResponse.serializeBinaryToWriter = function (
   }
 };
 
+
 /**
  * optional ArrayValue collections = 1;
  * @return {?proto.mongorpc.ArrayValue}
  */
-proto.mongorpc.ListCollectionsResponse.prototype.getCollections = function () {
+proto.mongorpc.ListCollectionsResponse.prototype.getCollections = function() {
   return /** @type{?proto.mongorpc.ArrayValue} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.ArrayValue, 1)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.ArrayValue, 1));
 };
+
 
 /**
  * @param {?proto.mongorpc.ArrayValue|undefined} value
  * @return {!proto.mongorpc.ListCollectionsResponse} returns this
- */
-proto.mongorpc.ListCollectionsResponse.prototype.setCollections = function (
-  value
-) {
+*/
+proto.mongorpc.ListCollectionsResponse.prototype.setCollections = function(value) {
   return jspb.Message.setWrapperField(this, 1, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.ListCollectionsResponse} returns this
  */
-proto.mongorpc.ListCollectionsResponse.prototype.clearCollections =
-  function () {
-    return this.setCollections(undefined);
-  };
+proto.mongorpc.ListCollectionsResponse.prototype.clearCollections = function() {
+  return this.setCollections(undefined);
+};
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.ListCollectionsResponse.prototype.hasCollections = function () {
+proto.mongorpc.ListCollectionsResponse.prototype.hasCollections = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.GetDocumentRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.GetDocumentRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.GetDocumentRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.GetDocumentRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.GetDocumentRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.GetDocumentRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    documentId: jspb.Message.getFieldWithDefault(msg, 3, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.GetDocumentRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.GetDocumentRequest.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        documentId: jspb.Message.getFieldWithDefault(msg, 3, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.GetDocumentRequest}
  */
-proto.mongorpc.GetDocumentRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.GetDocumentRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.GetDocumentRequest();
-  return proto.mongorpc.GetDocumentRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.GetDocumentRequest;
+  return proto.mongorpc.GetDocumentRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -5359,45 +5316,44 @@ proto.mongorpc.GetDocumentRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.GetDocumentRequest}
  */
-proto.mongorpc.GetDocumentRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.GetDocumentRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      case 3:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDocumentId(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDocumentId(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.GetDocumentRequest.prototype.serializeBinary = function () {
+proto.mongorpc.GetDocumentRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.GetDocumentRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -5406,135 +5362,140 @@ proto.mongorpc.GetDocumentRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.GetDocumentRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.GetDocumentRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getDocumentId();
   if (f.length > 0) {
-    writer.writeString(3, f);
+    writer.writeString(
+      3,
+      f
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.GetDocumentRequest.prototype.getDatabase = function () {
+proto.mongorpc.GetDocumentRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.GetDocumentRequest} returns this
  */
-proto.mongorpc.GetDocumentRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.GetDocumentRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.GetDocumentRequest.prototype.getCollection = function () {
+proto.mongorpc.GetDocumentRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.GetDocumentRequest} returns this
  */
-proto.mongorpc.GetDocumentRequest.prototype.setCollection = function (value) {
+proto.mongorpc.GetDocumentRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
 
 /**
  * optional string document_id = 3;
  * @return {string}
  */
-proto.mongorpc.GetDocumentRequest.prototype.getDocumentId = function () {
+proto.mongorpc.GetDocumentRequest.prototype.getDocumentId = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.GetDocumentRequest} returns this
  */
-proto.mongorpc.GetDocumentRequest.prototype.setDocumentId = function (value) {
+proto.mongorpc.GetDocumentRequest.prototype.setDocumentId = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.GetDocumentResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.GetDocumentResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.GetDocumentResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.GetDocumentResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.GetDocumentResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.GetDocumentResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    document: (f = msg.getDocument()) && proto.mongorpc.Value.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.GetDocumentResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.GetDocumentResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        document:
-          (f = msg.getDocument()) &&
-          proto.mongorpc.Value.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.GetDocumentResponse}
  */
-proto.mongorpc.GetDocumentResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.GetDocumentResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.GetDocumentResponse();
-  return proto.mongorpc.GetDocumentResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.GetDocumentResponse;
+  return proto.mongorpc.GetDocumentResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -5543,41 +5504,37 @@ proto.mongorpc.GetDocumentResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.GetDocumentResponse}
  */
-proto.mongorpc.GetDocumentResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.GetDocumentResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.setDocument(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.setDocument(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.GetDocumentResponse.prototype.serializeBinary = function () {
+proto.mongorpc.GetDocumentResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.GetDocumentResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -5586,131 +5543,124 @@ proto.mongorpc.GetDocumentResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.GetDocumentResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.GetDocumentResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDocument();
   if (f != null) {
-    writer.writeMessage(1, f, proto.mongorpc.Value.serializeBinaryToWriter);
+    writer.writeMessage(
+      1,
+      f,
+      proto.mongorpc.Value.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional Value document = 1;
  * @return {?proto.mongorpc.Value}
  */
-proto.mongorpc.GetDocumentResponse.prototype.getDocument = function () {
+proto.mongorpc.GetDocumentResponse.prototype.getDocument = function() {
   return /** @type{?proto.mongorpc.Value} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 1)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 1));
 };
+
 
 /**
  * @param {?proto.mongorpc.Value|undefined} value
  * @return {!proto.mongorpc.GetDocumentResponse} returns this
- */
-proto.mongorpc.GetDocumentResponse.prototype.setDocument = function (value) {
+*/
+proto.mongorpc.GetDocumentResponse.prototype.setDocument = function(value) {
   return jspb.Message.setWrapperField(this, 1, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.GetDocumentResponse} returns this
  */
-proto.mongorpc.GetDocumentResponse.prototype.clearDocument = function () {
+proto.mongorpc.GetDocumentResponse.prototype.clearDocument = function() {
   return this.setDocument(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.GetDocumentResponse.prototype.hasDocument = function () {
+proto.mongorpc.GetDocumentResponse.prototype.hasDocument = function() {
   return jspb.Message.getField(this, 1) != null;
 };
+
+
 
 /**
  * List of repeated fields within this message type.
  * @private {!Array<number>}
  * @const
  */
-proto.mongorpc.ListDocumentsRequest.repeatedFields_ = [5, 6];
+proto.mongorpc.ListDocumentsRequest.repeatedFields_ = [5,6];
+
+
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.ListDocumentsRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.ListDocumentsRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.ListDocumentsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.ListDocumentsRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.ListDocumentsRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.ListDocumentsRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    limit: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    skip: jspb.Message.getFieldWithDefault(msg, 4, 0),
+    filterList: jspb.Message.toObjectList(msg.getFilterList(),
+    proto.mongorpc.Filter.toObject, includeInstance),
+    sortList: jspb.Message.toObjectList(msg.getSortList(),
+    proto.mongorpc.Sort.toObject, includeInstance)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.ListDocumentsRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.ListDocumentsRequest.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        limit: jspb.Message.getFieldWithDefault(msg, 3, 0),
-        skip: jspb.Message.getFieldWithDefault(msg, 4, 0),
-        filterList: jspb.Message.toObjectList(
-          msg.getFilterList(),
-          proto.mongorpc.Filter.toObject,
-          includeInstance
-        ),
-        sortList: jspb.Message.toObjectList(
-          msg.getSortList(),
-          proto.mongorpc.Sort.toObject,
-          includeInstance
-        ),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.ListDocumentsRequest}
  */
-proto.mongorpc.ListDocumentsRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.ListDocumentsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.ListDocumentsRequest();
-  return proto.mongorpc.ListDocumentsRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.ListDocumentsRequest;
+  return proto.mongorpc.ListDocumentsRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -5719,65 +5669,58 @@ proto.mongorpc.ListDocumentsRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.ListDocumentsRequest}
  */
-proto.mongorpc.ListDocumentsRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.ListDocumentsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      case 3:
-        var value = /** @type {number} */ (reader.readInt32());
-        msg.setLimit(value);
-        break;
-      case 4:
-        var value = /** @type {number} */ (reader.readInt32());
-        msg.setSkip(value);
-        break;
-      case 5:
-        var value = new proto.mongorpc.Filter();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Filter.deserializeBinaryFromReader
-        );
-        msg.addFilter(value);
-        break;
-      case 6:
-        var value = new proto.mongorpc.Sort();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Sort.deserializeBinaryFromReader
-        );
-        msg.addSort(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    case 3:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setLimit(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setSkip(value);
+      break;
+    case 5:
+      var value = new proto.mongorpc.Filter;
+      reader.readMessage(value,proto.mongorpc.Filter.deserializeBinaryFromReader);
+      msg.addFilter(value);
+      break;
+    case 6:
+      var value = new proto.mongorpc.Sort;
+      reader.readMessage(value,proto.mongorpc.Sort.deserializeBinaryFromReader);
+      msg.addSort(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.ListDocumentsRequest.prototype.serializeBinary = function () {
+proto.mongorpc.ListDocumentsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.ListDocumentsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -5786,26 +5729,35 @@ proto.mongorpc.ListDocumentsRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.ListDocumentsRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.ListDocumentsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getLimit();
   if (f !== 0) {
-    writer.writeInt32(3, f);
+    writer.writeInt32(
+      3,
+      f
+    );
   }
   f = message.getSkip();
   if (f !== 0) {
-    writer.writeInt32(4, f);
+    writer.writeInt32(
+      4,
+      f
+    );
   }
   f = message.getFilterList();
   if (f.length > 0) {
@@ -5825,220 +5777,209 @@ proto.mongorpc.ListDocumentsRequest.serializeBinaryToWriter = function (
   }
 };
 
+
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.ListDocumentsRequest.prototype.getDatabase = function () {
+proto.mongorpc.ListDocumentsRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ListDocumentsRequest} returns this
  */
-proto.mongorpc.ListDocumentsRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.ListDocumentsRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.ListDocumentsRequest.prototype.getCollection = function () {
+proto.mongorpc.ListDocumentsRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ListDocumentsRequest} returns this
  */
-proto.mongorpc.ListDocumentsRequest.prototype.setCollection = function (value) {
+proto.mongorpc.ListDocumentsRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
 
 /**
  * optional int32 limit = 3;
  * @return {number}
  */
-proto.mongorpc.ListDocumentsRequest.prototype.getLimit = function () {
+proto.mongorpc.ListDocumentsRequest.prototype.getLimit = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.ListDocumentsRequest} returns this
  */
-proto.mongorpc.ListDocumentsRequest.prototype.setLimit = function (value) {
+proto.mongorpc.ListDocumentsRequest.prototype.setLimit = function(value) {
   return jspb.Message.setProto3IntField(this, 3, value);
 };
+
 
 /**
  * optional int32 skip = 4;
  * @return {number}
  */
-proto.mongorpc.ListDocumentsRequest.prototype.getSkip = function () {
+proto.mongorpc.ListDocumentsRequest.prototype.getSkip = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.ListDocumentsRequest} returns this
  */
-proto.mongorpc.ListDocumentsRequest.prototype.setSkip = function (value) {
+proto.mongorpc.ListDocumentsRequest.prototype.setSkip = function(value) {
   return jspb.Message.setProto3IntField(this, 4, value);
 };
+
 
 /**
  * repeated Filter filter = 5;
  * @return {!Array<!proto.mongorpc.Filter>}
  */
-proto.mongorpc.ListDocumentsRequest.prototype.getFilterList = function () {
+proto.mongorpc.ListDocumentsRequest.prototype.getFilterList = function() {
   return /** @type{!Array<!proto.mongorpc.Filter>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Filter, 5)
-  );
+    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Filter, 5));
 };
+
 
 /**
  * @param {!Array<!proto.mongorpc.Filter>} value
  * @return {!proto.mongorpc.ListDocumentsRequest} returns this
- */
-proto.mongorpc.ListDocumentsRequest.prototype.setFilterList = function (value) {
+*/
+proto.mongorpc.ListDocumentsRequest.prototype.setFilterList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 5, value);
 };
+
 
 /**
  * @param {!proto.mongorpc.Filter=} opt_value
  * @param {number=} opt_index
  * @return {!proto.mongorpc.Filter}
  */
-proto.mongorpc.ListDocumentsRequest.prototype.addFilter = function (
-  opt_value,
-  opt_index
-) {
-  return jspb.Message.addToRepeatedWrapperField(
-    this,
-    5,
-    opt_value,
-    proto.mongorpc.Filter,
-    opt_index
-  );
+proto.mongorpc.ListDocumentsRequest.prototype.addFilter = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 5, opt_value, proto.mongorpc.Filter, opt_index);
 };
+
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.mongorpc.ListDocumentsRequest} returns this
  */
-proto.mongorpc.ListDocumentsRequest.prototype.clearFilterList = function () {
+proto.mongorpc.ListDocumentsRequest.prototype.clearFilterList = function() {
   return this.setFilterList([]);
 };
+
 
 /**
  * repeated Sort sort = 6;
  * @return {!Array<!proto.mongorpc.Sort>}
  */
-proto.mongorpc.ListDocumentsRequest.prototype.getSortList = function () {
+proto.mongorpc.ListDocumentsRequest.prototype.getSortList = function() {
   return /** @type{!Array<!proto.mongorpc.Sort>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Sort, 6)
-  );
+    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Sort, 6));
 };
+
 
 /**
  * @param {!Array<!proto.mongorpc.Sort>} value
  * @return {!proto.mongorpc.ListDocumentsRequest} returns this
- */
-proto.mongorpc.ListDocumentsRequest.prototype.setSortList = function (value) {
+*/
+proto.mongorpc.ListDocumentsRequest.prototype.setSortList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 6, value);
 };
+
 
 /**
  * @param {!proto.mongorpc.Sort=} opt_value
  * @param {number=} opt_index
  * @return {!proto.mongorpc.Sort}
  */
-proto.mongorpc.ListDocumentsRequest.prototype.addSort = function (
-  opt_value,
-  opt_index
-) {
-  return jspb.Message.addToRepeatedWrapperField(
-    this,
-    6,
-    opt_value,
-    proto.mongorpc.Sort,
-    opt_index
-  );
+proto.mongorpc.ListDocumentsRequest.prototype.addSort = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 6, opt_value, proto.mongorpc.Sort, opt_index);
 };
+
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.mongorpc.ListDocumentsRequest} returns this
  */
-proto.mongorpc.ListDocumentsRequest.prototype.clearSortList = function () {
+proto.mongorpc.ListDocumentsRequest.prototype.clearSortList = function() {
   return this.setSortList([]);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.ListDocumentsResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.ListDocumentsResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.ListDocumentsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.ListDocumentsResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.ListDocumentsResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.ListDocumentsResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    documents: (f = msg.getDocuments()) && proto.mongorpc.ArrayValue.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.ListDocumentsResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.ListDocumentsResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        documents:
-          (f = msg.getDocuments()) &&
-          proto.mongorpc.ArrayValue.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.ListDocumentsResponse}
  */
-proto.mongorpc.ListDocumentsResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.ListDocumentsResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.ListDocumentsResponse();
-  return proto.mongorpc.ListDocumentsResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.ListDocumentsResponse;
+  return proto.mongorpc.ListDocumentsResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -6047,41 +5988,37 @@ proto.mongorpc.ListDocumentsResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.ListDocumentsResponse}
  */
-proto.mongorpc.ListDocumentsResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.ListDocumentsResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = new proto.mongorpc.ArrayValue();
-        reader.readMessage(
-          value,
-          proto.mongorpc.ArrayValue.deserializeBinaryFromReader
-        );
-        msg.setDocuments(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = new proto.mongorpc.ArrayValue;
+      reader.readMessage(value,proto.mongorpc.ArrayValue.deserializeBinaryFromReader);
+      msg.setDocuments(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.ListDocumentsResponse.prototype.serializeBinary = function () {
+proto.mongorpc.ListDocumentsResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.ListDocumentsResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -6090,10 +6027,7 @@ proto.mongorpc.ListDocumentsResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.ListDocumentsResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.ListDocumentsResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDocuments();
   if (f != null) {
@@ -6105,104 +6039,100 @@ proto.mongorpc.ListDocumentsResponse.serializeBinaryToWriter = function (
   }
 };
 
+
 /**
  * optional ArrayValue documents = 1;
  * @return {?proto.mongorpc.ArrayValue}
  */
-proto.mongorpc.ListDocumentsResponse.prototype.getDocuments = function () {
+proto.mongorpc.ListDocumentsResponse.prototype.getDocuments = function() {
   return /** @type{?proto.mongorpc.ArrayValue} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.ArrayValue, 1)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.ArrayValue, 1));
 };
+
 
 /**
  * @param {?proto.mongorpc.ArrayValue|undefined} value
  * @return {!proto.mongorpc.ListDocumentsResponse} returns this
- */
-proto.mongorpc.ListDocumentsResponse.prototype.setDocuments = function (value) {
+*/
+proto.mongorpc.ListDocumentsResponse.prototype.setDocuments = function(value) {
   return jspb.Message.setWrapperField(this, 1, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.ListDocumentsResponse} returns this
  */
-proto.mongorpc.ListDocumentsResponse.prototype.clearDocuments = function () {
+proto.mongorpc.ListDocumentsResponse.prototype.clearDocuments = function() {
   return this.setDocuments(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.ListDocumentsResponse.prototype.hasDocuments = function () {
+proto.mongorpc.ListDocumentsResponse.prototype.hasDocuments = function() {
   return jspb.Message.getField(this, 1) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.CreateDocumentRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.CreateDocumentRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.CreateDocumentRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.CreateDocumentRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.CreateDocumentRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.CreateDocumentRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    document: (f = msg.getDocument()) && proto.mongorpc.Value.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.CreateDocumentRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.CreateDocumentRequest.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        document:
-          (f = msg.getDocument()) &&
-          proto.mongorpc.Value.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.CreateDocumentRequest}
  */
-proto.mongorpc.CreateDocumentRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.CreateDocumentRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.CreateDocumentRequest();
-  return proto.mongorpc.CreateDocumentRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.CreateDocumentRequest;
+  return proto.mongorpc.CreateDocumentRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -6211,49 +6141,45 @@ proto.mongorpc.CreateDocumentRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.CreateDocumentRequest}
  */
-proto.mongorpc.CreateDocumentRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.CreateDocumentRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      case 3:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.setDocument(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    case 3:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.setDocument(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.CreateDocumentRequest.prototype.serializeBinary = function () {
+proto.mongorpc.CreateDocumentRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.CreateDocumentRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -6262,153 +6188,160 @@ proto.mongorpc.CreateDocumentRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.CreateDocumentRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.CreateDocumentRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getDocument();
   if (f != null) {
-    writer.writeMessage(3, f, proto.mongorpc.Value.serializeBinaryToWriter);
+    writer.writeMessage(
+      3,
+      f,
+      proto.mongorpc.Value.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.CreateDocumentRequest.prototype.getDatabase = function () {
+proto.mongorpc.CreateDocumentRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CreateDocumentRequest} returns this
  */
-proto.mongorpc.CreateDocumentRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.CreateDocumentRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.CreateDocumentRequest.prototype.getCollection = function () {
+proto.mongorpc.CreateDocumentRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CreateDocumentRequest} returns this
  */
-proto.mongorpc.CreateDocumentRequest.prototype.setCollection = function (
-  value
-) {
+proto.mongorpc.CreateDocumentRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
 
 /**
  * optional Value document = 3;
  * @return {?proto.mongorpc.Value}
  */
-proto.mongorpc.CreateDocumentRequest.prototype.getDocument = function () {
+proto.mongorpc.CreateDocumentRequest.prototype.getDocument = function() {
   return /** @type{?proto.mongorpc.Value} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 3)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 3));
 };
+
 
 /**
  * @param {?proto.mongorpc.Value|undefined} value
  * @return {!proto.mongorpc.CreateDocumentRequest} returns this
- */
-proto.mongorpc.CreateDocumentRequest.prototype.setDocument = function (value) {
+*/
+proto.mongorpc.CreateDocumentRequest.prototype.setDocument = function(value) {
   return jspb.Message.setWrapperField(this, 3, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.CreateDocumentRequest} returns this
  */
-proto.mongorpc.CreateDocumentRequest.prototype.clearDocument = function () {
+proto.mongorpc.CreateDocumentRequest.prototype.clearDocument = function() {
   return this.setDocument(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.CreateDocumentRequest.prototype.hasDocument = function () {
+proto.mongorpc.CreateDocumentRequest.prototype.hasDocument = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.CreateDocumentResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.CreateDocumentResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.CreateDocumentResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.CreateDocumentResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.CreateDocumentResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.CreateDocumentResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    documentId: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.CreateDocumentResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.CreateDocumentResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        documentId: jspb.Message.getFieldWithDefault(msg, 1, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.CreateDocumentResponse}
  */
-proto.mongorpc.CreateDocumentResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.CreateDocumentResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.CreateDocumentResponse();
-  return proto.mongorpc.CreateDocumentResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.CreateDocumentResponse;
+  return proto.mongorpc.CreateDocumentResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -6417,37 +6350,36 @@ proto.mongorpc.CreateDocumentResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.CreateDocumentResponse}
  */
-proto.mongorpc.CreateDocumentResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.CreateDocumentResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDocumentId(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDocumentId(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.CreateDocumentResponse.prototype.serializeBinary = function () {
+proto.mongorpc.CreateDocumentResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.CreateDocumentResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -6456,100 +6388,93 @@ proto.mongorpc.CreateDocumentResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.CreateDocumentResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.CreateDocumentResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDocumentId();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional string document_id = 1;
  * @return {string}
  */
-proto.mongorpc.CreateDocumentResponse.prototype.getDocumentId = function () {
+proto.mongorpc.CreateDocumentResponse.prototype.getDocumentId = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CreateDocumentResponse} returns this
  */
-proto.mongorpc.CreateDocumentResponse.prototype.setDocumentId = function (
-  value
-) {
+proto.mongorpc.CreateDocumentResponse.prototype.setDocumentId = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.UpdateDocumentRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.UpdateDocumentRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.UpdateDocumentRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.UpdateDocumentRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.UpdateDocumentRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.UpdateDocumentRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    documentId: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    document: (f = msg.getDocument()) && proto.mongorpc.Value.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.UpdateDocumentRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.UpdateDocumentRequest.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        documentId: jspb.Message.getFieldWithDefault(msg, 3, ""),
-        document:
-          (f = msg.getDocument()) &&
-          proto.mongorpc.Value.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.UpdateDocumentRequest}
  */
-proto.mongorpc.UpdateDocumentRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.UpdateDocumentRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.UpdateDocumentRequest();
-  return proto.mongorpc.UpdateDocumentRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.UpdateDocumentRequest;
+  return proto.mongorpc.UpdateDocumentRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -6558,53 +6483,49 @@ proto.mongorpc.UpdateDocumentRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.UpdateDocumentRequest}
  */
-proto.mongorpc.UpdateDocumentRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.UpdateDocumentRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      case 3:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDocumentId(value);
-        break;
-      case 4:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.setDocument(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDocumentId(value);
+      break;
+    case 4:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.setDocument(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.UpdateDocumentRequest.prototype.serializeBinary = function () {
+proto.mongorpc.UpdateDocumentRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.UpdateDocumentRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -6613,180 +6534,188 @@ proto.mongorpc.UpdateDocumentRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.UpdateDocumentRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.UpdateDocumentRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getDocumentId();
   if (f.length > 0) {
-    writer.writeString(3, f);
+    writer.writeString(
+      3,
+      f
+    );
   }
   f = message.getDocument();
   if (f != null) {
-    writer.writeMessage(4, f, proto.mongorpc.Value.serializeBinaryToWriter);
+    writer.writeMessage(
+      4,
+      f,
+      proto.mongorpc.Value.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.UpdateDocumentRequest.prototype.getDatabase = function () {
+proto.mongorpc.UpdateDocumentRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.UpdateDocumentRequest} returns this
  */
-proto.mongorpc.UpdateDocumentRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.UpdateDocumentRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.UpdateDocumentRequest.prototype.getCollection = function () {
+proto.mongorpc.UpdateDocumentRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.UpdateDocumentRequest} returns this
  */
-proto.mongorpc.UpdateDocumentRequest.prototype.setCollection = function (
-  value
-) {
+proto.mongorpc.UpdateDocumentRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
 
 /**
  * optional string document_id = 3;
  * @return {string}
  */
-proto.mongorpc.UpdateDocumentRequest.prototype.getDocumentId = function () {
+proto.mongorpc.UpdateDocumentRequest.prototype.getDocumentId = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.UpdateDocumentRequest} returns this
  */
-proto.mongorpc.UpdateDocumentRequest.prototype.setDocumentId = function (
-  value
-) {
+proto.mongorpc.UpdateDocumentRequest.prototype.setDocumentId = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
+
 
 /**
  * optional Value document = 4;
  * @return {?proto.mongorpc.Value}
  */
-proto.mongorpc.UpdateDocumentRequest.prototype.getDocument = function () {
+proto.mongorpc.UpdateDocumentRequest.prototype.getDocument = function() {
   return /** @type{?proto.mongorpc.Value} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 4)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 4));
 };
+
 
 /**
  * @param {?proto.mongorpc.Value|undefined} value
  * @return {!proto.mongorpc.UpdateDocumentRequest} returns this
- */
-proto.mongorpc.UpdateDocumentRequest.prototype.setDocument = function (value) {
+*/
+proto.mongorpc.UpdateDocumentRequest.prototype.setDocument = function(value) {
   return jspb.Message.setWrapperField(this, 4, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.UpdateDocumentRequest} returns this
  */
-proto.mongorpc.UpdateDocumentRequest.prototype.clearDocument = function () {
+proto.mongorpc.UpdateDocumentRequest.prototype.clearDocument = function() {
   return this.setDocument(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.UpdateDocumentRequest.prototype.hasDocument = function () {
+proto.mongorpc.UpdateDocumentRequest.prototype.hasDocument = function() {
   return jspb.Message.getField(this, 4) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.UpdateDocumentResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.UpdateDocumentResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.UpdateDocumentResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.UpdateDocumentResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.UpdateDocumentResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.UpdateDocumentResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    matchedCount: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    modifiedCount: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    upsertedCount: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    upsertedId: (f = msg.getUpsertedId()) && proto.mongorpc.Value.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.UpdateDocumentResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.UpdateDocumentResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        matchedCount: jspb.Message.getFieldWithDefault(msg, 1, 0),
-        modifiedCount: jspb.Message.getFieldWithDefault(msg, 2, 0),
-        upsertedCount: jspb.Message.getFieldWithDefault(msg, 3, 0),
-        upsertedId:
-          (f = msg.getUpsertedId()) &&
-          proto.mongorpc.Value.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.UpdateDocumentResponse}
  */
-proto.mongorpc.UpdateDocumentResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.UpdateDocumentResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.UpdateDocumentResponse();
-  return proto.mongorpc.UpdateDocumentResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.UpdateDocumentResponse;
+  return proto.mongorpc.UpdateDocumentResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -6795,53 +6724,49 @@ proto.mongorpc.UpdateDocumentResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.UpdateDocumentResponse}
  */
-proto.mongorpc.UpdateDocumentResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.UpdateDocumentResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setMatchedCount(value);
-        break;
-      case 2:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setModifiedCount(value);
-        break;
-      case 3:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setUpsertedCount(value);
-        break;
-      case 4:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.setUpsertedId(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setMatchedCount(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setModifiedCount(value);
+      break;
+    case 3:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setUpsertedCount(value);
+      break;
+    case 4:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.setUpsertedId(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.UpdateDocumentResponse.prototype.serializeBinary = function () {
+proto.mongorpc.UpdateDocumentResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.UpdateDocumentResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -6850,181 +6775,187 @@ proto.mongorpc.UpdateDocumentResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.UpdateDocumentResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.UpdateDocumentResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getMatchedCount();
   if (f !== 0) {
-    writer.writeInt64(1, f);
+    writer.writeInt64(
+      1,
+      f
+    );
   }
   f = message.getModifiedCount();
   if (f !== 0) {
-    writer.writeInt64(2, f);
+    writer.writeInt64(
+      2,
+      f
+    );
   }
   f = message.getUpsertedCount();
   if (f !== 0) {
-    writer.writeInt64(3, f);
+    writer.writeInt64(
+      3,
+      f
+    );
   }
   f = message.getUpsertedId();
   if (f != null) {
-    writer.writeMessage(4, f, proto.mongorpc.Value.serializeBinaryToWriter);
+    writer.writeMessage(
+      4,
+      f,
+      proto.mongorpc.Value.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional int64 matched_count = 1;
  * @return {number}
  */
-proto.mongorpc.UpdateDocumentResponse.prototype.getMatchedCount = function () {
+proto.mongorpc.UpdateDocumentResponse.prototype.getMatchedCount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.UpdateDocumentResponse} returns this
  */
-proto.mongorpc.UpdateDocumentResponse.prototype.setMatchedCount = function (
-  value
-) {
+proto.mongorpc.UpdateDocumentResponse.prototype.setMatchedCount = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
+
 
 /**
  * optional int64 modified_count = 2;
  * @return {number}
  */
-proto.mongorpc.UpdateDocumentResponse.prototype.getModifiedCount = function () {
+proto.mongorpc.UpdateDocumentResponse.prototype.getModifiedCount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.UpdateDocumentResponse} returns this
  */
-proto.mongorpc.UpdateDocumentResponse.prototype.setModifiedCount = function (
-  value
-) {
+proto.mongorpc.UpdateDocumentResponse.prototype.setModifiedCount = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
+
 
 /**
  * optional int64 upserted_count = 3;
  * @return {number}
  */
-proto.mongorpc.UpdateDocumentResponse.prototype.getUpsertedCount = function () {
+proto.mongorpc.UpdateDocumentResponse.prototype.getUpsertedCount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.UpdateDocumentResponse} returns this
  */
-proto.mongorpc.UpdateDocumentResponse.prototype.setUpsertedCount = function (
-  value
-) {
+proto.mongorpc.UpdateDocumentResponse.prototype.setUpsertedCount = function(value) {
   return jspb.Message.setProto3IntField(this, 3, value);
 };
+
 
 /**
  * optional Value upserted_id = 4;
  * @return {?proto.mongorpc.Value}
  */
-proto.mongorpc.UpdateDocumentResponse.prototype.getUpsertedId = function () {
+proto.mongorpc.UpdateDocumentResponse.prototype.getUpsertedId = function() {
   return /** @type{?proto.mongorpc.Value} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 4)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 4));
 };
+
 
 /**
  * @param {?proto.mongorpc.Value|undefined} value
  * @return {!proto.mongorpc.UpdateDocumentResponse} returns this
- */
-proto.mongorpc.UpdateDocumentResponse.prototype.setUpsertedId = function (
-  value
-) {
+*/
+proto.mongorpc.UpdateDocumentResponse.prototype.setUpsertedId = function(value) {
   return jspb.Message.setWrapperField(this, 4, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.UpdateDocumentResponse} returns this
  */
-proto.mongorpc.UpdateDocumentResponse.prototype.clearUpsertedId = function () {
+proto.mongorpc.UpdateDocumentResponse.prototype.clearUpsertedId = function() {
   return this.setUpsertedId(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.UpdateDocumentResponse.prototype.hasUpsertedId = function () {
+proto.mongorpc.UpdateDocumentResponse.prototype.hasUpsertedId = function() {
   return jspb.Message.getField(this, 4) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.DeleteDocumentRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.DeleteDocumentRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.DeleteDocumentRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.DeleteDocumentRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.DeleteDocumentRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.DeleteDocumentRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    documentId: jspb.Message.getFieldWithDefault(msg, 3, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.DeleteDocumentRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.DeleteDocumentRequest.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        documentId: jspb.Message.getFieldWithDefault(msg, 3, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.DeleteDocumentRequest}
  */
-proto.mongorpc.DeleteDocumentRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.DeleteDocumentRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.DeleteDocumentRequest();
-  return proto.mongorpc.DeleteDocumentRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.DeleteDocumentRequest;
+  return proto.mongorpc.DeleteDocumentRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -7033,45 +6964,44 @@ proto.mongorpc.DeleteDocumentRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.DeleteDocumentRequest}
  */
-proto.mongorpc.DeleteDocumentRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.DeleteDocumentRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      case 3:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDocumentId(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDocumentId(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.DeleteDocumentRequest.prototype.serializeBinary = function () {
+proto.mongorpc.DeleteDocumentRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.DeleteDocumentRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -7080,137 +7010,140 @@ proto.mongorpc.DeleteDocumentRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.DeleteDocumentRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.DeleteDocumentRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getDocumentId();
   if (f.length > 0) {
-    writer.writeString(3, f);
+    writer.writeString(
+      3,
+      f
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.DeleteDocumentRequest.prototype.getDatabase = function () {
+proto.mongorpc.DeleteDocumentRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.DeleteDocumentRequest} returns this
  */
-proto.mongorpc.DeleteDocumentRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.DeleteDocumentRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.DeleteDocumentRequest.prototype.getCollection = function () {
+proto.mongorpc.DeleteDocumentRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.DeleteDocumentRequest} returns this
  */
-proto.mongorpc.DeleteDocumentRequest.prototype.setCollection = function (
-  value
-) {
+proto.mongorpc.DeleteDocumentRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
 
 /**
  * optional string document_id = 3;
  * @return {string}
  */
-proto.mongorpc.DeleteDocumentRequest.prototype.getDocumentId = function () {
+proto.mongorpc.DeleteDocumentRequest.prototype.getDocumentId = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.DeleteDocumentRequest} returns this
  */
-proto.mongorpc.DeleteDocumentRequest.prototype.setDocumentId = function (
-  value
-) {
+proto.mongorpc.DeleteDocumentRequest.prototype.setDocumentId = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.DeleteDocumentResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.DeleteDocumentResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.DeleteDocumentResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.DeleteDocumentResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.DeleteDocumentResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.DeleteDocumentResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    deletedCount: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.DeleteDocumentResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.DeleteDocumentResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        deletedCount: jspb.Message.getFieldWithDefault(msg, 1, 0),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.DeleteDocumentResponse}
  */
-proto.mongorpc.DeleteDocumentResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.DeleteDocumentResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.DeleteDocumentResponse();
-  return proto.mongorpc.DeleteDocumentResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.DeleteDocumentResponse;
+  return proto.mongorpc.DeleteDocumentResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -7219,37 +7152,36 @@ proto.mongorpc.DeleteDocumentResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.DeleteDocumentResponse}
  */
-proto.mongorpc.DeleteDocumentResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.DeleteDocumentResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setDeletedCount(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setDeletedCount(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.DeleteDocumentResponse.prototype.serializeBinary = function () {
+proto.mongorpc.DeleteDocumentResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.DeleteDocumentResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -7258,107 +7190,105 @@ proto.mongorpc.DeleteDocumentResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.DeleteDocumentResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.DeleteDocumentResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDeletedCount();
   if (f !== 0) {
-    writer.writeInt64(1, f);
+    writer.writeInt64(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional int64 deleted_count = 1;
  * @return {number}
  */
-proto.mongorpc.DeleteDocumentResponse.prototype.getDeletedCount = function () {
+proto.mongorpc.DeleteDocumentResponse.prototype.getDeletedCount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.DeleteDocumentResponse} returns this
  */
-proto.mongorpc.DeleteDocumentResponse.prototype.setDeletedCount = function (
-  value
-) {
+proto.mongorpc.DeleteDocumentResponse.prototype.setDeletedCount = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
+
+
 
 /**
  * List of repeated fields within this message type.
  * @private {!Array<number>}
  * @const
  */
-proto.mongorpc.ListenRequest.repeatedFields_ = [5, 6];
+proto.mongorpc.ListenRequest.repeatedFields_ = [5,6];
+
+
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.ListenRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.ListenRequest.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.ListenRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.ListenRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.ListenRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.ListenRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    operation: jspb.Message.getFieldWithDefault(msg, 4, ""),
+    filterList: jspb.Message.toObjectList(msg.getFilterList(),
+    proto.mongorpc.Filter.toObject, includeInstance),
+    sortList: jspb.Message.toObjectList(msg.getSortList(),
+    proto.mongorpc.Sort.toObject, includeInstance),
+    limit: jspb.Message.getFieldWithDefault(msg, 7, 0),
+    skip: jspb.Message.getFieldWithDefault(msg, 8, 0)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.ListenRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.ListenRequest.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        operation: jspb.Message.getFieldWithDefault(msg, 4, ""),
-        filterList: jspb.Message.toObjectList(
-          msg.getFilterList(),
-          proto.mongorpc.Filter.toObject,
-          includeInstance
-        ),
-        sortList: jspb.Message.toObjectList(
-          msg.getSortList(),
-          proto.mongorpc.Sort.toObject,
-          includeInstance
-        ),
-        limit: jspb.Message.getFieldWithDefault(msg, 7, 0),
-        skip: jspb.Message.getFieldWithDefault(msg, 8, 0),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.ListenRequest}
  */
-proto.mongorpc.ListenRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.ListenRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.ListenRequest();
+  var msg = new proto.mongorpc.ListenRequest;
   return proto.mongorpc.ListenRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -7367,69 +7297,62 @@ proto.mongorpc.ListenRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.ListenRequest}
  */
-proto.mongorpc.ListenRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.ListenRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      case 4:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setOperation(value);
-        break;
-      case 5:
-        var value = new proto.mongorpc.Filter();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Filter.deserializeBinaryFromReader
-        );
-        msg.addFilter(value);
-        break;
-      case 6:
-        var value = new proto.mongorpc.Sort();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Sort.deserializeBinaryFromReader
-        );
-        msg.addSort(value);
-        break;
-      case 7:
-        var value = /** @type {number} */ (reader.readInt32());
-        msg.setLimit(value);
-        break;
-      case 8:
-        var value = /** @type {number} */ (reader.readInt32());
-        msg.setSkip(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setOperation(value);
+      break;
+    case 5:
+      var value = new proto.mongorpc.Filter;
+      reader.readMessage(value,proto.mongorpc.Filter.deserializeBinaryFromReader);
+      msg.addFilter(value);
+      break;
+    case 6:
+      var value = new proto.mongorpc.Sort;
+      reader.readMessage(value,proto.mongorpc.Sort.deserializeBinaryFromReader);
+      msg.addSort(value);
+      break;
+    case 7:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setLimit(value);
+      break;
+    case 8:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setSkip(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.ListenRequest.prototype.serializeBinary = function () {
+proto.mongorpc.ListenRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.ListenRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -7438,22 +7361,28 @@ proto.mongorpc.ListenRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.ListenRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.ListenRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getOperation();
   if (f.length > 0) {
-    writer.writeString(4, f);
+    writer.writeString(
+      4,
+      f
+    );
   }
   f = message.getFilterList();
   if (f.length > 0) {
@@ -7473,236 +7402,242 @@ proto.mongorpc.ListenRequest.serializeBinaryToWriter = function (
   }
   f = message.getLimit();
   if (f !== 0) {
-    writer.writeInt32(7, f);
+    writer.writeInt32(
+      7,
+      f
+    );
   }
   f = message.getSkip();
   if (f !== 0) {
-    writer.writeInt32(8, f);
+    writer.writeInt32(
+      8,
+      f
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.ListenRequest.prototype.getDatabase = function () {
+proto.mongorpc.ListenRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ListenRequest} returns this
  */
-proto.mongorpc.ListenRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.ListenRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.ListenRequest.prototype.getCollection = function () {
+proto.mongorpc.ListenRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ListenRequest} returns this
  */
-proto.mongorpc.ListenRequest.prototype.setCollection = function (value) {
+proto.mongorpc.ListenRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
 
 /**
  * optional string operation = 4;
  * @return {string}
  */
-proto.mongorpc.ListenRequest.prototype.getOperation = function () {
+proto.mongorpc.ListenRequest.prototype.getOperation = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ListenRequest} returns this
  */
-proto.mongorpc.ListenRequest.prototype.setOperation = function (value) {
+proto.mongorpc.ListenRequest.prototype.setOperation = function(value) {
   return jspb.Message.setProto3StringField(this, 4, value);
 };
+
 
 /**
  * repeated Filter filter = 5;
  * @return {!Array<!proto.mongorpc.Filter>}
  */
-proto.mongorpc.ListenRequest.prototype.getFilterList = function () {
+proto.mongorpc.ListenRequest.prototype.getFilterList = function() {
   return /** @type{!Array<!proto.mongorpc.Filter>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Filter, 5)
-  );
+    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Filter, 5));
 };
+
 
 /**
  * @param {!Array<!proto.mongorpc.Filter>} value
  * @return {!proto.mongorpc.ListenRequest} returns this
- */
-proto.mongorpc.ListenRequest.prototype.setFilterList = function (value) {
+*/
+proto.mongorpc.ListenRequest.prototype.setFilterList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 5, value);
 };
+
 
 /**
  * @param {!proto.mongorpc.Filter=} opt_value
  * @param {number=} opt_index
  * @return {!proto.mongorpc.Filter}
  */
-proto.mongorpc.ListenRequest.prototype.addFilter = function (
-  opt_value,
-  opt_index
-) {
-  return jspb.Message.addToRepeatedWrapperField(
-    this,
-    5,
-    opt_value,
-    proto.mongorpc.Filter,
-    opt_index
-  );
+proto.mongorpc.ListenRequest.prototype.addFilter = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 5, opt_value, proto.mongorpc.Filter, opt_index);
 };
+
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.mongorpc.ListenRequest} returns this
  */
-proto.mongorpc.ListenRequest.prototype.clearFilterList = function () {
+proto.mongorpc.ListenRequest.prototype.clearFilterList = function() {
   return this.setFilterList([]);
 };
+
 
 /**
  * repeated Sort sort = 6;
  * @return {!Array<!proto.mongorpc.Sort>}
  */
-proto.mongorpc.ListenRequest.prototype.getSortList = function () {
+proto.mongorpc.ListenRequest.prototype.getSortList = function() {
   return /** @type{!Array<!proto.mongorpc.Sort>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Sort, 6)
-  );
+    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Sort, 6));
 };
+
 
 /**
  * @param {!Array<!proto.mongorpc.Sort>} value
  * @return {!proto.mongorpc.ListenRequest} returns this
- */
-proto.mongorpc.ListenRequest.prototype.setSortList = function (value) {
+*/
+proto.mongorpc.ListenRequest.prototype.setSortList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 6, value);
 };
+
 
 /**
  * @param {!proto.mongorpc.Sort=} opt_value
  * @param {number=} opt_index
  * @return {!proto.mongorpc.Sort}
  */
-proto.mongorpc.ListenRequest.prototype.addSort = function (
-  opt_value,
-  opt_index
-) {
-  return jspb.Message.addToRepeatedWrapperField(
-    this,
-    6,
-    opt_value,
-    proto.mongorpc.Sort,
-    opt_index
-  );
+proto.mongorpc.ListenRequest.prototype.addSort = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 6, opt_value, proto.mongorpc.Sort, opt_index);
 };
+
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.mongorpc.ListenRequest} returns this
  */
-proto.mongorpc.ListenRequest.prototype.clearSortList = function () {
+proto.mongorpc.ListenRequest.prototype.clearSortList = function() {
   return this.setSortList([]);
 };
+
 
 /**
  * optional int32 limit = 7;
  * @return {number}
  */
-proto.mongorpc.ListenRequest.prototype.getLimit = function () {
+proto.mongorpc.ListenRequest.prototype.getLimit = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.ListenRequest} returns this
  */
-proto.mongorpc.ListenRequest.prototype.setLimit = function (value) {
+proto.mongorpc.ListenRequest.prototype.setLimit = function(value) {
   return jspb.Message.setProto3IntField(this, 7, value);
 };
+
 
 /**
  * optional int32 skip = 8;
  * @return {number}
  */
-proto.mongorpc.ListenRequest.prototype.getSkip = function () {
+proto.mongorpc.ListenRequest.prototype.getSkip = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 8, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.ListenRequest} returns this
  */
-proto.mongorpc.ListenRequest.prototype.setSkip = function (value) {
+proto.mongorpc.ListenRequest.prototype.setSkip = function(value) {
   return jspb.Message.setProto3IntField(this, 8, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.ListenResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.ListenResponse.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.ListenResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.ListenResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.ListenResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.ListenResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    operation: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    document: (f = msg.getDocument()) && proto.mongorpc.Value.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.ListenResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.ListenResponse.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        operation: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        document:
-          (f = msg.getDocument()) &&
-          proto.mongorpc.Value.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.ListenResponse}
  */
-proto.mongorpc.ListenResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.ListenResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.ListenResponse();
+  var msg = new proto.mongorpc.ListenResponse;
   return proto.mongorpc.ListenResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -7711,45 +7646,41 @@ proto.mongorpc.ListenResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.ListenResponse}
  */
-proto.mongorpc.ListenResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.ListenResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setOperation(value);
-        break;
-      case 2:
-        var value = new proto.mongorpc.Value();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Value.deserializeBinaryFromReader
-        );
-        msg.setDocument(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setOperation(value);
+      break;
+    case 2:
+      var value = new proto.mongorpc.Value;
+      reader.readMessage(value,proto.mongorpc.Value.deserializeBinaryFromReader);
+      msg.setDocument(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.ListenResponse.prototype.serializeBinary = function () {
+proto.mongorpc.ListenResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.ListenResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -7758,70 +7689,81 @@ proto.mongorpc.ListenResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.ListenResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.ListenResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getOperation();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getDocument();
   if (f != null) {
-    writer.writeMessage(2, f, proto.mongorpc.Value.serializeBinaryToWriter);
+    writer.writeMessage(
+      2,
+      f,
+      proto.mongorpc.Value.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional string operation = 1;
  * @return {string}
  */
-proto.mongorpc.ListenResponse.prototype.getOperation = function () {
+proto.mongorpc.ListenResponse.prototype.getOperation = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ListenResponse} returns this
  */
-proto.mongorpc.ListenResponse.prototype.setOperation = function (value) {
+proto.mongorpc.ListenResponse.prototype.setOperation = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional Value document = 2;
  * @return {?proto.mongorpc.Value}
  */
-proto.mongorpc.ListenResponse.prototype.getDocument = function () {
+proto.mongorpc.ListenResponse.prototype.getDocument = function() {
   return /** @type{?proto.mongorpc.Value} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Value, 2));
 };
+
 
 /**
  * @param {?proto.mongorpc.Value|undefined} value
  * @return {!proto.mongorpc.ListenResponse} returns this
- */
-proto.mongorpc.ListenResponse.prototype.setDocument = function (value) {
+*/
+proto.mongorpc.ListenResponse.prototype.setDocument = function(value) {
   return jspb.Message.setWrapperField(this, 2, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.ListenResponse} returns this
  */
-proto.mongorpc.ListenResponse.prototype.clearDocument = function () {
+proto.mongorpc.ListenResponse.prototype.clearDocument = function() {
   return this.setDocument(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.ListenResponse.prototype.hasDocument = function () {
+proto.mongorpc.ListenResponse.prototype.hasDocument = function() {
   return jspb.Message.getField(this, 2) != null;
 };
+
+
 
 /**
  * List of repeated fields within this message type.
@@ -7830,61 +7772,62 @@ proto.mongorpc.ListenResponse.prototype.hasDocument = function () {
  */
 proto.mongorpc.Index.repeatedFields_ = [2];
 
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.Index.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.Index.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.Index.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.Index.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.Index} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.Index.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    name: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    keysList: jspb.Message.toObjectList(msg.getKeysList(),
+    proto.mongorpc.IndexKey.toObject, includeInstance),
+    unique: jspb.Message.getBooleanFieldWithDefault(msg, 3, false)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.Index} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.Index.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        name: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        keysList: jspb.Message.toObjectList(
-          msg.getKeysList(),
-          proto.mongorpc.IndexKey.toObject,
-          includeInstance
-        ),
-        unique: jspb.Message.getBooleanFieldWithDefault(msg, 3, false),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.Index}
  */
-proto.mongorpc.Index.deserializeBinary = function (bytes) {
+proto.mongorpc.Index.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.Index();
+  var msg = new proto.mongorpc.Index;
   return proto.mongorpc.Index.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -7893,46 +7836,45 @@ proto.mongorpc.Index.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.Index}
  */
-proto.mongorpc.Index.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.Index.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setName(value);
-        break;
-      case 2:
-        var value = new proto.mongorpc.IndexKey();
-        reader.readMessage(
-          value,
-          proto.mongorpc.IndexKey.deserializeBinaryFromReader
-        );
-        msg.addKeys(value);
-        break;
-      case 3:
-        var value = /** @type {boolean} */ (reader.readBool());
-        msg.setUnique(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    case 2:
+      var value = new proto.mongorpc.IndexKey;
+      reader.readMessage(value,proto.mongorpc.IndexKey.deserializeBinaryFromReader);
+      msg.addKeys(value);
+      break;
+    case 3:
+      var value = /** @type {boolean} */ (reader.readBool());
+      msg.setUnique(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.Index.prototype.serializeBinary = function () {
+proto.mongorpc.Index.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.Index.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -7941,11 +7883,14 @@ proto.mongorpc.Index.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.Index.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.Index.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getName();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getKeysList();
   if (f.length > 0) {
@@ -7957,135 +7902,143 @@ proto.mongorpc.Index.serializeBinaryToWriter = function (message, writer) {
   }
   f = message.getUnique();
   if (f) {
-    writer.writeBool(3, f);
+    writer.writeBool(
+      3,
+      f
+    );
   }
 };
+
 
 /**
  * optional string name = 1;
  * @return {string}
  */
-proto.mongorpc.Index.prototype.getName = function () {
+proto.mongorpc.Index.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.Index} returns this
  */
-proto.mongorpc.Index.prototype.setName = function (value) {
+proto.mongorpc.Index.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * repeated IndexKey keys = 2;
  * @return {!Array<!proto.mongorpc.IndexKey>}
  */
-proto.mongorpc.Index.prototype.getKeysList = function () {
+proto.mongorpc.Index.prototype.getKeysList = function() {
   return /** @type{!Array<!proto.mongorpc.IndexKey>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.IndexKey, 2)
-  );
+    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.IndexKey, 2));
 };
+
 
 /**
  * @param {!Array<!proto.mongorpc.IndexKey>} value
  * @return {!proto.mongorpc.Index} returns this
- */
-proto.mongorpc.Index.prototype.setKeysList = function (value) {
+*/
+proto.mongorpc.Index.prototype.setKeysList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 2, value);
 };
+
 
 /**
  * @param {!proto.mongorpc.IndexKey=} opt_value
  * @param {number=} opt_index
  * @return {!proto.mongorpc.IndexKey}
  */
-proto.mongorpc.Index.prototype.addKeys = function (opt_value, opt_index) {
-  return jspb.Message.addToRepeatedWrapperField(
-    this,
-    2,
-    opt_value,
-    proto.mongorpc.IndexKey,
-    opt_index
-  );
+proto.mongorpc.Index.prototype.addKeys = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 2, opt_value, proto.mongorpc.IndexKey, opt_index);
 };
+
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.mongorpc.Index} returns this
  */
-proto.mongorpc.Index.prototype.clearKeysList = function () {
+proto.mongorpc.Index.prototype.clearKeysList = function() {
   return this.setKeysList([]);
 };
+
 
 /**
  * optional bool unique = 3;
  * @return {boolean}
  */
-proto.mongorpc.Index.prototype.getUnique = function () {
-  return /** @type {boolean} */ (
-    jspb.Message.getBooleanFieldWithDefault(this, 3, false)
-  );
+proto.mongorpc.Index.prototype.getUnique = function() {
+  return /** @type {boolean} */ (jspb.Message.getBooleanFieldWithDefault(this, 3, false));
 };
+
 
 /**
  * @param {boolean} value
  * @return {!proto.mongorpc.Index} returns this
  */
-proto.mongorpc.Index.prototype.setUnique = function (value) {
+proto.mongorpc.Index.prototype.setUnique = function(value) {
   return jspb.Message.setProto3BooleanField(this, 3, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.IndexKey.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.IndexKey.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.IndexKey.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.IndexKey.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.IndexKey} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.IndexKey.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    field: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    direction: jspb.Message.getFieldWithDefault(msg, 2, 0)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.IndexKey} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.IndexKey.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        field: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        direction: jspb.Message.getFieldWithDefault(msg, 2, 0),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.IndexKey}
  */
-proto.mongorpc.IndexKey.deserializeBinary = function (bytes) {
+proto.mongorpc.IndexKey.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.IndexKey();
+  var msg = new proto.mongorpc.IndexKey;
   return proto.mongorpc.IndexKey.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -8094,40 +8047,40 @@ proto.mongorpc.IndexKey.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.IndexKey}
  */
-proto.mongorpc.IndexKey.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.IndexKey.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setField(value);
-        break;
-      case 2:
-        var value = /** @type {!proto.mongorpc.IndexDirection} */ (
-          reader.readEnum()
-        );
-        msg.setDirection(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setField(value);
+      break;
+    case 2:
+      var value = /** @type {!proto.mongorpc.IndexDirection} */ (reader.readEnum());
+      msg.setDirection(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.IndexKey.prototype.serializeBinary = function () {
+proto.mongorpc.IndexKey.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.IndexKey.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -8136,113 +8089,117 @@ proto.mongorpc.IndexKey.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.IndexKey.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.IndexKey.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getField();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getDirection();
   if (f !== 0.0) {
-    writer.writeEnum(2, f);
+    writer.writeEnum(
+      2,
+      f
+    );
   }
 };
+
 
 /**
  * optional string field = 1;
  * @return {string}
  */
-proto.mongorpc.IndexKey.prototype.getField = function () {
+proto.mongorpc.IndexKey.prototype.getField = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.IndexKey} returns this
  */
-proto.mongorpc.IndexKey.prototype.setField = function (value) {
+proto.mongorpc.IndexKey.prototype.setField = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional IndexDirection direction = 2;
  * @return {!proto.mongorpc.IndexDirection}
  */
-proto.mongorpc.IndexKey.prototype.getDirection = function () {
-  return /** @type {!proto.mongorpc.IndexDirection} */ (
-    jspb.Message.getFieldWithDefault(this, 2, 0)
-  );
+proto.mongorpc.IndexKey.prototype.getDirection = function() {
+  return /** @type {!proto.mongorpc.IndexDirection} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
+
 
 /**
  * @param {!proto.mongorpc.IndexDirection} value
  * @return {!proto.mongorpc.IndexKey} returns this
  */
-proto.mongorpc.IndexKey.prototype.setDirection = function (value) {
+proto.mongorpc.IndexKey.prototype.setDirection = function(value) {
   return jspb.Message.setProto3EnumField(this, 2, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.CreateIndexRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.CreateIndexRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.CreateIndexRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.CreateIndexRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.CreateIndexRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.CreateIndexRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    index: (f = msg.getIndex()) && proto.mongorpc.Index.toObject(includeInstance, f)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.CreateIndexRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.CreateIndexRequest.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        index:
-          (f = msg.getIndex()) &&
-          proto.mongorpc.Index.toObject(includeInstance, f),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.CreateIndexRequest}
  */
-proto.mongorpc.CreateIndexRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.CreateIndexRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.CreateIndexRequest();
-  return proto.mongorpc.CreateIndexRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.CreateIndexRequest;
+  return proto.mongorpc.CreateIndexRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -8251,49 +8208,45 @@ proto.mongorpc.CreateIndexRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.CreateIndexRequest}
  */
-proto.mongorpc.CreateIndexRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.CreateIndexRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      case 3:
-        var value = new proto.mongorpc.Index();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Index.deserializeBinaryFromReader
-        );
-        msg.setIndex(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    case 3:
+      var value = new proto.mongorpc.Index;
+      reader.readMessage(value,proto.mongorpc.Index.deserializeBinaryFromReader);
+      msg.setIndex(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.CreateIndexRequest.prototype.serializeBinary = function () {
+proto.mongorpc.CreateIndexRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.CreateIndexRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -8302,151 +8255,160 @@ proto.mongorpc.CreateIndexRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.CreateIndexRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.CreateIndexRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getIndex();
   if (f != null) {
-    writer.writeMessage(3, f, proto.mongorpc.Index.serializeBinaryToWriter);
+    writer.writeMessage(
+      3,
+      f,
+      proto.mongorpc.Index.serializeBinaryToWriter
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.CreateIndexRequest.prototype.getDatabase = function () {
+proto.mongorpc.CreateIndexRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CreateIndexRequest} returns this
  */
-proto.mongorpc.CreateIndexRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.CreateIndexRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.CreateIndexRequest.prototype.getCollection = function () {
+proto.mongorpc.CreateIndexRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CreateIndexRequest} returns this
  */
-proto.mongorpc.CreateIndexRequest.prototype.setCollection = function (value) {
+proto.mongorpc.CreateIndexRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
 
 /**
  * optional Index index = 3;
  * @return {?proto.mongorpc.Index}
  */
-proto.mongorpc.CreateIndexRequest.prototype.getIndex = function () {
+proto.mongorpc.CreateIndexRequest.prototype.getIndex = function() {
   return /** @type{?proto.mongorpc.Index} */ (
-    jspb.Message.getWrapperField(this, proto.mongorpc.Index, 3)
-  );
+    jspb.Message.getWrapperField(this, proto.mongorpc.Index, 3));
 };
+
 
 /**
  * @param {?proto.mongorpc.Index|undefined} value
  * @return {!proto.mongorpc.CreateIndexRequest} returns this
- */
-proto.mongorpc.CreateIndexRequest.prototype.setIndex = function (value) {
+*/
+proto.mongorpc.CreateIndexRequest.prototype.setIndex = function(value) {
   return jspb.Message.setWrapperField(this, 3, value);
 };
+
 
 /**
  * Clears the message field making it undefined.
  * @return {!proto.mongorpc.CreateIndexRequest} returns this
  */
-proto.mongorpc.CreateIndexRequest.prototype.clearIndex = function () {
+proto.mongorpc.CreateIndexRequest.prototype.clearIndex = function() {
   return this.setIndex(undefined);
 };
+
 
 /**
  * Returns whether this field is set.
  * @return {boolean}
  */
-proto.mongorpc.CreateIndexRequest.prototype.hasIndex = function () {
+proto.mongorpc.CreateIndexRequest.prototype.hasIndex = function() {
   return jspb.Message.getField(this, 3) != null;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.CreateIndexResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.CreateIndexResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.CreateIndexResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.CreateIndexResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.CreateIndexResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.CreateIndexResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    name: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.CreateIndexResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.CreateIndexResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        name: jspb.Message.getFieldWithDefault(msg, 1, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.CreateIndexResponse}
  */
-proto.mongorpc.CreateIndexResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.CreateIndexResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.CreateIndexResponse();
-  return proto.mongorpc.CreateIndexResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.CreateIndexResponse;
+  return proto.mongorpc.CreateIndexResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -8455,37 +8417,36 @@ proto.mongorpc.CreateIndexResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.CreateIndexResponse}
  */
-proto.mongorpc.CreateIndexResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.CreateIndexResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setName(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.CreateIndexResponse.prototype.serializeBinary = function () {
+proto.mongorpc.CreateIndexResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.CreateIndexResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -8494,91 +8455,91 @@ proto.mongorpc.CreateIndexResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.CreateIndexResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.CreateIndexResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getName();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional string name = 1;
  * @return {string}
  */
-proto.mongorpc.CreateIndexResponse.prototype.getName = function () {
+proto.mongorpc.CreateIndexResponse.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CreateIndexResponse} returns this
  */
-proto.mongorpc.CreateIndexResponse.prototype.setName = function (value) {
+proto.mongorpc.CreateIndexResponse.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.ListIndexesRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.ListIndexesRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.ListIndexesRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.ListIndexesRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.ListIndexesRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.ListIndexesRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.ListIndexesRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.ListIndexesRequest.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.ListIndexesRequest}
  */
-proto.mongorpc.ListIndexesRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.ListIndexesRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.ListIndexesRequest();
-  return proto.mongorpc.ListIndexesRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.ListIndexesRequest;
+  return proto.mongorpc.ListIndexesRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -8587,41 +8548,40 @@ proto.mongorpc.ListIndexesRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.ListIndexesRequest}
  */
-proto.mongorpc.ListIndexesRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.ListIndexesRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.ListIndexesRequest.prototype.serializeBinary = function () {
+proto.mongorpc.ListIndexesRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.ListIndexesRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -8630,52 +8590,61 @@ proto.mongorpc.ListIndexesRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.ListIndexesRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.ListIndexesRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.ListIndexesRequest.prototype.getDatabase = function () {
+proto.mongorpc.ListIndexesRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ListIndexesRequest} returns this
  */
-proto.mongorpc.ListIndexesRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.ListIndexesRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.ListIndexesRequest.prototype.getCollection = function () {
+proto.mongorpc.ListIndexesRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ListIndexesRequest} returns this
  */
-proto.mongorpc.ListIndexesRequest.prototype.setCollection = function (value) {
+proto.mongorpc.ListIndexesRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
+
 
 /**
  * List of repeated fields within this message type.
@@ -8684,70 +8653,60 @@ proto.mongorpc.ListIndexesRequest.prototype.setCollection = function (value) {
  */
 proto.mongorpc.ListIndexesResponse.repeatedFields_ = [1];
 
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.ListIndexesResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.ListIndexesResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.ListIndexesResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.ListIndexesResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.ListIndexesResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.ListIndexesResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    indexesList: jspb.Message.toObjectList(msg.getIndexesList(),
+    proto.mongorpc.Index.toObject, includeInstance)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.ListIndexesResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.ListIndexesResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        indexesList: jspb.Message.toObjectList(
-          msg.getIndexesList(),
-          proto.mongorpc.Index.toObject,
-          includeInstance
-        ),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.ListIndexesResponse}
  */
-proto.mongorpc.ListIndexesResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.ListIndexesResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.ListIndexesResponse();
-  return proto.mongorpc.ListIndexesResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.ListIndexesResponse;
+  return proto.mongorpc.ListIndexesResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -8756,41 +8715,37 @@ proto.mongorpc.ListIndexesResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.ListIndexesResponse}
  */
-proto.mongorpc.ListIndexesResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.ListIndexesResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = new proto.mongorpc.Index();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Index.deserializeBinaryFromReader
-        );
-        msg.addIndexes(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = new proto.mongorpc.Index;
+      reader.readMessage(value,proto.mongorpc.Index.deserializeBinaryFromReader);
+      msg.addIndexes(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.ListIndexesResponse.prototype.serializeBinary = function () {
+proto.mongorpc.ListIndexesResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.ListIndexesResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -8799,10 +8754,7 @@ proto.mongorpc.ListIndexesResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.ListIndexesResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.ListIndexesResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getIndexesList();
   if (f.length > 0) {
@@ -8814,109 +8766,101 @@ proto.mongorpc.ListIndexesResponse.serializeBinaryToWriter = function (
   }
 };
 
+
 /**
  * repeated Index indexes = 1;
  * @return {!Array<!proto.mongorpc.Index>}
  */
-proto.mongorpc.ListIndexesResponse.prototype.getIndexesList = function () {
+proto.mongorpc.ListIndexesResponse.prototype.getIndexesList = function() {
   return /** @type{!Array<!proto.mongorpc.Index>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Index, 1)
-  );
+    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Index, 1));
 };
+
 
 /**
  * @param {!Array<!proto.mongorpc.Index>} value
  * @return {!proto.mongorpc.ListIndexesResponse} returns this
- */
-proto.mongorpc.ListIndexesResponse.prototype.setIndexesList = function (value) {
+*/
+proto.mongorpc.ListIndexesResponse.prototype.setIndexesList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 1, value);
 };
+
 
 /**
  * @param {!proto.mongorpc.Index=} opt_value
  * @param {number=} opt_index
  * @return {!proto.mongorpc.Index}
  */
-proto.mongorpc.ListIndexesResponse.prototype.addIndexes = function (
-  opt_value,
-  opt_index
-) {
-  return jspb.Message.addToRepeatedWrapperField(
-    this,
-    1,
-    opt_value,
-    proto.mongorpc.Index,
-    opt_index
-  );
+proto.mongorpc.ListIndexesResponse.prototype.addIndexes = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 1, opt_value, proto.mongorpc.Index, opt_index);
 };
+
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.mongorpc.ListIndexesResponse} returns this
  */
-proto.mongorpc.ListIndexesResponse.prototype.clearIndexesList = function () {
+proto.mongorpc.ListIndexesResponse.prototype.clearIndexesList = function() {
   return this.setIndexesList([]);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.DeleteIndexRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.DeleteIndexRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.DeleteIndexRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.DeleteIndexRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.DeleteIndexRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.DeleteIndexRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    name: jspb.Message.getFieldWithDefault(msg, 3, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.DeleteIndexRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.DeleteIndexRequest.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        name: jspb.Message.getFieldWithDefault(msg, 3, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.DeleteIndexRequest}
  */
-proto.mongorpc.DeleteIndexRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.DeleteIndexRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.DeleteIndexRequest();
-  return proto.mongorpc.DeleteIndexRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.DeleteIndexRequest;
+  return proto.mongorpc.DeleteIndexRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -8925,45 +8869,44 @@ proto.mongorpc.DeleteIndexRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.DeleteIndexRequest}
  */
-proto.mongorpc.DeleteIndexRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.DeleteIndexRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      case 3:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setName(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.DeleteIndexRequest.prototype.serializeBinary = function () {
+proto.mongorpc.DeleteIndexRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.DeleteIndexRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -8972,133 +8915,140 @@ proto.mongorpc.DeleteIndexRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.DeleteIndexRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.DeleteIndexRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getName();
   if (f.length > 0) {
-    writer.writeString(3, f);
+    writer.writeString(
+      3,
+      f
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.DeleteIndexRequest.prototype.getDatabase = function () {
+proto.mongorpc.DeleteIndexRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.DeleteIndexRequest} returns this
  */
-proto.mongorpc.DeleteIndexRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.DeleteIndexRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.DeleteIndexRequest.prototype.getCollection = function () {
+proto.mongorpc.DeleteIndexRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.DeleteIndexRequest} returns this
  */
-proto.mongorpc.DeleteIndexRequest.prototype.setCollection = function (value) {
+proto.mongorpc.DeleteIndexRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
 
 /**
  * optional string name = 3;
  * @return {string}
  */
-proto.mongorpc.DeleteIndexRequest.prototype.getName = function () {
+proto.mongorpc.DeleteIndexRequest.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.DeleteIndexRequest} returns this
  */
-proto.mongorpc.DeleteIndexRequest.prototype.setName = function (value) {
+proto.mongorpc.DeleteIndexRequest.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.DeleteIndexResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.DeleteIndexResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.DeleteIndexResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.DeleteIndexResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.DeleteIndexResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.DeleteIndexResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    name: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.DeleteIndexResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.DeleteIndexResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        name: jspb.Message.getFieldWithDefault(msg, 1, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.DeleteIndexResponse}
  */
-proto.mongorpc.DeleteIndexResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.DeleteIndexResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.DeleteIndexResponse();
-  return proto.mongorpc.DeleteIndexResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.DeleteIndexResponse;
+  return proto.mongorpc.DeleteIndexResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -9107,37 +9057,36 @@ proto.mongorpc.DeleteIndexResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.DeleteIndexResponse}
  */
-proto.mongorpc.DeleteIndexResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.DeleteIndexResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setName(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.DeleteIndexResponse.prototype.serializeBinary = function () {
+proto.mongorpc.DeleteIndexResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.DeleteIndexResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -9146,86 +9095,92 @@ proto.mongorpc.DeleteIndexResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.DeleteIndexResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.DeleteIndexResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getName();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional string name = 1;
  * @return {string}
  */
-proto.mongorpc.DeleteIndexResponse.prototype.getName = function () {
+proto.mongorpc.DeleteIndexResponse.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.DeleteIndexResponse} returns this
  */
-proto.mongorpc.DeleteIndexResponse.prototype.setName = function (value) {
+proto.mongorpc.DeleteIndexResponse.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.ReindexRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.ReindexRequest.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.ReindexRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.ReindexRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.ReindexRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.ReindexRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    name: jspb.Message.getFieldWithDefault(msg, 3, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.ReindexRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.ReindexRequest.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        name: jspb.Message.getFieldWithDefault(msg, 3, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.ReindexRequest}
  */
-proto.mongorpc.ReindexRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.ReindexRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.ReindexRequest();
+  var msg = new proto.mongorpc.ReindexRequest;
   return proto.mongorpc.ReindexRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -9234,45 +9189,44 @@ proto.mongorpc.ReindexRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.ReindexRequest}
  */
-proto.mongorpc.ReindexRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.ReindexRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      case 3:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setName(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.ReindexRequest.prototype.serializeBinary = function () {
+proto.mongorpc.ReindexRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.ReindexRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -9281,127 +9235,140 @@ proto.mongorpc.ReindexRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.ReindexRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.ReindexRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getName();
   if (f.length > 0) {
-    writer.writeString(3, f);
+    writer.writeString(
+      3,
+      f
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.ReindexRequest.prototype.getDatabase = function () {
+proto.mongorpc.ReindexRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ReindexRequest} returns this
  */
-proto.mongorpc.ReindexRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.ReindexRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.ReindexRequest.prototype.getCollection = function () {
+proto.mongorpc.ReindexRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ReindexRequest} returns this
  */
-proto.mongorpc.ReindexRequest.prototype.setCollection = function (value) {
+proto.mongorpc.ReindexRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
 
 /**
  * optional string name = 3;
  * @return {string}
  */
-proto.mongorpc.ReindexRequest.prototype.getName = function () {
+proto.mongorpc.ReindexRequest.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ReindexRequest} returns this
  */
-proto.mongorpc.ReindexRequest.prototype.setName = function (value) {
+proto.mongorpc.ReindexRequest.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.ReindexResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.ReindexResponse.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.ReindexResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.ReindexResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.ReindexResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.ReindexResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    name: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.ReindexResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.ReindexResponse.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        name: jspb.Message.getFieldWithDefault(msg, 1, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.ReindexResponse}
  */
-proto.mongorpc.ReindexResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.ReindexResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.ReindexResponse();
-  return proto.mongorpc.ReindexResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.ReindexResponse;
+  return proto.mongorpc.ReindexResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -9410,37 +9377,36 @@ proto.mongorpc.ReindexResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.ReindexResponse}
  */
-proto.mongorpc.ReindexResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.ReindexResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setName(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.ReindexResponse.prototype.serializeBinary = function () {
+proto.mongorpc.ReindexResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.ReindexResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -9449,114 +9415,105 @@ proto.mongorpc.ReindexResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.ReindexResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.ReindexResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getName();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional string name = 1;
  * @return {string}
  */
-proto.mongorpc.ReindexResponse.prototype.getName = function () {
+proto.mongorpc.ReindexResponse.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.ReindexResponse} returns this
  */
-proto.mongorpc.ReindexResponse.prototype.setName = function (value) {
+proto.mongorpc.ReindexResponse.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
+
 
 /**
  * List of repeated fields within this message type.
  * @private {!Array<number>}
  * @const
  */
-proto.mongorpc.CountDocumentsRequest.repeatedFields_ = [5, 6];
+proto.mongorpc.CountDocumentsRequest.repeatedFields_ = [5,6];
+
+
 
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.CountDocumentsRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.CountDocumentsRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.CountDocumentsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.CountDocumentsRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.CountDocumentsRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.CountDocumentsRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    operation: jspb.Message.getFieldWithDefault(msg, 4, ""),
+    filterList: jspb.Message.toObjectList(msg.getFilterList(),
+    proto.mongorpc.Filter.toObject, includeInstance),
+    sortList: jspb.Message.toObjectList(msg.getSortList(),
+    proto.mongorpc.Sort.toObject, includeInstance),
+    limit: jspb.Message.getFieldWithDefault(msg, 7, 0),
+    skip: jspb.Message.getFieldWithDefault(msg, 8, 0)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.CountDocumentsRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.CountDocumentsRequest.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        operation: jspb.Message.getFieldWithDefault(msg, 4, ""),
-        filterList: jspb.Message.toObjectList(
-          msg.getFilterList(),
-          proto.mongorpc.Filter.toObject,
-          includeInstance
-        ),
-        sortList: jspb.Message.toObjectList(
-          msg.getSortList(),
-          proto.mongorpc.Sort.toObject,
-          includeInstance
-        ),
-        limit: jspb.Message.getFieldWithDefault(msg, 7, 0),
-        skip: jspb.Message.getFieldWithDefault(msg, 8, 0),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.CountDocumentsRequest}
  */
-proto.mongorpc.CountDocumentsRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.CountDocumentsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.CountDocumentsRequest();
-  return proto.mongorpc.CountDocumentsRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.CountDocumentsRequest;
+  return proto.mongorpc.CountDocumentsRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -9565,69 +9522,62 @@ proto.mongorpc.CountDocumentsRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.CountDocumentsRequest}
  */
-proto.mongorpc.CountDocumentsRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.CountDocumentsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      case 4:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setOperation(value);
-        break;
-      case 5:
-        var value = new proto.mongorpc.Filter();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Filter.deserializeBinaryFromReader
-        );
-        msg.addFilter(value);
-        break;
-      case 6:
-        var value = new proto.mongorpc.Sort();
-        reader.readMessage(
-          value,
-          proto.mongorpc.Sort.deserializeBinaryFromReader
-        );
-        msg.addSort(value);
-        break;
-      case 7:
-        var value = /** @type {number} */ (reader.readInt32());
-        msg.setLimit(value);
-        break;
-      case 8:
-        var value = /** @type {number} */ (reader.readInt32());
-        msg.setSkip(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    case 4:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setOperation(value);
+      break;
+    case 5:
+      var value = new proto.mongorpc.Filter;
+      reader.readMessage(value,proto.mongorpc.Filter.deserializeBinaryFromReader);
+      msg.addFilter(value);
+      break;
+    case 6:
+      var value = new proto.mongorpc.Sort;
+      reader.readMessage(value,proto.mongorpc.Sort.deserializeBinaryFromReader);
+      msg.addSort(value);
+      break;
+    case 7:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setLimit(value);
+      break;
+    case 8:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setSkip(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.CountDocumentsRequest.prototype.serializeBinary = function () {
+proto.mongorpc.CountDocumentsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.CountDocumentsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -9636,22 +9586,28 @@ proto.mongorpc.CountDocumentsRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.CountDocumentsRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.CountDocumentsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getOperation();
   if (f.length > 0) {
-    writer.writeString(4, f);
+    writer.writeString(
+      4,
+      f
+    );
   }
   f = message.getFilterList();
   if (f.length > 0) {
@@ -9671,246 +9627,241 @@ proto.mongorpc.CountDocumentsRequest.serializeBinaryToWriter = function (
   }
   f = message.getLimit();
   if (f !== 0) {
-    writer.writeInt32(7, f);
+    writer.writeInt32(
+      7,
+      f
+    );
   }
   f = message.getSkip();
   if (f !== 0) {
-    writer.writeInt32(8, f);
+    writer.writeInt32(
+      8,
+      f
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.CountDocumentsRequest.prototype.getDatabase = function () {
+proto.mongorpc.CountDocumentsRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CountDocumentsRequest} returns this
  */
-proto.mongorpc.CountDocumentsRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.CountDocumentsRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.CountDocumentsRequest.prototype.getCollection = function () {
+proto.mongorpc.CountDocumentsRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CountDocumentsRequest} returns this
  */
-proto.mongorpc.CountDocumentsRequest.prototype.setCollection = function (
-  value
-) {
+proto.mongorpc.CountDocumentsRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
 
 /**
  * optional string operation = 4;
  * @return {string}
  */
-proto.mongorpc.CountDocumentsRequest.prototype.getOperation = function () {
+proto.mongorpc.CountDocumentsRequest.prototype.getOperation = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 4, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CountDocumentsRequest} returns this
  */
-proto.mongorpc.CountDocumentsRequest.prototype.setOperation = function (value) {
+proto.mongorpc.CountDocumentsRequest.prototype.setOperation = function(value) {
   return jspb.Message.setProto3StringField(this, 4, value);
 };
+
 
 /**
  * repeated Filter filter = 5;
  * @return {!Array<!proto.mongorpc.Filter>}
  */
-proto.mongorpc.CountDocumentsRequest.prototype.getFilterList = function () {
+proto.mongorpc.CountDocumentsRequest.prototype.getFilterList = function() {
   return /** @type{!Array<!proto.mongorpc.Filter>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Filter, 5)
-  );
+    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Filter, 5));
 };
+
 
 /**
  * @param {!Array<!proto.mongorpc.Filter>} value
  * @return {!proto.mongorpc.CountDocumentsRequest} returns this
- */
-proto.mongorpc.CountDocumentsRequest.prototype.setFilterList = function (
-  value
-) {
+*/
+proto.mongorpc.CountDocumentsRequest.prototype.setFilterList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 5, value);
 };
+
 
 /**
  * @param {!proto.mongorpc.Filter=} opt_value
  * @param {number=} opt_index
  * @return {!proto.mongorpc.Filter}
  */
-proto.mongorpc.CountDocumentsRequest.prototype.addFilter = function (
-  opt_value,
-  opt_index
-) {
-  return jspb.Message.addToRepeatedWrapperField(
-    this,
-    5,
-    opt_value,
-    proto.mongorpc.Filter,
-    opt_index
-  );
+proto.mongorpc.CountDocumentsRequest.prototype.addFilter = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 5, opt_value, proto.mongorpc.Filter, opt_index);
 };
+
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.mongorpc.CountDocumentsRequest} returns this
  */
-proto.mongorpc.CountDocumentsRequest.prototype.clearFilterList = function () {
+proto.mongorpc.CountDocumentsRequest.prototype.clearFilterList = function() {
   return this.setFilterList([]);
 };
+
 
 /**
  * repeated Sort sort = 6;
  * @return {!Array<!proto.mongorpc.Sort>}
  */
-proto.mongorpc.CountDocumentsRequest.prototype.getSortList = function () {
+proto.mongorpc.CountDocumentsRequest.prototype.getSortList = function() {
   return /** @type{!Array<!proto.mongorpc.Sort>} */ (
-    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Sort, 6)
-  );
+    jspb.Message.getRepeatedWrapperField(this, proto.mongorpc.Sort, 6));
 };
+
 
 /**
  * @param {!Array<!proto.mongorpc.Sort>} value
  * @return {!proto.mongorpc.CountDocumentsRequest} returns this
- */
-proto.mongorpc.CountDocumentsRequest.prototype.setSortList = function (value) {
+*/
+proto.mongorpc.CountDocumentsRequest.prototype.setSortList = function(value) {
   return jspb.Message.setRepeatedWrapperField(this, 6, value);
 };
+
 
 /**
  * @param {!proto.mongorpc.Sort=} opt_value
  * @param {number=} opt_index
  * @return {!proto.mongorpc.Sort}
  */
-proto.mongorpc.CountDocumentsRequest.prototype.addSort = function (
-  opt_value,
-  opt_index
-) {
-  return jspb.Message.addToRepeatedWrapperField(
-    this,
-    6,
-    opt_value,
-    proto.mongorpc.Sort,
-    opt_index
-  );
+proto.mongorpc.CountDocumentsRequest.prototype.addSort = function(opt_value, opt_index) {
+  return jspb.Message.addToRepeatedWrapperField(this, 6, opt_value, proto.mongorpc.Sort, opt_index);
 };
+
 
 /**
  * Clears the list making it empty but non-null.
  * @return {!proto.mongorpc.CountDocumentsRequest} returns this
  */
-proto.mongorpc.CountDocumentsRequest.prototype.clearSortList = function () {
+proto.mongorpc.CountDocumentsRequest.prototype.clearSortList = function() {
   return this.setSortList([]);
 };
+
 
 /**
  * optional int32 limit = 7;
  * @return {number}
  */
-proto.mongorpc.CountDocumentsRequest.prototype.getLimit = function () {
+proto.mongorpc.CountDocumentsRequest.prototype.getLimit = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.CountDocumentsRequest} returns this
  */
-proto.mongorpc.CountDocumentsRequest.prototype.setLimit = function (value) {
+proto.mongorpc.CountDocumentsRequest.prototype.setLimit = function(value) {
   return jspb.Message.setProto3IntField(this, 7, value);
 };
+
 
 /**
  * optional int32 skip = 8;
  * @return {number}
  */
-proto.mongorpc.CountDocumentsRequest.prototype.getSkip = function () {
+proto.mongorpc.CountDocumentsRequest.prototype.getSkip = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 8, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.CountDocumentsRequest} returns this
  */
-proto.mongorpc.CountDocumentsRequest.prototype.setSkip = function (value) {
+proto.mongorpc.CountDocumentsRequest.prototype.setSkip = function(value) {
   return jspb.Message.setProto3IntField(this, 8, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.CountDocumentsResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.CountDocumentsResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.CountDocumentsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.CountDocumentsResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.CountDocumentsResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.CountDocumentsResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    count: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.CountDocumentsResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.CountDocumentsResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        count: jspb.Message.getFieldWithDefault(msg, 1, 0),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.CountDocumentsResponse}
  */
-proto.mongorpc.CountDocumentsResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.CountDocumentsResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.CountDocumentsResponse();
-  return proto.mongorpc.CountDocumentsResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.CountDocumentsResponse;
+  return proto.mongorpc.CountDocumentsResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -9919,37 +9870,36 @@ proto.mongorpc.CountDocumentsResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.CountDocumentsResponse}
  */
-proto.mongorpc.CountDocumentsResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.CountDocumentsResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setCount(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setCount(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.CountDocumentsResponse.prototype.serializeBinary = function () {
+proto.mongorpc.CountDocumentsResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.CountDocumentsResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -9958,80 +9908,90 @@ proto.mongorpc.CountDocumentsResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.CountDocumentsResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.CountDocumentsResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCount();
   if (f !== 0) {
-    writer.writeInt64(1, f);
+    writer.writeInt64(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional int64 count = 1;
  * @return {number}
  */
-proto.mongorpc.CountDocumentsResponse.prototype.getCount = function () {
+proto.mongorpc.CountDocumentsResponse.prototype.getCount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.CountDocumentsResponse} returns this
  */
-proto.mongorpc.CountDocumentsResponse.prototype.setCount = function (value) {
+proto.mongorpc.CountDocumentsResponse.prototype.setCount = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.Empty.prototype.toObject = function (opt_includeInstance) {
-    return proto.mongorpc.Empty.toObject(opt_includeInstance, this);
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.Empty.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.Empty.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.Empty} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.Empty.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.Empty} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.Empty.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {};
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.Empty}
  */
-proto.mongorpc.Empty.deserializeBinary = function (bytes) {
+proto.mongorpc.Empty.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.Empty();
+  var msg = new proto.mongorpc.Empty;
   return proto.mongorpc.Empty.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -10040,30 +10000,32 @@ proto.mongorpc.Empty.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.Empty}
  */
-proto.mongorpc.Empty.deserializeBinaryFromReader = function (msg, reader) {
+proto.mongorpc.Empty.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      default:
-        reader.skipField();
-        break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.Empty.prototype.serializeBinary = function () {
+proto.mongorpc.Empty.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.Empty.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -10072,71 +10034,66 @@ proto.mongorpc.Empty.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.Empty.serializeBinaryToWriter = function (message, writer) {
+proto.mongorpc.Empty.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.CollectionStatsRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.CollectionStatsRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.CollectionStatsRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.CollectionStatsRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.CollectionStatsRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.CollectionStatsRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.CollectionStatsRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.CollectionStatsRequest.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.CollectionStatsRequest}
  */
-proto.mongorpc.CollectionStatsRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.CollectionStatsRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.CollectionStatsRequest();
-  return proto.mongorpc.CollectionStatsRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.CollectionStatsRequest;
+  return proto.mongorpc.CollectionStatsRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -10145,41 +10102,40 @@ proto.mongorpc.CollectionStatsRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.CollectionStatsRequest}
  */
-proto.mongorpc.CollectionStatsRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.CollectionStatsRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.CollectionStatsRequest.prototype.serializeBinary = function () {
+proto.mongorpc.CollectionStatsRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.CollectionStatsRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -10188,123 +10144,123 @@ proto.mongorpc.CollectionStatsRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.CollectionStatsRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.CollectionStatsRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.CollectionStatsRequest.prototype.getDatabase = function () {
+proto.mongorpc.CollectionStatsRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CollectionStatsRequest} returns this
  */
-proto.mongorpc.CollectionStatsRequest.prototype.setDatabase = function (value) {
+proto.mongorpc.CollectionStatsRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.CollectionStatsRequest.prototype.getCollection = function () {
+proto.mongorpc.CollectionStatsRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CollectionStatsRequest} returns this
  */
-proto.mongorpc.CollectionStatsRequest.prototype.setCollection = function (
-  value
-) {
+proto.mongorpc.CollectionStatsRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.CollectionStatsResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.CollectionStatsResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.CollectionStatsResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.CollectionStatsResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.CollectionStatsResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.CollectionStatsResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    count: jspb.Message.getFieldWithDefault(msg, 1, 0),
+    size: jspb.Message.getFieldWithDefault(msg, 2, 0),
+    avgObjSize: jspb.Message.getFieldWithDefault(msg, 3, 0),
+    storageSize: jspb.Message.getFieldWithDefault(msg, 4, 0),
+    totalIndexSize: jspb.Message.getFieldWithDefault(msg, 5, 0),
+    indexSize: jspb.Message.getFieldWithDefault(msg, 6, 0),
+    numIndexes: jspb.Message.getFieldWithDefault(msg, 7, 0),
+    nindexes: jspb.Message.getFieldWithDefault(msg, 8, 0),
+    freeStorageSize: jspb.Message.getFieldWithDefault(msg, 9, 0)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.CollectionStatsResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.CollectionStatsResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        count: jspb.Message.getFieldWithDefault(msg, 1, 0),
-        size: jspb.Message.getFieldWithDefault(msg, 2, 0),
-        avgObjSize: jspb.Message.getFieldWithDefault(msg, 3, 0),
-        storageSize: jspb.Message.getFieldWithDefault(msg, 4, 0),
-        totalIndexSize: jspb.Message.getFieldWithDefault(msg, 5, 0),
-        indexSize: jspb.Message.getFieldWithDefault(msg, 6, 0),
-        numIndexes: jspb.Message.getFieldWithDefault(msg, 7, 0),
-        nindexes: jspb.Message.getFieldWithDefault(msg, 8, 0),
-        freeStorageSize: jspb.Message.getFieldWithDefault(msg, 9, 0),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.CollectionStatsResponse}
  */
-proto.mongorpc.CollectionStatsResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.CollectionStatsResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.CollectionStatsResponse();
-  return proto.mongorpc.CollectionStatsResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.CollectionStatsResponse;
+  return proto.mongorpc.CollectionStatsResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -10313,69 +10269,68 @@ proto.mongorpc.CollectionStatsResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.CollectionStatsResponse}
  */
-proto.mongorpc.CollectionStatsResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.CollectionStatsResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setCount(value);
-        break;
-      case 2:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setSize(value);
-        break;
-      case 3:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setAvgObjSize(value);
-        break;
-      case 4:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setStorageSize(value);
-        break;
-      case 5:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setTotalIndexSize(value);
-        break;
-      case 6:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setIndexSize(value);
-        break;
-      case 7:
-        var value = /** @type {number} */ (reader.readInt32());
-        msg.setNumIndexes(value);
-        break;
-      case 8:
-        var value = /** @type {number} */ (reader.readInt32());
-        msg.setNindexes(value);
-        break;
-      case 9:
-        var value = /** @type {number} */ (reader.readInt64());
-        msg.setFreeStorageSize(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setCount(value);
+      break;
+    case 2:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setSize(value);
+      break;
+    case 3:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setAvgObjSize(value);
+      break;
+    case 4:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setStorageSize(value);
+      break;
+    case 5:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setTotalIndexSize(value);
+      break;
+    case 6:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setIndexSize(value);
+      break;
+    case 7:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setNumIndexes(value);
+      break;
+    case 8:
+      var value = /** @type {number} */ (reader.readInt32());
+      msg.setNindexes(value);
+      break;
+    case 9:
+      var value = /** @type {number} */ (reader.readInt64());
+      msg.setFreeStorageSize(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.CollectionStatsResponse.prototype.serializeBinary = function () {
+proto.mongorpc.CollectionStatsResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.CollectionStatsResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -10384,271 +10339,292 @@ proto.mongorpc.CollectionStatsResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.CollectionStatsResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.CollectionStatsResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getCount();
   if (f !== 0) {
-    writer.writeInt64(1, f);
+    writer.writeInt64(
+      1,
+      f
+    );
   }
   f = message.getSize();
   if (f !== 0) {
-    writer.writeInt64(2, f);
+    writer.writeInt64(
+      2,
+      f
+    );
   }
   f = message.getAvgObjSize();
   if (f !== 0) {
-    writer.writeInt64(3, f);
+    writer.writeInt64(
+      3,
+      f
+    );
   }
   f = message.getStorageSize();
   if (f !== 0) {
-    writer.writeInt64(4, f);
+    writer.writeInt64(
+      4,
+      f
+    );
   }
   f = message.getTotalIndexSize();
   if (f !== 0) {
-    writer.writeInt64(5, f);
+    writer.writeInt64(
+      5,
+      f
+    );
   }
   f = message.getIndexSize();
   if (f !== 0) {
-    writer.writeInt64(6, f);
+    writer.writeInt64(
+      6,
+      f
+    );
   }
   f = message.getNumIndexes();
   if (f !== 0) {
-    writer.writeInt32(7, f);
+    writer.writeInt32(
+      7,
+      f
+    );
   }
   f = message.getNindexes();
   if (f !== 0) {
-    writer.writeInt32(8, f);
+    writer.writeInt32(
+      8,
+      f
+    );
   }
   f = message.getFreeStorageSize();
   if (f !== 0) {
-    writer.writeInt64(9, f);
+    writer.writeInt64(
+      9,
+      f
+    );
   }
 };
+
 
 /**
  * optional int64 count = 1;
  * @return {number}
  */
-proto.mongorpc.CollectionStatsResponse.prototype.getCount = function () {
+proto.mongorpc.CollectionStatsResponse.prototype.getCount = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.CollectionStatsResponse} returns this
  */
-proto.mongorpc.CollectionStatsResponse.prototype.setCount = function (value) {
+proto.mongorpc.CollectionStatsResponse.prototype.setCount = function(value) {
   return jspb.Message.setProto3IntField(this, 1, value);
 };
+
 
 /**
  * optional int64 size = 2;
  * @return {number}
  */
-proto.mongorpc.CollectionStatsResponse.prototype.getSize = function () {
+proto.mongorpc.CollectionStatsResponse.prototype.getSize = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 2, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.CollectionStatsResponse} returns this
  */
-proto.mongorpc.CollectionStatsResponse.prototype.setSize = function (value) {
+proto.mongorpc.CollectionStatsResponse.prototype.setSize = function(value) {
   return jspb.Message.setProto3IntField(this, 2, value);
 };
+
 
 /**
  * optional int64 avg_obj_size = 3;
  * @return {number}
  */
-proto.mongorpc.CollectionStatsResponse.prototype.getAvgObjSize = function () {
+proto.mongorpc.CollectionStatsResponse.prototype.getAvgObjSize = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 3, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.CollectionStatsResponse} returns this
  */
-proto.mongorpc.CollectionStatsResponse.prototype.setAvgObjSize = function (
-  value
-) {
+proto.mongorpc.CollectionStatsResponse.prototype.setAvgObjSize = function(value) {
   return jspb.Message.setProto3IntField(this, 3, value);
 };
+
 
 /**
  * optional int64 storage_size = 4;
  * @return {number}
  */
-proto.mongorpc.CollectionStatsResponse.prototype.getStorageSize = function () {
+proto.mongorpc.CollectionStatsResponse.prototype.getStorageSize = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 4, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.CollectionStatsResponse} returns this
  */
-proto.mongorpc.CollectionStatsResponse.prototype.setStorageSize = function (
-  value
-) {
+proto.mongorpc.CollectionStatsResponse.prototype.setStorageSize = function(value) {
   return jspb.Message.setProto3IntField(this, 4, value);
 };
+
 
 /**
  * optional int64 total_index_size = 5;
  * @return {number}
  */
-proto.mongorpc.CollectionStatsResponse.prototype.getTotalIndexSize =
-  function () {
-    return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
-  };
+proto.mongorpc.CollectionStatsResponse.prototype.getTotalIndexSize = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 5, 0));
+};
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.CollectionStatsResponse} returns this
  */
-proto.mongorpc.CollectionStatsResponse.prototype.setTotalIndexSize = function (
-  value
-) {
+proto.mongorpc.CollectionStatsResponse.prototype.setTotalIndexSize = function(value) {
   return jspb.Message.setProto3IntField(this, 5, value);
 };
+
 
 /**
  * optional int64 index_size = 6;
  * @return {number}
  */
-proto.mongorpc.CollectionStatsResponse.prototype.getIndexSize = function () {
+proto.mongorpc.CollectionStatsResponse.prototype.getIndexSize = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 6, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.CollectionStatsResponse} returns this
  */
-proto.mongorpc.CollectionStatsResponse.prototype.setIndexSize = function (
-  value
-) {
+proto.mongorpc.CollectionStatsResponse.prototype.setIndexSize = function(value) {
   return jspb.Message.setProto3IntField(this, 6, value);
 };
+
 
 /**
  * optional int32 num_indexes = 7;
  * @return {number}
  */
-proto.mongorpc.CollectionStatsResponse.prototype.getNumIndexes = function () {
+proto.mongorpc.CollectionStatsResponse.prototype.getNumIndexes = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 7, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.CollectionStatsResponse} returns this
  */
-proto.mongorpc.CollectionStatsResponse.prototype.setNumIndexes = function (
-  value
-) {
+proto.mongorpc.CollectionStatsResponse.prototype.setNumIndexes = function(value) {
   return jspb.Message.setProto3IntField(this, 7, value);
 };
+
 
 /**
  * optional int32 nindexes = 8;
  * @return {number}
  */
-proto.mongorpc.CollectionStatsResponse.prototype.getNindexes = function () {
+proto.mongorpc.CollectionStatsResponse.prototype.getNindexes = function() {
   return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 8, 0));
 };
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.CollectionStatsResponse} returns this
  */
-proto.mongorpc.CollectionStatsResponse.prototype.setNindexes = function (
-  value
-) {
+proto.mongorpc.CollectionStatsResponse.prototype.setNindexes = function(value) {
   return jspb.Message.setProto3IntField(this, 8, value);
 };
+
 
 /**
  * optional int64 free_storage_size = 9;
  * @return {number}
  */
-proto.mongorpc.CollectionStatsResponse.prototype.getFreeStorageSize =
-  function () {
-    return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 9, 0));
-  };
+proto.mongorpc.CollectionStatsResponse.prototype.getFreeStorageSize = function() {
+  return /** @type {number} */ (jspb.Message.getFieldWithDefault(this, 9, 0));
+};
+
 
 /**
  * @param {number} value
  * @return {!proto.mongorpc.CollectionStatsResponse} returns this
  */
-proto.mongorpc.CollectionStatsResponse.prototype.setFreeStorageSize = function (
-  value
-) {
+proto.mongorpc.CollectionStatsResponse.prototype.setFreeStorageSize = function(value) {
   return jspb.Message.setProto3IntField(this, 9, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.CreateCollectionRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.CreateCollectionRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.CreateCollectionRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.CreateCollectionRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.CreateCollectionRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.CreateCollectionRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    name: jspb.Message.getFieldWithDefault(msg, 3, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.CreateCollectionRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.CreateCollectionRequest.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        name: jspb.Message.getFieldWithDefault(msg, 3, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.CreateCollectionRequest}
  */
-proto.mongorpc.CreateCollectionRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.CreateCollectionRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.CreateCollectionRequest();
-  return proto.mongorpc.CreateCollectionRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.CreateCollectionRequest;
+  return proto.mongorpc.CreateCollectionRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -10657,45 +10633,44 @@ proto.mongorpc.CreateCollectionRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.CreateCollectionRequest}
  */
-proto.mongorpc.CreateCollectionRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.CreateCollectionRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      case 3:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setName(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.CreateCollectionRequest.prototype.serializeBinary = function () {
+proto.mongorpc.CreateCollectionRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.CreateCollectionRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -10704,137 +10679,140 @@ proto.mongorpc.CreateCollectionRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.CreateCollectionRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.CreateCollectionRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getName();
   if (f.length > 0) {
-    writer.writeString(3, f);
+    writer.writeString(
+      3,
+      f
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.CreateCollectionRequest.prototype.getDatabase = function () {
+proto.mongorpc.CreateCollectionRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CreateCollectionRequest} returns this
  */
-proto.mongorpc.CreateCollectionRequest.prototype.setDatabase = function (
-  value
-) {
+proto.mongorpc.CreateCollectionRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.CreateCollectionRequest.prototype.getCollection = function () {
+proto.mongorpc.CreateCollectionRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CreateCollectionRequest} returns this
  */
-proto.mongorpc.CreateCollectionRequest.prototype.setCollection = function (
-  value
-) {
+proto.mongorpc.CreateCollectionRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
 
 /**
  * optional string name = 3;
  * @return {string}
  */
-proto.mongorpc.CreateCollectionRequest.prototype.getName = function () {
+proto.mongorpc.CreateCollectionRequest.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CreateCollectionRequest} returns this
  */
-proto.mongorpc.CreateCollectionRequest.prototype.setName = function (value) {
+proto.mongorpc.CreateCollectionRequest.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.CreateCollectionResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.CreateCollectionResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.CreateCollectionResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.CreateCollectionResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.CreateCollectionResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.CreateCollectionResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    name: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.CreateCollectionResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.CreateCollectionResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        name: jspb.Message.getFieldWithDefault(msg, 1, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.CreateCollectionResponse}
  */
-proto.mongorpc.CreateCollectionResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.CreateCollectionResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.CreateCollectionResponse();
-  return proto.mongorpc.CreateCollectionResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.CreateCollectionResponse;
+  return proto.mongorpc.CreateCollectionResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -10843,41 +10821,36 @@ proto.mongorpc.CreateCollectionResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.CreateCollectionResponse}
  */
-proto.mongorpc.CreateCollectionResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.CreateCollectionResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setName(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.CreateCollectionResponse.prototype.serializeBinary =
-  function () {
-    var writer = new jspb.BinaryWriter();
-    proto.mongorpc.CreateCollectionResponse.serializeBinaryToWriter(
-      this,
-      writer
-    );
-    return writer.getResultBuffer();
-  };
+proto.mongorpc.CreateCollectionResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mongorpc.CreateCollectionResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -10886,95 +10859,92 @@ proto.mongorpc.CreateCollectionResponse.prototype.serializeBinary =
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.CreateCollectionResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.CreateCollectionResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getName();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional string name = 1;
  * @return {string}
  */
-proto.mongorpc.CreateCollectionResponse.prototype.getName = function () {
+proto.mongorpc.CreateCollectionResponse.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.CreateCollectionResponse} returns this
  */
-proto.mongorpc.CreateCollectionResponse.prototype.setName = function (value) {
+proto.mongorpc.CreateCollectionResponse.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.RenameCollectionRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.RenameCollectionRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.RenameCollectionRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.RenameCollectionRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.RenameCollectionRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.RenameCollectionRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
+    name: jspb.Message.getFieldWithDefault(msg, 3, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.RenameCollectionRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.RenameCollectionRequest.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-        name: jspb.Message.getFieldWithDefault(msg, 3, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.RenameCollectionRequest}
  */
-proto.mongorpc.RenameCollectionRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.RenameCollectionRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.RenameCollectionRequest();
-  return proto.mongorpc.RenameCollectionRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.RenameCollectionRequest;
+  return proto.mongorpc.RenameCollectionRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -10983,45 +10953,44 @@ proto.mongorpc.RenameCollectionRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.RenameCollectionRequest}
  */
-proto.mongorpc.RenameCollectionRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.RenameCollectionRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      case 3:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setName(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    case 3:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.RenameCollectionRequest.prototype.serializeBinary = function () {
+proto.mongorpc.RenameCollectionRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.RenameCollectionRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -11030,137 +10999,140 @@ proto.mongorpc.RenameCollectionRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.RenameCollectionRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.RenameCollectionRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
   f = message.getName();
   if (f.length > 0) {
-    writer.writeString(3, f);
+    writer.writeString(
+      3,
+      f
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.RenameCollectionRequest.prototype.getDatabase = function () {
+proto.mongorpc.RenameCollectionRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.RenameCollectionRequest} returns this
  */
-proto.mongorpc.RenameCollectionRequest.prototype.setDatabase = function (
-  value
-) {
+proto.mongorpc.RenameCollectionRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.RenameCollectionRequest.prototype.getCollection = function () {
+proto.mongorpc.RenameCollectionRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.RenameCollectionRequest} returns this
  */
-proto.mongorpc.RenameCollectionRequest.prototype.setCollection = function (
-  value
-) {
+proto.mongorpc.RenameCollectionRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
+
 
 /**
  * optional string name = 3;
  * @return {string}
  */
-proto.mongorpc.RenameCollectionRequest.prototype.getName = function () {
+proto.mongorpc.RenameCollectionRequest.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.RenameCollectionRequest} returns this
  */
-proto.mongorpc.RenameCollectionRequest.prototype.setName = function (value) {
+proto.mongorpc.RenameCollectionRequest.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.RenameCollectionResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.RenameCollectionResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.RenameCollectionResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.RenameCollectionResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.RenameCollectionResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.RenameCollectionResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    name: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.RenameCollectionResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.RenameCollectionResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        name: jspb.Message.getFieldWithDefault(msg, 1, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.RenameCollectionResponse}
  */
-proto.mongorpc.RenameCollectionResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.RenameCollectionResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.RenameCollectionResponse();
-  return proto.mongorpc.RenameCollectionResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.RenameCollectionResponse;
+  return proto.mongorpc.RenameCollectionResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -11169,41 +11141,36 @@ proto.mongorpc.RenameCollectionResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.RenameCollectionResponse}
  */
-proto.mongorpc.RenameCollectionResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.RenameCollectionResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setName(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setName(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.RenameCollectionResponse.prototype.serializeBinary =
-  function () {
-    var writer = new jspb.BinaryWriter();
-    proto.mongorpc.RenameCollectionResponse.serializeBinaryToWriter(
-      this,
-      writer
-    );
-    return writer.getResultBuffer();
-  };
+proto.mongorpc.RenameCollectionResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mongorpc.RenameCollectionResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -11212,94 +11179,91 @@ proto.mongorpc.RenameCollectionResponse.prototype.serializeBinary =
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.RenameCollectionResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.RenameCollectionResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getName();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional string name = 1;
  * @return {string}
  */
-proto.mongorpc.RenameCollectionResponse.prototype.getName = function () {
+proto.mongorpc.RenameCollectionResponse.prototype.getName = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.RenameCollectionResponse} returns this
  */
-proto.mongorpc.RenameCollectionResponse.prototype.setName = function (value) {
+proto.mongorpc.RenameCollectionResponse.prototype.setName = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.DeleteCollectionRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.DeleteCollectionRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.DeleteCollectionRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.DeleteCollectionRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.DeleteCollectionRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.DeleteCollectionRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    database: jspb.Message.getFieldWithDefault(msg, 1, ""),
+    collection: jspb.Message.getFieldWithDefault(msg, 2, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.DeleteCollectionRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.DeleteCollectionRequest.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        database: jspb.Message.getFieldWithDefault(msg, 1, ""),
-        collection: jspb.Message.getFieldWithDefault(msg, 2, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.DeleteCollectionRequest}
  */
-proto.mongorpc.DeleteCollectionRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.DeleteCollectionRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.DeleteCollectionRequest();
-  return proto.mongorpc.DeleteCollectionRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.DeleteCollectionRequest;
+  return proto.mongorpc.DeleteCollectionRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -11308,41 +11272,40 @@ proto.mongorpc.DeleteCollectionRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.DeleteCollectionRequest}
  */
-proto.mongorpc.DeleteCollectionRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.DeleteCollectionRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setDatabase(value);
-        break;
-      case 2:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setCollection(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setDatabase(value);
+      break;
+    case 2:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setCollection(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.DeleteCollectionRequest.prototype.serializeBinary = function () {
+proto.mongorpc.DeleteCollectionRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.DeleteCollectionRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -11351,115 +11314,115 @@ proto.mongorpc.DeleteCollectionRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.DeleteCollectionRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.DeleteCollectionRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getDatabase();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
   f = message.getCollection();
   if (f.length > 0) {
-    writer.writeString(2, f);
+    writer.writeString(
+      2,
+      f
+    );
   }
 };
+
 
 /**
  * optional string database = 1;
  * @return {string}
  */
-proto.mongorpc.DeleteCollectionRequest.prototype.getDatabase = function () {
+proto.mongorpc.DeleteCollectionRequest.prototype.getDatabase = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.DeleteCollectionRequest} returns this
  */
-proto.mongorpc.DeleteCollectionRequest.prototype.setDatabase = function (
-  value
-) {
+proto.mongorpc.DeleteCollectionRequest.prototype.setDatabase = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
+
 
 /**
  * optional string collection = 2;
  * @return {string}
  */
-proto.mongorpc.DeleteCollectionRequest.prototype.getCollection = function () {
+proto.mongorpc.DeleteCollectionRequest.prototype.getCollection = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 2, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.DeleteCollectionRequest} returns this
  */
-proto.mongorpc.DeleteCollectionRequest.prototype.setCollection = function (
-  value
-) {
+proto.mongorpc.DeleteCollectionRequest.prototype.setCollection = function(value) {
   return jspb.Message.setProto3StringField(this, 2, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.DeleteCollectionResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.DeleteCollectionResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.DeleteCollectionResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.DeleteCollectionResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.DeleteCollectionResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.DeleteCollectionResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.DeleteCollectionResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.DeleteCollectionResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {};
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.DeleteCollectionResponse}
  */
-proto.mongorpc.DeleteCollectionResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.DeleteCollectionResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.DeleteCollectionResponse();
-  return proto.mongorpc.DeleteCollectionResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.DeleteCollectionResponse;
+  return proto.mongorpc.DeleteCollectionResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -11468,37 +11431,32 @@ proto.mongorpc.DeleteCollectionResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.DeleteCollectionResponse}
  */
-proto.mongorpc.DeleteCollectionResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.DeleteCollectionResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      default:
-        reader.skipField();
-        break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.DeleteCollectionResponse.prototype.serializeBinary =
-  function () {
-    var writer = new jspb.BinaryWriter();
-    proto.mongorpc.DeleteCollectionResponse.serializeBinaryToWriter(
-      this,
-      writer
-    );
-    return writer.getResultBuffer();
-  };
+proto.mongorpc.DeleteCollectionResponse.prototype.serializeBinary = function() {
+  var writer = new jspb.BinaryWriter();
+  proto.mongorpc.DeleteCollectionResponse.serializeBinaryToWriter(this, writer);
+  return writer.getResultBuffer();
+};
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -11507,70 +11465,65 @@ proto.mongorpc.DeleteCollectionResponse.prototype.serializeBinary =
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.DeleteCollectionResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.DeleteCollectionResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.HealthCheckRequest.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.HealthCheckRequest.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.HealthCheckRequest.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.HealthCheckRequest.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.HealthCheckRequest} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.HealthCheckRequest.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    service: jspb.Message.getFieldWithDefault(msg, 1, "")
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.HealthCheckRequest} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.HealthCheckRequest.toObject = function (includeInstance, msg) {
-    var f,
-      obj = {
-        service: jspb.Message.getFieldWithDefault(msg, 1, ""),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.HealthCheckRequest}
  */
-proto.mongorpc.HealthCheckRequest.deserializeBinary = function (bytes) {
+proto.mongorpc.HealthCheckRequest.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.HealthCheckRequest();
-  return proto.mongorpc.HealthCheckRequest.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.HealthCheckRequest;
+  return proto.mongorpc.HealthCheckRequest.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -11579,37 +11532,36 @@ proto.mongorpc.HealthCheckRequest.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.HealthCheckRequest}
  */
-proto.mongorpc.HealthCheckRequest.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.HealthCheckRequest.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value = /** @type {string} */ (reader.readString());
-        msg.setService(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {string} */ (reader.readString());
+      msg.setService(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.HealthCheckRequest.prototype.serializeBinary = function () {
+proto.mongorpc.HealthCheckRequest.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.HealthCheckRequest.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -11618,93 +11570,90 @@ proto.mongorpc.HealthCheckRequest.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.HealthCheckRequest.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.HealthCheckRequest.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getService();
   if (f.length > 0) {
-    writer.writeString(1, f);
+    writer.writeString(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * optional string service = 1;
  * @return {string}
  */
-proto.mongorpc.HealthCheckRequest.prototype.getService = function () {
+proto.mongorpc.HealthCheckRequest.prototype.getService = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 1, ""));
 };
+
 
 /**
  * @param {string} value
  * @return {!proto.mongorpc.HealthCheckRequest} returns this
  */
-proto.mongorpc.HealthCheckRequest.prototype.setService = function (value) {
+proto.mongorpc.HealthCheckRequest.prototype.setService = function(value) {
   return jspb.Message.setProto3StringField(this, 1, value);
 };
 
+
+
+
+
 if (jspb.Message.GENERATE_TO_OBJECT) {
-  /**
-   * Creates an object representation of this proto.
-   * Field names that are reserved in JavaScript and will be renamed to pb_name.
-   * Optional fields that are not set will be set to undefined.
-   * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
-   * For the list of reserved names please see:
-   *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
-   * @param {boolean=} opt_includeInstance Deprecated. whether to include the
-   *     JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @return {!Object}
-   */
-  proto.mongorpc.HealthCheckResponse.prototype.toObject = function (
-    opt_includeInstance
-  ) {
-    return proto.mongorpc.HealthCheckResponse.toObject(
-      opt_includeInstance,
-      this
-    );
+/**
+ * Creates an object representation of this proto.
+ * Field names that are reserved in JavaScript and will be renamed to pb_name.
+ * Optional fields that are not set will be set to undefined.
+ * To access a reserved field use, foo.pb_<name>, eg, foo.pb_default.
+ * For the list of reserved names please see:
+ *     net/proto2/compiler/js/internal/generator.cc#kKeyword.
+ * @param {boolean=} opt_includeInstance Deprecated. whether to include the
+ *     JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @return {!Object}
+ */
+proto.mongorpc.HealthCheckResponse.prototype.toObject = function(opt_includeInstance) {
+  return proto.mongorpc.HealthCheckResponse.toObject(opt_includeInstance, this);
+};
+
+
+/**
+ * Static version of the {@see toObject} method.
+ * @param {boolean|undefined} includeInstance Deprecated. Whether to include
+ *     the JSPB instance for transitional soy proto support:
+ *     http://goto/soy-param-migration
+ * @param {!proto.mongorpc.HealthCheckResponse} msg The msg instance to transform.
+ * @return {!Object}
+ * @suppress {unusedLocalVariables} f is only used for nested messages
+ */
+proto.mongorpc.HealthCheckResponse.toObject = function(includeInstance, msg) {
+  var f, obj = {
+    status: jspb.Message.getFieldWithDefault(msg, 1, 0)
   };
 
-  /**
-   * Static version of the {@see toObject} method.
-   * @param {boolean|undefined} includeInstance Deprecated. Whether to include
-   *     the JSPB instance for transitional soy proto support:
-   *     http://goto/soy-param-migration
-   * @param {!proto.mongorpc.HealthCheckResponse} msg The msg instance to transform.
-   * @return {!Object}
-   * @suppress {unusedLocalVariables} f is only used for nested messages
-   */
-  proto.mongorpc.HealthCheckResponse.toObject = function (
-    includeInstance,
-    msg
-  ) {
-    var f,
-      obj = {
-        status: jspb.Message.getFieldWithDefault(msg, 1, 0),
-      };
-
-    if (includeInstance) {
-      obj.$jspbMessageInstance = msg;
-    }
-    return obj;
-  };
+  if (includeInstance) {
+    obj.$jspbMessageInstance = msg;
+  }
+  return obj;
+};
 }
+
 
 /**
  * Deserializes binary data (in protobuf wire format).
  * @param {jspb.ByteSource} bytes The bytes to deserialize.
  * @return {!proto.mongorpc.HealthCheckResponse}
  */
-proto.mongorpc.HealthCheckResponse.deserializeBinary = function (bytes) {
+proto.mongorpc.HealthCheckResponse.deserializeBinary = function(bytes) {
   var reader = new jspb.BinaryReader(bytes);
-  var msg = new proto.mongorpc.HealthCheckResponse();
-  return proto.mongorpc.HealthCheckResponse.deserializeBinaryFromReader(
-    msg,
-    reader
-  );
+  var msg = new proto.mongorpc.HealthCheckResponse;
+  return proto.mongorpc.HealthCheckResponse.deserializeBinaryFromReader(msg, reader);
 };
+
 
 /**
  * Deserializes binary data (in protobuf wire format) from the
@@ -11713,40 +11662,36 @@ proto.mongorpc.HealthCheckResponse.deserializeBinary = function (bytes) {
  * @param {!jspb.BinaryReader} reader The BinaryReader to use.
  * @return {!proto.mongorpc.HealthCheckResponse}
  */
-proto.mongorpc.HealthCheckResponse.deserializeBinaryFromReader = function (
-  msg,
-  reader
-) {
+proto.mongorpc.HealthCheckResponse.deserializeBinaryFromReader = function(msg, reader) {
   while (reader.nextField()) {
     if (reader.isEndGroup()) {
       break;
     }
     var field = reader.getFieldNumber();
     switch (field) {
-      case 1:
-        var value =
-          /** @type {!proto.mongorpc.HealthCheckResponse.ServingStatus} */ (
-            reader.readEnum()
-          );
-        msg.setStatus(value);
-        break;
-      default:
-        reader.skipField();
-        break;
+    case 1:
+      var value = /** @type {!proto.mongorpc.HealthCheckResponse.ServingStatus} */ (reader.readEnum());
+      msg.setStatus(value);
+      break;
+    default:
+      reader.skipField();
+      break;
     }
   }
   return msg;
 };
 
+
 /**
  * Serializes the message to binary data (in protobuf wire format).
  * @return {!Uint8Array}
  */
-proto.mongorpc.HealthCheckResponse.prototype.serializeBinary = function () {
+proto.mongorpc.HealthCheckResponse.prototype.serializeBinary = function() {
   var writer = new jspb.BinaryWriter();
   proto.mongorpc.HealthCheckResponse.serializeBinaryToWriter(this, writer);
   return writer.getResultBuffer();
 };
+
 
 /**
  * Serializes the given message to binary data (in protobuf wire
@@ -11755,16 +11700,17 @@ proto.mongorpc.HealthCheckResponse.prototype.serializeBinary = function () {
  * @param {!jspb.BinaryWriter} writer
  * @suppress {unusedLocalVariables} f is only used for nested messages
  */
-proto.mongorpc.HealthCheckResponse.serializeBinaryToWriter = function (
-  message,
-  writer
-) {
+proto.mongorpc.HealthCheckResponse.serializeBinaryToWriter = function(message, writer) {
   var f = undefined;
   f = message.getStatus();
   if (f !== 0.0) {
-    writer.writeEnum(1, f);
+    writer.writeEnum(
+      1,
+      f
+    );
   }
 };
+
 
 /**
  * @enum {number}
@@ -11773,32 +11719,32 @@ proto.mongorpc.HealthCheckResponse.ServingStatus = {
   UNKNOWN: 0,
   SERVING: 1,
   NOT_SERVING: 2,
-  SERVICE_UNKNOWN: 3,
+  SERVICE_UNKNOWN: 3
 };
 
 /**
  * optional ServingStatus status = 1;
  * @return {!proto.mongorpc.HealthCheckResponse.ServingStatus}
  */
-proto.mongorpc.HealthCheckResponse.prototype.getStatus = function () {
-  return /** @type {!proto.mongorpc.HealthCheckResponse.ServingStatus} */ (
-    jspb.Message.getFieldWithDefault(this, 1, 0)
-  );
+proto.mongorpc.HealthCheckResponse.prototype.getStatus = function() {
+  return /** @type {!proto.mongorpc.HealthCheckResponse.ServingStatus} */ (jspb.Message.getFieldWithDefault(this, 1, 0));
 };
+
 
 /**
  * @param {!proto.mongorpc.HealthCheckResponse.ServingStatus} value
  * @return {!proto.mongorpc.HealthCheckResponse} returns this
  */
-proto.mongorpc.HealthCheckResponse.prototype.setStatus = function (value) {
+proto.mongorpc.HealthCheckResponse.prototype.setStatus = function(value) {
   return jspb.Message.setProto3EnumField(this, 1, value);
 };
+
 
 /**
  * @enum {number}
  */
 proto.mongorpc.NullValue = {
-  NULL_VALUE: 0,
+  NULL_VALUE: 0
 };
 
 /**
@@ -11806,7 +11752,7 @@ proto.mongorpc.NullValue = {
  */
 proto.mongorpc.IndexDirection = {
   ASCENDING: 0,
-  DESCENDING: 1,
+  DESCENDING: 1
 };
 
 goog.object.extend(exports, proto.mongorpc);

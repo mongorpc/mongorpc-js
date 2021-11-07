@@ -1,5 +1,5 @@
-import { MongoRPCClient } from "../proto/MongorpcServiceClientPb";
-import { GetDocumentRequest } from "../proto/mongorpc_pb";
+import { MongoRPCClient } from "../proto/mongorpc_pb_service";
+import { GetDocumentRequest, Value } from "../proto/mongorpc_pb";
 import { Collection } from "./collection";
 
 class Document {
@@ -17,19 +17,22 @@ class Document {
     this.client = client;
   }
 
-  public async get() {
+  public get() : Promise<Value> {
     const request = new GetDocumentRequest();
     request.setDatabase(this.parent.parent.name);
     request.setCollection(this.parent.name);
     request.setDocumentId(this.documentID);
 
-    try {
-      const response = await this.client.getDocument(request, null);
-      // TODO: convert proto.value to interface
-      return response.getDocument();
-    } catch (error) {
-      throw error;
-    }
+    return new Promise((resolve, reject) => {
+      this.client.getDocument(request, (err, response) => {
+        if (err) {
+          reject(err);
+        } else {
+          // TODO: convert proto value to javascript value
+          resolve(response.getDocument());
+        }
+      });
+    });
   }
 }
 
