@@ -11,8 +11,8 @@ wget https://raw.githubusercontent.com/mongorpc/mongorpc/main/proto/mongorpc.pro
 # protoc -I=. mongorpc.proto --js_out=import_style=commonjs:.
 
 protoc -I=. mongorpc.proto \
-  --js_out=import_style=commonjs:. \
-  --grpc-web_out=import_style=commonjs,mode=grpcwebtext:.
+  --js_out=import_style=commonjs+dts:pb \
+  --grpc-web_out=import_style=commonjs+dts,mode=grpcwebtext:pb
 
 # Path to this plugin
 # PROTOC_GEN_TS_PATH="../node_modules/.bin/protoc-gen-ts"

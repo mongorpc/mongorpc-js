@@ -1,4 +1,4 @@
-import { MongoRPCClient } from "../proto/mongorpc_pb_service";
+import { MongoRPCClient } from "../proto";
 import { Database } from "./database";
 
 class MongoRPC {
