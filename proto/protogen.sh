@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+rm -rf pb
+mkdir -p pb
+
 if [ -f mongorpc.proto ]
 then 
     rm mongorpc.proto
