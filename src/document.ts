@@ -1,4 +1,4 @@
-import { GetDocumentRequest, MongoRPCClient, Value } from "../proto";
+import { GetDocumentRequest, MongoRPCClient, Value } from "./proto";
 import { Collection } from "./collection";
 import { DecodeValue } from "./decoder";
 
@@ -25,7 +25,12 @@ class Document {
 
     try {
       const response = await this.client.getDocument(request);
-      return DecodeValue(response.getDocument());
+      const document = response.getDocument();
+      if (document) {
+        return DecodeValue(document);
+      }
+
+      return null;
     } catch (error) {
       throw error;
     }

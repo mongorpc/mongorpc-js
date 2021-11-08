@@ -1,6 +1,4 @@
-import { Value } from "../proto";
-import "../proto/pb/mongorpc_pb";
-import "../proto/pb/mongorpc_grpc_web_pb";
+import { Value } from "./proto";
 
 export function DecodeValue(value: Value): any {
   switch (value.getTypeCase()) {
@@ -21,20 +19,20 @@ export function DecodeValue(value: Value): any {
 
     case Value.TypeCase.ARRAY_VALUE:
       var arr = value.getArrayValue();
-      var array = arr.getValuesList().map((value) => {
-        return DecodeValue(value);
-      });
-      return array;
+      if (arr) {
+        var array = arr.getValuesList().map((value) => {
+          return DecodeValue(value);
+        });
+        return array;
+      }
+      return [];
 
     case Value.TypeCase.MAP_VALUE:
-      var obj = value.getMapValue().toObject();
-      var map: Map<string, any> = new Map();
-      for (var key in obj) {
-        var value: Value = obj[key];
-        map[key] = DecodeValue(value);
+      var obj = value.getMapValue()?.getFieldsMap();
+      if (obj) {
+        return obj;
       }
-      return map;
-
+      return {};
     default:
       throw new Error("Unsupported value type");
   }
