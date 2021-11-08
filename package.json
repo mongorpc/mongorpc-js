@@ -1,8 +1,8 @@
 {
   "name": "mongorpc-js",
   "version": "0.0.1",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/mongorpc/mongorpc-js.git",
   "author": "Satish Babariya <satish.babariya@gmail.com>",
   "license": "MIT",
