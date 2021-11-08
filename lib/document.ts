@@ -1,5 +1,6 @@
 import { GetDocumentRequest, MongoRPCClient, Value } from "../proto";
 import { Collection } from "./collection";
+import { DecodeValue } from "./decoder";
 
 class Document {
   private client: MongoRPCClient;
@@ -16,7 +17,7 @@ class Document {
     this.client = client;
   }
 
-  public async get(): Promise<Value> {
+  public async get(): Promise<any> {
     const request = new GetDocumentRequest();
     request.setDatabase(this.parent.parent.name);
     request.setCollection(this.parent.name);
@@ -24,7 +25,7 @@ class Document {
 
     try {
       const response = await this.client.getDocument(request);
-      return response.getDocument();
+      return DecodeValue(response.getDocument());
     } catch (error) {
       throw error;
     }
