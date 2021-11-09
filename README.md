@@ -52,3 +52,28 @@ const collections = await client
   .database("sample_mflix")
   .listCollections();
 ```
+
+- Insert Document
+```ts
+const document = await client
+  .database("sample_mflix")
+  .collection("movies")
+  .insert({
+    title: "Blacksmith Scene",
+    year: 1893,
+    createdAt: Date(),
+  });
+```
+
+- Update Document
+```ts
+const result = await client
+  .database("sample_mflix")
+  .collection("movies")
+  .document("617ba6bb72d7eadace3a5353")
+  .update({
+    title: "Batman Begins",
+    year: 2005,
+    createdAt: Date(),
+  });
+```
