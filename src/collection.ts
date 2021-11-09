@@ -112,6 +112,11 @@ class ListDocumentsRequestBuilder {
       filter.setLess(value);
     }
 
+    if (!this._filter) {
+      this._filter = [];
+    }
+    this._filter.push(filter);
+
     return this;
   }
 
@@ -131,7 +136,6 @@ class ListDocumentsRequestBuilder {
     if (this._filter) {
       request.setFilterList(this._filter);
     }
-
     try {
       const response = await this.client.listDocuments(request);
       const documents = response.getDocuments();

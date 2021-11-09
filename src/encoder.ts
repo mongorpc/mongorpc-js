@@ -29,29 +29,6 @@ export type EncoderValueTypes =
 export function EncodeValue(value: EncoderValueTypes): Value {
   let result: Value = new Value();
 
-  if (value === null) {
-    result.setNullValue(NullValue.NULL_VALUE);
-  }
-
-  if (value as ObjectID) {
-    let id = new ProtoObjectID();
-    id.setId((value as ObjectID).id);
-    result.setObjectIdValue(id);
-  }
-
-  if (value instanceof Date) {
-    let date = new Timestamp();
-    date.setSeconds((value as Date).getTime() / 1000);
-  }
-
-  if (Array.isArray(value)) {
-    let array = new ArrayValue();
-    for (let item of value) {
-      array.addValues(EncodeValue(item));
-    }
-    result.setArrayValue(array);
-  }
-
   switch (typeof value) {
     case "string":
       result.setStringValue(value);
@@ -77,7 +54,24 @@ export function EncodeValue(value: EncoderValueTypes): Value {
       result.setMapValue(mapValue);
 
     default:
-      console.error("Unsupported value type", typeof value);
+      if (value === null) {
+        result.setNullValue(NullValue.NULL_VALUE);
+      } else if (value as ObjectID) {
+        let id = new ProtoObjectID();
+        id.setId((value as ObjectID).id);
+        result.setObjectIdValue(id);
+      } else if (value instanceof Date) {
+        let date = new Timestamp();
+        date.setSeconds((value as Date).getTime() / 1000);
+      } else if (Array.isArray(value)) {
+        let array = new ArrayValue();
+        for (let item of value) {
+          array.addValues(EncodeValue(item));
+        }
+        result.setArrayValue(array);
+      } else {
+        console.error("Unsupported value type", typeof value);
+      }
   }
 
   return result;

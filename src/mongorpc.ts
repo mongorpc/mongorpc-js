@@ -8,6 +8,14 @@ class MongoRPC {
     this.client = new MongoRPCClient(host);
   }
 
+  public debug(enabled: boolean): void {
+    if (enabled) {
+      // @ts-ignore
+      const enableDevTools = window.__GRPCWEB_DEVTOOLS__ || (() => {});
+      enableDevTools([this.client]);
+    }
+  }
+
   public database(name: string): Database {
     return new Database(name, this.client);
   }
