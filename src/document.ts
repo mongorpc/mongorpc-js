@@ -1,7 +1,10 @@
 import { GetDocumentRequest, MongoRPCClient, Value } from "./proto";
 import { Collection } from "./collection";
 import { DecodeValue } from "./decoder";
-import { UpdateDocumentRequest } from "./proto/pb/mongorpc_pb";
+import {
+  DeleteDocumentRequest,
+  UpdateDocumentRequest,
+} from "./proto/pb/mongorpc_pb";
 import { EncodeValue } from "./encoder";
 
 class Document {
@@ -59,6 +62,24 @@ class Document {
         matchedCount,
         modifiedCount,
         upsertedCount,
+      };
+    } catch (error) {
+      throw error;
+    }
+  }
+
+  public async delete(): Promise<any> {
+    const request = new DeleteDocumentRequest();
+    request.setDatabase(this.parent.parent.name);
+    request.setCollection(this.parent.name);
+    request.setDocumentId(this.documentID);
+
+    try {
+      const response = await this.client.deleteDocument(request);
+      const count = response.getDeletedCount();
+
+      return {
+        deletedCount: count,
       };
     } catch (error) {
       throw error;
