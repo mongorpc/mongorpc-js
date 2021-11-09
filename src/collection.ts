@@ -4,8 +4,13 @@ import { Document } from "./document";
 import {
   ListDocumentsRequest,
   Sort as ProtoSort,
+  Filter as ProtoFilter,
+  Equal,
+  Greater,
+  Less,
 } from "./proto/pb/mongorpc_pb";
 import { DecodeValue } from "./decoder";
+import { EncodeValue } from "./encoder";
 
 class Collection {
   private client: MongoRPCClient;
@@ -27,15 +32,28 @@ class Collection {
   }
 }
 
-interface Sort {
-  field: string;
-  asending: boolean;
-}
+//     EQUAL = 1,
+//     NOT_EQUAL = 2,
+//     LESS = 3,
+//     LESS_EQUAL = 4,
+//     GREATER = 5,
+//     GREATER_EQUAL = 6,
+//     IN = 7,
+//     NOT_IN = 8,
+//     EXISTS = 9,
+//     NOT_EXISTS = 10,
+
+type QueryEqualTo = { field: string; equalTo: any };
+type QueryGreaterThan = { field: string; greaterThan: string };
+type QueryLessThan = { field: string; lessThan: string };
+
+type QueryType = QueryEqualTo | QueryGreaterThan | QueryLessThan;
 
 class ListDocumentsRequestBuilder {
   _limit?: number;
   _skip?: number;
-  _sort?: Sort[];
+  _sort?: ProtoSort[];
+  _filter?: ProtoFilter[];
 
   private client: MongoRPCClient;
   private parent: Database;
@@ -61,14 +79,39 @@ class ListDocumentsRequestBuilder {
     field: string;
     asending: boolean;
   }): ListDocumentsRequestBuilder {
-    const sort: Sort = {
-      field: by.field,
-      asending: by.asending,
-    };
+    const sort: ProtoSort = new ProtoSort();
+    sort.setField(by.field);
+    sort.setAscending(by.asending);
     if (!this._sort) {
       this._sort = [];
     }
     this._sort.push(sort);
+    return this;
+  }
+
+  public where(query: QueryType): ListDocumentsRequestBuilder {
+    const filter: ProtoFilter = new ProtoFilter();
+
+    if (query as QueryEqualTo) {
+      const equalTo = query as QueryEqualTo;
+      const value = new Equal();
+      value.setField(equalTo.field);
+      value.setValue(EncodeValue(equalTo.equalTo));
+      filter.setEqual(value);
+    } else if (query as QueryGreaterThan) {
+      const greaterThan = query as QueryGreaterThan;
+      const value = new Greater();
+      value.setField(greaterThan.field);
+      value.setValue(EncodeValue(greaterThan.greaterThan));
+      filter.setGreater(value);
+    } else if (query as QueryLessThan) {
+      const lessThan = query as QueryLessThan;
+      const value = new Less();
+      value.setField(lessThan.field);
+      value.setValue(EncodeValue(lessThan.lessThan));
+      filter.setLess(value);
+    }
+
     return this;
   }
 
@@ -83,12 +126,10 @@ class ListDocumentsRequestBuilder {
       request.setSkip(this._skip);
     }
     if (this._sort) {
-      for (const sort of this._sort) {
-        const sortField = new ProtoSort();
-        sortField.setField(sort.field);
-        sortField.setAscending(sort.asending);
-        request.addSort(sortField);
-      }
+      request.setSortList(this._sort);
+    }
+    if (this._filter) {
+      request.setFilterList(this._filter);
     }
 
     try {
@@ -108,4 +149,11 @@ class ListDocumentsRequestBuilder {
   }
 }
 
-export { Collection, ListDocumentsRequestBuilder, Sort };
+export {
+  Collection,
+  ListDocumentsRequestBuilder,
+  QueryType,
+  QueryEqualTo,
+  QueryGreaterThan,
+  QueryLessThan,
+};

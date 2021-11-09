@@ -39,10 +39,10 @@ export function DecodeValue(value: Value): any {
       return {};
 
     case Value.TypeCase.DATE_VALUE:
-     let date = value.getDateValue();
-     if (date) {
-       return new Date(date.getSeconds() * 1000);
-     }
+      let date = value.getDateValue();
+      if (date) {
+        return new Date(date.getSeconds() * 1000);
+      }
 
     case Value.TypeCase.OBJECT_ID_VALUE:
       let id = value.getObjectIdValue();
