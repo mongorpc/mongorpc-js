@@ -33,3 +33,22 @@ const documents = await client
 console.log(documents);
 
 ```
+
+```ts
+const documents = await client
+  .database("sample_mflix")
+  .collection("movies")
+  .documents()
+  .where({
+    field: "year",
+    equalTo: 1915,
+  })
+  .get();
+```
+
+- List All Collections in Database
+```ts
+const collections = await client
+  .database("sample_mflix")
+  .listCollections();
+```
