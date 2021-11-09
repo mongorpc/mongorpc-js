@@ -39,17 +39,6 @@ class Collection {
   }
 }
 
-//     EQUAL = 1,
-//     NOT_EQUAL = 2,
-//     LESS = 3,
-//     LESS_EQUAL = 4,
-//     GREATER = 5,
-//     GREATER_EQUAL = 6,
-//     IN = 7,
-//     NOT_IN = 8,
-//     EXISTS = 9,
-//     NOT_EXISTS = 10,
-
 type QueryEqualTo = { field: string; equalTo: any };
 type QueryNotEqualTo = { field: string; notEqualTo: any };
 type QueryGreaterThan = { field: string; greaterThan: any };
@@ -225,4 +214,11 @@ export {
   QueryEqualTo,
   QueryGreaterThan,
   QueryLessThan,
+  QueryGreaterThanOrEqualTo,
+  QueryLessThanOrEqualTo,
+  QueryNotEqualTo,
+  QueryIn,
+  QueryNotIn,
+  QueryExists,
+  QueryNotExists,
 };
