@@ -8,6 +8,13 @@ import {
   Equal,
   Greater,
   Less,
+  GreaterEqual,
+  LessEqual,
+  NotEqual,
+  Exists,
+  NotExists,
+  In,
+  NotIn,
 } from "./proto/pb/mongorpc_pb";
 import { DecodeValue } from "./decoder";
 import { EncodeValue } from "./encoder";
@@ -44,10 +51,28 @@ class Collection {
 //     NOT_EXISTS = 10,
 
 type QueryEqualTo = { field: string; equalTo: any };
-type QueryGreaterThan = { field: string; greaterThan: string };
-type QueryLessThan = { field: string; lessThan: string };
+type QueryNotEqualTo = { field: string; notEqualTo: any };
+type QueryGreaterThan = { field: string; greaterThan: any };
+type QueryGreaterThanOrEqualTo = { field: string; greaterThanOrEqualTo: any };
+type QueryLessThan = { field: string; lessThan: any };
+type QueryLessThanOrEqualTo = { field: string; lessThanOrEqualTo: any };
 
-type QueryType = QueryEqualTo | QueryGreaterThan | QueryLessThan;
+type QueryIn = { field: string; in: any[] };
+type QueryNotIn = { field: string; notIn: any[] };
+type QueryExists = { field: string; exists: boolean };
+type QueryNotExists = { field: string; notExists: boolean };
+
+type QueryType =
+  | QueryEqualTo
+  | QueryNotEqualTo
+  | QueryGreaterThan
+  | QueryGreaterThanOrEqualTo
+  | QueryLessThan
+  | QueryLessThanOrEqualTo
+  | QueryIn
+  | QueryNotIn
+  | QueryExists
+  | QueryNotExists;
 
 class ListDocumentsRequestBuilder {
   _limit?: number;
@@ -110,6 +135,46 @@ class ListDocumentsRequestBuilder {
       value.setField(lessThan.field);
       value.setValue(EncodeValue(lessThan.lessThan));
       filter.setLess(value);
+    } else if (query as QueryGreaterThanOrEqualTo) {
+      const greaterThanOrEqualTo = query as QueryGreaterThanOrEqualTo;
+      const value = new GreaterEqual();
+      value.setField(greaterThanOrEqualTo.field);
+      value.setValue(EncodeValue(greaterThanOrEqualTo.greaterThanOrEqualTo));
+      filter.setGreaterEqual(value);
+    } else if (query as QueryLessThanOrEqualTo) {
+      const lessThanOrEqualTo = query as QueryLessThanOrEqualTo;
+      const value = new LessEqual();
+      value.setField(lessThanOrEqualTo.field);
+      value.setValue(EncodeValue(lessThanOrEqualTo.lessThanOrEqualTo));
+      filter.setLessEqual(value);
+    } else if (query as QueryNotEqualTo) {
+      const equalTo = query as QueryNotEqualTo;
+      const value = new NotEqual();
+      value.setField(equalTo.field);
+      value.setValue(EncodeValue(equalTo.notEqualTo));
+      filter.setNotEqual(value);
+    } else if (query as QueryIn) {
+      const inQuery = query as QueryIn;
+      const value = new In();
+      value.setField(inQuery.field);
+      value.setValuesList(inQuery.in.map((v) => EncodeValue(v)));
+      filter.setIn(value);
+    } else if (query as QueryNotIn) {
+      const notInQuery = query as QueryNotIn;
+      const value = new NotIn();
+      value.setField(notInQuery.field);
+      value.setValuesList(notInQuery.notIn.map((v) => EncodeValue(v)));
+      filter.setNotIn(value);
+    } else if (query as QueryExists) {
+      const existsQuery = query as QueryExists;
+      const value = new Exists();
+      value.setField(existsQuery.field);
+      filter.setExists(value);
+    } else if (query as QueryNotExists) {
+      const notExistsQuery = query as QueryNotExists;
+      const value = new NotExists();
+      value.setField(notExistsQuery.field);
+      filter.setNotExists(value);
     }
 
     if (!this._filter) {
