@@ -1,3 +1,4 @@
+import { TypeToString } from "./decoder";
 import { Value } from "./proto";
 import {
   ArrayValue,
@@ -12,8 +13,11 @@ import {
 // bytesValue: Uint8Array | string;
 // dateValue?: Timestamp.AsObject;
 
-export interface ObjectID {
-  id: string;
+export class ObjectID {
+  public id: string;
+  constructor(id: string) {
+    this.id = id;
+  }
 }
 
 export type EncoderValueTypes =
@@ -26,56 +30,67 @@ export type EncoderValueTypes =
   | Array<any>
   | object;
 
-export function EncodeValue(value: EncoderValueTypes): Value {
+export function EncodeValue(value: any): Value {
   let result: Value = new Value();
-
-  switch (typeof value) {
-    case "string":
-      result.setStringValue(value);
-      break;
-    case "number":
-      Number.isInteger(value)
-        ? result.setIntegerValue(value)
-        : result.setDoubleValue(value);
-      break;
-    case "boolean":
-      result.setBoolValue(value);
-      break;
-    case "object":
-      let map = new Map(Object.entries(value as object));
-      let mapValue = new MapValue();
-
-      // TODO: Support nested objects / check does this even work???
-      map.forEach((value, key) => {
-        let v = EncodeValue(value);
-        mapValue.getFieldsMap().set(key, v);
-      });
-
-      result.setMapValue(mapValue);
-
-      break;
-    default:
-      console.error("Unsupported value type", typeof value);
-  }
 
   if (value === null) {
     result.setNullValue(NullValue.NULL_VALUE);
-  } else if (value as ObjectID) {
-    let id = new ProtoObjectID();
-    id.setId((value as ObjectID).id);
-    result.setObjectIdValue(id);
-  } else if (value instanceof Date) {
-    let date = new Timestamp();
-    date.setSeconds((value as Date).getTime() / 1000);
-  } else if (Array.isArray(value)) {
-    let array = new ArrayValue();
-    for (let item of value) {
-      array.addValues(EncodeValue(item));
-    }
-    result.setArrayValue(array);
-  } else {
-    console.error("Unsupported value type", typeof value);
+    return result;
   }
+
+  if (typeof value === "number") {
+    if (Number.isInteger(value)) {
+      result.setIntegerValue(value);
+    } else {
+      result.setDoubleValue(value);
+    }
+    return result;
+  }
+
+  if (typeof value === "string") {
+    result.setStringValue(value);
+    return result;
+  }
+
+  if (typeof value === "boolean") {
+    result.setBoolValue(value);
+    return result;
+  }
+
+  if (value instanceof ObjectID) {
+    let id = new ProtoObjectID();
+    id.setId(value.id);
+    result.setObjectIdValue(id);
+    return result;
+  }
+
+  if (value instanceof Date) {
+    let date = new Timestamp();
+    date.setSeconds(value.getTime() / 1000);
+    date.setNanos(0);
+    result.setDateValue(date);
+    return result;
+  }
+
+  if (Array.isArray(value)) {
+    let array = new ArrayValue();
+    value.forEach((v) => {
+      array.addValues(EncodeValue(v));
+    });
+    result.setArrayValue(array);
+    return result;
+  }
+
+  if (typeof value === "object" || value instanceof Object) {
+    let map = new MapValue();
+    Object.keys(value).forEach((k) => {
+      map.getFieldsMap().set(k, EncodeValue(value[k]));
+    });
+    result.setMapValue(map);
+    return result;
+  }
+
+  console.log(`Unsupported type: ${TypeToString(value)}`);
 
   return result;
 }
