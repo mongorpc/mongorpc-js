@@ -22,12 +22,12 @@ class Database {
 
     try {
       const response = await this.client.listCollections(request);
-      const collections = response.getCollections()
+      const collections = response.getCollections();
       if (collections) {
-        let values = collections.getValuesList().map(value => {
+        let values = collections.getValuesList().map((value) => {
           return DecodeValue(value);
         });
-        return values.map(value => {
+        return values.map((value) => {
           return new Collection(value.toString(), this, this.client);
         });
       }
