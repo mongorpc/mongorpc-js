@@ -24,7 +24,7 @@ class Collection {
     return new ListDocumentsRequestBuilder(this.client, this.parent, this.name);
   }
 
-  public async create(document: any): Promise<ObjectID> {
+  public async insert(document: any): Promise<ObjectID> {
     const request = new CreateDocumentRequest();
     request.setDatabase(this.parent.name);
     request.setCollection(this.name);
