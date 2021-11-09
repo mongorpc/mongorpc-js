@@ -53,25 +53,28 @@ export function EncodeValue(value: EncoderValueTypes): Value {
 
       result.setMapValue(mapValue);
 
+      break;
     default:
-      if (value === null) {
-        result.setNullValue(NullValue.NULL_VALUE);
-      } else if (value as ObjectID) {
-        let id = new ProtoObjectID();
-        id.setId((value as ObjectID).id);
-        result.setObjectIdValue(id);
-      } else if (value instanceof Date) {
-        let date = new Timestamp();
-        date.setSeconds((value as Date).getTime() / 1000);
-      } else if (Array.isArray(value)) {
-        let array = new ArrayValue();
-        for (let item of value) {
-          array.addValues(EncodeValue(item));
-        }
-        result.setArrayValue(array);
-      } else {
-        console.error("Unsupported value type", typeof value);
-      }
+      console.error("Unsupported value type", typeof value);
+  }
+
+  if (value === null) {
+    result.setNullValue(NullValue.NULL_VALUE);
+  } else if (value as ObjectID) {
+    let id = new ProtoObjectID();
+    id.setId((value as ObjectID).id);
+    result.setObjectIdValue(id);
+  } else if (value instanceof Date) {
+    let date = new Timestamp();
+    date.setSeconds((value as Date).getTime() / 1000);
+  } else if (Array.isArray(value)) {
+    let array = new ArrayValue();
+    for (let item of value) {
+      array.addValues(EncodeValue(item));
+    }
+    result.setArrayValue(array);
+  } else {
+    console.error("Unsupported value type", typeof value);
   }
 
   return result;
