@@ -2,8 +2,22 @@ import { MongoRPCClient } from "./proto";
 import { Database } from "./database";
 import { Document } from "./document";
 import { ListDocumentsRequestBuilder } from "./query";
-import { CreateDocumentRequest } from "./proto/pb/mongorpc_pb";
+import {
+  CreateDocumentRequest,
+  ListCollectionsRequest,
+  ListenRequest,
+  ListenResponse,
+} from "./proto/pb/mongorpc_pb";
 import { EncodeValue, ObjectID } from "./encoder";
+import { DecodeValue } from "./decoder";
+import { ClientReadableStream } from "grpc-web";
+
+export interface CollectionListner {
+  // onError(error: Error): void;
+  // onData(data: Document): void;
+  // onEnd(): void;
+  cancel(): void;
+}
 
 class Collection {
   private client: MongoRPCClient;
@@ -37,6 +51,41 @@ class Collection {
     } catch (error) {
       throw error;
     }
+  }
+
+  public listen(callback: (result: any | Error) => void): CollectionListner {
+    const request = new ListenRequest();
+    request.setDatabase(this.parent.name);
+    request.setCollection(this.name);
+
+    const listner: ClientReadableStream<ListenResponse> =
+      this.client.listen(request);
+
+    listner.on("data", (data) => {
+      let res = data.getDocument();
+      if (res) {
+        callback({
+          data: DecodeValue(res),
+          operation: data.getOperation(),
+        });
+      } else {
+        callback(null);
+      }
+    });
+
+    listner.on("error", (error) => {
+      callback(error);
+    });
+
+    listner.on("end", () => {
+      console.log("end");
+    });
+
+    return {
+      cancel: () => {
+        listner.cancel();
+      },
+    };
   }
 }
 
