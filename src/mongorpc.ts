@@ -1,31 +1,17 @@
 import { MongoRPCClient } from "./proto";
 import { Database } from "./database";
-
-class AuthInterceptor {
-  token: string;
-
-  constructor(token: string) {
-    this.token = token;
-  }
-
-  intercept(request: any, invoker: any) {
-    const metadata = request.getMetadata();
-    metadata.Authorization = "Bearer " + this.token;
-    return invoker(request);
-  }
-}
+import { Interceptor } from "./interceptor";
 
 class MongoRPC {
   private client: MongoRPCClient;
 
-  public constructor(host: string, token?: string) {
+  public constructor(host: string, interceptors?: [Interceptor]) {
     let options = null;
-    if (token) {
-      const authInterceptor = new AuthInterceptor(token);
+    if (interceptors) {
       options = {
-        unaryInterceptors: [authInterceptor],
-        streamInterceptors: [authInterceptor]
-      }
+        unaryInterceptors: interceptors,
+        streamInterceptors: interceptors,
+      };
     }
 
     this.client = new MongoRPCClient(host, null, options);
