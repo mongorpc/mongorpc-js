@@ -77,3 +77,13 @@ const result = await client
     createdAt: Date(),
   });
 ```
+
+- Listening for Collection Changes
+```ts
+const canclationToken = client
+  .database("sample_mflix")
+  .collection("movies")
+  .listen(async (change) => {
+    console.log({ change: change });
+  });
+```

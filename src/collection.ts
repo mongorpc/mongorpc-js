@@ -12,7 +12,7 @@ import { EncodeOperationType, EncodeValue, ObjectID } from "./encoder";
 import { DecodeValue } from "./decoder";
 import { ClientReadableStream } from "grpc-web";
 
-export interface CancelToken {
+export interface CancellationToken {
   cancel(): void;
 }
 
@@ -53,13 +53,18 @@ class Collection {
     }
   }
 
-  public listen(callback: ListenRequestCallback, options: {
-    operation: OperationType;
-  }): CancelToken {
+  public listen(
+    callback: ListenRequestCallback,
+    options?: {
+      operation: OperationType;
+    }
+  ): CancellationToken {
     const request = new ListenRequest();
     request.setDatabase(this.parent.name);
     request.setCollection(this.name);
-    request.setOperationType(EncodeOperationType(options.operation));
+    if (options && options.operation) {
+      request.setOperationType(EncodeOperationType(options.operation));
+    }
 
     const listner: ClientReadableStream<ListenResponse> =
       this.client.listen(request);
