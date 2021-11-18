@@ -8,7 +8,7 @@ import {
   ListenRequest,
   ListenResponse,
 } from "./proto/pb/mongorpc_pb";
-import { EncodeValue, ObjectID } from "./encoder";
+import { EncodeOperationType, EncodeValue, ObjectID } from "./encoder";
 import { DecodeValue } from "./decoder";
 import { ClientReadableStream } from "grpc-web";
 
@@ -17,6 +17,7 @@ export interface CancelToken {
 }
 
 export type ListenRequestCallback = (result: any | Error) => void;
+export type OperationType = "INSERT" | "UPDATE" | "DELETE" | "REPLACE";
 
 class Collection {
   private client: MongoRPCClient;
@@ -52,10 +53,13 @@ class Collection {
     }
   }
 
-  public listen(callback: ListenRequestCallback, onEnd?: () => void): CancelToken {
+  public listen(callback: ListenRequestCallback, options: {
+    operation: OperationType;
+  }): CancelToken {
     const request = new ListenRequest();
     request.setDatabase(this.parent.name);
     request.setCollection(this.name);
+    request.setOperationType(EncodeOperationType(options.operation));
 
     const listner: ClientReadableStream<ListenResponse> =
       this.client.listen(request);
@@ -74,10 +78,6 @@ class Collection {
 
     listner.on("error", (error) => {
       callback(error);
-    });
-
-    listner.on("end", () => {
-      onEnd && onEnd();
     });
 
     return {

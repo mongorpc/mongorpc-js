@@ -6,6 +6,7 @@ import {
   NullValue,
   ObjectID as ProtoObjectID,
   Timestamp,
+  OperationType
 } from "./proto/pb/mongorpc_pb";
 
 // mapValue?: MapValue.AsObject;
@@ -93,4 +94,20 @@ export function EncodeValue(value: any): Value {
   console.log(`Unsupported type: ${TypeToString(value)}`);
 
   return result;
+}
+
+export function EncodeOperationType(type: string): OperationType {
+  type = type.toUpperCase();
+  switch (type) {
+    case "INSERT":
+      return OperationType.INSERT;
+    case "UPDATE":
+      return OperationType.UPDATE;
+    case "DELETE":
+      return OperationType.DELETE;
+    case "REPLACE":
+      return OperationType.REPLACE;
+    default:
+      throw new Error(`Unsupported operation type: ${type}`);
+  }
 }
