@@ -12,12 +12,11 @@ import { EncodeValue, ObjectID } from "./encoder";
 import { DecodeValue } from "./decoder";
 import { ClientReadableStream } from "grpc-web";
 
-export interface CollectionListner {
-  // onError(error: Error): void;
-  // onData(data: Document): void;
-  // onEnd(): void;
+export interface CancelToken {
   cancel(): void;
 }
+
+export type ListenRequestCallback = (result: any | Error) => void;
 
 class Collection {
   private client: MongoRPCClient;
@@ -53,7 +52,7 @@ class Collection {
     }
   }
 
-  public listen(callback: (result: any | Error) => void): CollectionListner {
+  public listen(callback: ListenRequestCallback, onEnd?: () => void): CancelToken {
     const request = new ListenRequest();
     request.setDatabase(this.parent.name);
     request.setCollection(this.name);
@@ -78,7 +77,7 @@ class Collection {
     });
 
     listner.on("end", () => {
-      console.log("end");
+      onEnd && onEnd();
     });
 
     return {
