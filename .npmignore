@@ -10,6 +10,7 @@
 src/
 .github/
 test/
+lib/
 
 # configuration
 package-lock.json
