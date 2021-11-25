@@ -1,6 +1,5 @@
 import * as jspb from 'google-protobuf'
 
-import * as google_api_annotations_pb from '../google/api/annotations_pb';
 import * as mongorpc_value_pb from '../mongorpc/value_pb';
 
 
