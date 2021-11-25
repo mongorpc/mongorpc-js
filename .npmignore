@@ -1,0 +1,24 @@
+# source
+**/*.ts
+*.ts
+
+# definitions
+!**/*.d.ts
+!*.d.ts
+
+#source and test files
+src/
+.github/
+test/
+
+# configuration
+package-lock.json
+tslint.json
+tsconfig.json
+.prettierrc
+yarn.lock
+yarn-error.log
+
+# Dependency directories
+node_modules/
+jspm_packages/
