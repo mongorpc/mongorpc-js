@@ -1,5 +1,5 @@
 export interface Interceptor {
-    intercept(request: any, invoker: any): any;
+  intercept(request: any, invoker: any): any;
 }
 
 export class AuthInterceptor implements Interceptor {

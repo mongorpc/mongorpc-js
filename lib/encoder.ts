@@ -1,18 +1,11 @@
-import { TypeToString } from "./decoder";
-import { Value } from "./proto";
 import {
   ArrayValue,
   MapValue,
   NullValue,
-  ObjectID as ProtoObjectID,
   Timestamp,
-  OperationType
-} from "./proto/pb/mongorpc_pb";
-
-// mapValue?: MapValue.AsObject;
-// arrayValue?: ArrayValue.AsObject;
-// bytesValue: Uint8Array | string;
-// dateValue?: Timestamp.AsObject;
+  Value,
+  ObjectId as ObjectIdValue,
+} from "./mongorpc/value_pb";
 
 export class ObjectID {
   public id: string;
@@ -20,16 +13,6 @@ export class ObjectID {
     this.id = id;
   }
 }
-
-export type EncoderValueTypes =
-  | null
-  | number
-  | string
-  | boolean
-  | ObjectID
-  | Date
-  | Array<any>
-  | object;
 
 export function EncodeValue(value: any): Value {
   let result: Value = new Value();
@@ -41,7 +24,7 @@ export function EncodeValue(value: any): Value {
 
   if (typeof value === "number") {
     if (Number.isInteger(value)) {
-      result.setIntegerValue(value);
+      result.setInteger64Value(value);
     } else {
       result.setDoubleValue(value);
     }
@@ -54,12 +37,12 @@ export function EncodeValue(value: any): Value {
   }
 
   if (typeof value === "boolean") {
-    result.setBoolValue(value);
+    result.setBooleanValue(value);
     return result;
   }
 
   if (value instanceof ObjectID) {
-    let id = new ProtoObjectID();
+    let id = new ObjectIdValue();
     id.setId(value.id);
     result.setObjectIdValue(id);
     return result;
@@ -69,7 +52,7 @@ export function EncodeValue(value: any): Value {
     let date = new Timestamp();
     date.setSeconds(value.getTime() / 1000);
     date.setNanos(0);
-    result.setDateValue(date);
+    result.setTimestampValue(date);
     return result;
   }
 
@@ -91,23 +74,7 @@ export function EncodeValue(value: any): Value {
     return result;
   }
 
-  console.log(`Unsupported type: ${TypeToString(value)}`);
+  console.log(`Unsupported type: ${value}`);
 
   return result;
-}
-
-export function EncodeOperationType(type: string): OperationType {
-  type = type.toUpperCase();
-  switch (type) {
-    case "INSERT":
-      return OperationType.INSERT;
-    case "UPDATE":
-      return OperationType.UPDATE;
-    case "DELETE":
-      return OperationType.DELETE;
-    case "REPLACE":
-      return OperationType.REPLACE;
-    default:
-      throw new Error(`Unsupported operation type: ${type}`);
-  }
 }

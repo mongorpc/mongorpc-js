@@ -1,68 +1,59 @@
-import { GetDocumentRequest, MongoRPCClient, Value } from "./proto";
 import { Collection } from "./collection";
 import { DecodeValue } from "./decoder";
+import { EncodeValue } from "./encoder";
+import { MongoRPCPromiseClient } from "./mongorpc/mongorpc_grpc_web_pb";
 import {
   DeleteDocumentRequest,
+  GetDocumentRequest,
   UpdateDocumentRequest,
-} from "./proto/pb/mongorpc_pb";
-import { EncodeValue } from "./encoder";
+} from "./mongorpc/mongorpc_pb";
+import { ObjectId } from "./mongorpc/value_pb";
 
-class Document {
-  private client: MongoRPCClient;
+export class Document {
+  private client: MongoRPCPromiseClient;
   documentID: string;
   parent: Collection;
+
+  _objectID: ObjectId;
 
   public constructor(
     documentID: string,
     parent: Collection,
-    client: MongoRPCClient
+    client: MongoRPCPromiseClient
   ) {
     this.documentID = documentID;
     this.parent = parent;
     this.client = client;
+
+    const objectID = new ObjectId();
+    objectID.setId(this.documentID);
+    this._objectID = objectID;
   }
 
   public async get(): Promise<any> {
     const request = new GetDocumentRequest();
     request.setDatabase(this.parent.parent.name);
     request.setCollection(this.parent.name);
-    request.setDocumentId(this.documentID);
+    request.setDocumentId(this._objectID);
 
     try {
       const response = await this.client.getDocument(request);
-      const document = response.getDocument();
-      if (document) {
-        return DecodeValue(document);
-      }
-
-      return null;
+      return DecodeValue(response);
     } catch (error) {
       throw error;
     }
   }
 
-  public async update(data: any): Promise<{
-    matchedCount: number;
-    modifiedCount: number;
-    upsertedCount: number;
-  }> {
+  public async update(data: any): Promise<any> {
     const request = new UpdateDocumentRequest();
     request.setDatabase(this.parent.parent.name);
     request.setCollection(this.parent.name);
-    request.setDocumentId(this.documentID);
+    request.setDocumentId(this._objectID);
     request.setDocument(EncodeValue(data));
 
     try {
       const response = await this.client.updateDocument(request);
-      const matchedCount = response.getUpsertedCount();
-      const modifiedCount = response.getMatchedCount();
-      const upsertedCount = response.getModifiedCount();
-
-      return {
-        matchedCount,
-        modifiedCount,
-        upsertedCount,
-      };
+      return DecodeValue(response);
     } catch (error) {
       throw error;
     }
@@ -72,19 +63,13 @@ class Document {
     const request = new DeleteDocumentRequest();
     request.setDatabase(this.parent.parent.name);
     request.setCollection(this.parent.name);
-    request.setDocumentId(this.documentID);
+    request.setDocumentId(this._objectID);
 
     try {
       const response = await this.client.deleteDocument(request);
-      const count = response.getDeletedCount();
-
-      return {
-        deletedCount: count,
-      };
+      return DecodeValue(response);
     } catch (error) {
       throw error;
     }
   }
 }
-
-export { Document };

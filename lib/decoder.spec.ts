@@ -1,6 +1,5 @@
 import { DecodeValue } from "./decoder";
-import { EncodeValue, ObjectID } from "./encoder";
-import { Value } from "./proto";
+import { EncodeValue } from "./encoder";
 
 describe("mongorpc value EncodeValuer", () => {
   let values = [

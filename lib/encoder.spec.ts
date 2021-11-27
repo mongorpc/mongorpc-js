@@ -1,5 +1,5 @@
+import { Value } from "./mongorpc/value_pb";
 import { EncodeValue, ObjectID } from "./encoder";
-import { Value } from "./proto";
 
 describe("mongorpc value EncodeValuer", () => {
   it("null", async () => {
@@ -9,7 +9,7 @@ describe("mongorpc value EncodeValuer", () => {
 
   it("integer", async () => {
     let result = EncodeValue(1);
-    expect(result.getTypeCase()).toBe(Value.TypeCase.INTEGER_VALUE);
+    expect(result.getTypeCase()).toBe(Value.TypeCase.INTEGER64_VALUE);
   });
 
   it("double", async () => {
@@ -24,7 +24,7 @@ describe("mongorpc value EncodeValuer", () => {
 
   it("bool", async () => {
     let result = EncodeValue(false);
-    expect(result.getTypeCase()).toBe(Value.TypeCase.BOOL_VALUE);
+    expect(result.getTypeCase()).toBe(Value.TypeCase.BOOLEAN_VALUE);
   });
 
   it("objectID", async () => {
@@ -34,7 +34,7 @@ describe("mongorpc value EncodeValuer", () => {
 
   it("date", async () => {
     let result = EncodeValue(new Date());
-    expect(result.getTypeCase()).toBe(Value.TypeCase.DATE_VALUE);
+    expect(result.getTypeCase()).toBe(Value.TypeCase.TIMESTAMP_VALUE);
   });
 
   it("array", async () => {
@@ -55,7 +55,7 @@ describe("mongorpc value EncodeValuer", () => {
       .getArrayValue()
       ?.getValuesList()
       .forEach((value) => {
-        expect(value.getTypeCase()).toBe(Value.TypeCase.INTEGER_VALUE);
+        expect(value.getTypeCase()).toBe(Value.TypeCase.INTEGER64_VALUE);
       });
   });
 
@@ -77,7 +77,7 @@ describe("mongorpc value EncodeValuer", () => {
         if (key === "name") {
           expect(value.getTypeCase()).toBe(Value.TypeCase.STRING_VALUE);
         } else if (key === "age") {
-          expect(value.getTypeCase()).toBe(Value.TypeCase.INTEGER_VALUE);
+          expect(value.getTypeCase()).toBe(Value.TypeCase.INTEGER64_VALUE);
         } else if (key === "address") {
           expect(value.getTypeCase()).toBe(Value.TypeCase.MAP_VALUE);
 
