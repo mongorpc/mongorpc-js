@@ -11,6 +11,7 @@ src/
 .github/
 test/
 lib/
+proto/
 
 # configuration
 package-lock.json
