@@ -1,8 +1,20 @@
+import { ClientReadableStream } from "grpc-web";
 import { Database } from "./database";
 import { DecodeValue } from "./decoder";
 import { EncodeValue } from "./encoder";
 import { MongoRPCPromiseClient } from "./mongorpc/mongorpc_grpc_web_pb";
-import { QueryDocumentsRequest } from "./mongorpc/mongorpc_pb";
+import {
+  ListenRequest,
+  ListenResponse,
+  QueryDocumentsRequest,
+} from "./mongorpc/mongorpc_pb";
+
+export interface CancellationToken {
+  cancel(): void;
+}
+
+export type ListenRequestCallback = (result: any | Error) => void;
+export type OperationType = "insert" | "update" | "delete";
 
 export enum SortOrder {
   ASCENDING = 1,
@@ -194,5 +206,57 @@ export class QueryBuilder {
     } catch (error) {
       throw error;
     }
+  }
+
+  public listen(
+    callback: ListenRequestCallback,
+    options?: {
+      operation: OperationType;
+    }
+  ): CancellationToken {
+    const request = new ListenRequest();
+    request.setDatabase(this.parent.name);
+    request.setCollection(this.name);
+
+    let filter: Dictionary<any> = {};
+    if (options && options.operation) {
+      filter["operationType"] = options.operation.valueOf();
+    }
+
+    if (this._filter) {
+      this._filter.forEach((f) => {
+        filter["fullDocument." + f.Key] = f[f.Key];
+      });
+    }
+
+    console.log(filter);
+
+    const match = {
+      $match: filter,
+    };
+
+    request.setPipelineList([EncodeValue(match)]);
+
+    const listner: ClientReadableStream<ListenResponse> =
+      this.client.listen(request);
+
+    listner.on("data", (data) => {
+      let res = data.getChanges();
+      if (res) {
+        callback(DecodeValue(res));
+      } else {
+        callback(null);
+      }
+    });
+
+    listner.on("error", (error) => {
+      callback(error);
+    });
+
+    return {
+      cancel: () => {
+        listner.cancel();
+      },
+    };
   }
 }
