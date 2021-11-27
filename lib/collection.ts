@@ -3,6 +3,7 @@ import { Document } from "./document";
 import { EncodeValue } from "./encoder";
 import { MongoRPCPromiseClient } from "./mongorpc/mongorpc_grpc_web_pb";
 import { InsertDocumentRequest } from "./mongorpc/mongorpc_pb";
+import { QueryBuilder } from "./query";
 
 export class Collection {
   private client: MongoRPCPromiseClient;
@@ -21,6 +22,10 @@ export class Collection {
 
   public document(id: string): Document {
     return new Document(id, this, this.client);
+  }
+
+  public documents(): QueryBuilder {
+    return new QueryBuilder(this.name, this.parent, this.client);
   }
 
   public async insert(document: any): Promise<any> {
