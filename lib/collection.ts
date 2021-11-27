@@ -1,13 +1,17 @@
 import { Database } from "./database";
 import { Document } from "./document";
-import { MongoRPCClient } from "./mongorpc/mongorpc_grpc_web_pb";
+import { MongoRPCPromiseClient } from "./mongorpc/mongorpc_grpc_web_pb";
 
 export class Collection {
-  private client: MongoRPCClient;
+  private client: MongoRPCPromiseClient;
   name: string;
   parent: Database;
 
-  public constructor(name: string, parent: Database, client: MongoRPCClient) {
+  public constructor(
+    name: string,
+    parent: Database,
+    client: MongoRPCPromiseClient
+  ) {
     this.name = name;
     this.parent = parent;
     this.client = client;

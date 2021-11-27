@@ -1,11 +1,11 @@
 import { Collection } from "./collection";
-import { MongoRPCClient } from "./mongorpc/mongorpc_grpc_web_pb";
+import { MongoRPCPromiseClient } from "./mongorpc/mongorpc_grpc_web_pb";
 
 export class Database {
-  private client: MongoRPCClient;
+  private client: MongoRPCPromiseClient;
   name: string;
 
-  public constructor(name: string, client: MongoRPCClient) {
+  public constructor(name: string, client: MongoRPCPromiseClient) {
     this.name = name;
     this.client = client;
   }

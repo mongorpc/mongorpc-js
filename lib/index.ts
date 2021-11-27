@@ -1,9 +1,9 @@
 import { Database } from "./database";
 import { Interceptor } from "./interceptor";
-import { MongoRPCClient } from "./mongorpc/mongorpc_grpc_web_pb";
+import { MongoRPCPromiseClient } from "./mongorpc/mongorpc_grpc_web_pb";
 
 class MongoRPC {
-  private client: MongoRPCClient;
+  private client: MongoRPCPromiseClient;
 
   public constructor(host: string, interceptors?: [Interceptor]) {
     let options = null;
@@ -14,7 +14,7 @@ class MongoRPC {
       };
     }
 
-    this.client = new MongoRPCClient(host, null, options);
+    this.client = new MongoRPCPromiseClient(host, null, options);
   }
 
   public debug(enabled: boolean): void {
