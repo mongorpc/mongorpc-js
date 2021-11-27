@@ -1,5 +1,25 @@
 import { Database } from "./database";
-import { Interceptor } from "./interceptor";
+import { Collection } from "./collection";
+import {
+  CancellationToken,
+  QueryBuilder,
+  ListenRequestCallback,
+  OperationType,
+  QueryEqualTo,
+  QueryExists,
+  QueryGreaterThan,
+  QueryGreaterThanOrEqualTo,
+  QueryIn,
+  QueryLessThan,
+  QueryLessThanOrEqualTo,
+  QueryNotEqualTo,
+  QueryNotExists,
+  QueryNotIn,
+  QueryType,
+  SortOrder,
+} from "./query";
+import { Document } from "./document";
+import { AuthInterceptor, Interceptor } from "./interceptor";
 import { MongoRPCPromiseClient } from "./mongorpc/mongorpc_grpc_web_pb";
 
 class MongoRPC {
@@ -30,4 +50,27 @@ class MongoRPC {
   }
 }
 
-export { MongoRPC };
+export {
+  MongoRPC,
+  Database,
+  Collection,
+  Interceptor,
+  AuthInterceptor,
+  Document,
+  CancellationToken,
+  QueryBuilder,
+  ListenRequestCallback,
+  OperationType,
+  QueryEqualTo,
+  QueryExists,
+  QueryGreaterThan,
+  QueryGreaterThanOrEqualTo,
+  QueryIn,
+  QueryLessThan,
+  QueryLessThanOrEqualTo,
+  QueryNotEqualTo,
+  QueryNotExists,
+  QueryNotIn,
+  QueryType,
+  SortOrder,
+};
