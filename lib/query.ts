@@ -21,37 +21,6 @@ export enum SortOrder {
   DESCENDING = -1,
 }
 
-interface Dictionary<T> {
-  [Key: string]: T;
-}
-
-export type QueryEqualTo = { field: string; equalTo: any };
-export type QueryNotEqualTo = { field: string; notEqualTo: any };
-export type QueryGreaterThan = { field: string; greaterThan: any };
-export type QueryGreaterThanOrEqualTo = {
-  field: string;
-  greaterThanOrEqualTo: any;
-};
-export type QueryLessThan = { field: string; lessThan: any };
-export type QueryLessThanOrEqualTo = { field: string; lessThanOrEqualTo: any };
-
-export type QueryIn = { field: string; in: any[] };
-export type QueryNotIn = { field: string; notIn: any[] };
-export type QueryExists = { field: string; exists: boolean };
-export type QueryNotExists = { field: string; notExists: boolean };
-
-export type QueryType =
-  | QueryEqualTo
-  | QueryNotEqualTo
-  | QueryGreaterThan
-  | QueryGreaterThanOrEqualTo
-  | QueryLessThan
-  | QueryLessThanOrEqualTo
-  | QueryIn
-  | QueryNotIn
-  | QueryExists
-  | QueryNotExists;
-
 export class QueryBuilder {
   private client: MongoRPCPromiseClient;
   name: string;
@@ -59,8 +28,8 @@ export class QueryBuilder {
 
   private _limit?: number;
   private _skip?: number;
-  private _sort?: Dictionary<number>[];
-  private _filter?: Dictionary<any>[];
+  private _sort?: any;
+  private _filter?: any;
 
   public constructor(
     name: string,
@@ -84,103 +53,89 @@ export class QueryBuilder {
 
   public sort(by: { field: string; order: SortOrder }): QueryBuilder {
     if (!this._sort) {
-      this._sort = [];
+      this._sort = {};
     }
-    const sort: Dictionary<number> = {};
-    sort[by.field] = by.order.valueOf();
-    this._sort.push(sort);
+    this._sort[by.field] = by.order;
     return this;
   }
 
   public search(text: string): QueryBuilder {
     if (!this._filter) {
-      this._filter = [];
+      this._filter = {};
     }
-    this._filter.push({
-      $text: {
-        $search: text,
-      },
-    });
-
+    this._filter["$text"] = { $search: text };
     return this;
   }
 
-  public where(query: QueryType): QueryBuilder {
+  public where(query: {
+    field: string;
+    equalTo: any;
+    greaterThan: any;
+    greaterThanOrEqualTo: any;
+    lessThan: any;
+    lessThanOrEqualTo: any;
+    notEqualTo: any;
+    in: any[];
+    notIn: any[];
+    exists: boolean;
+    notExists: boolean;
+  }): QueryBuilder {
     if (!this._filter) {
-      this._filter = [];
+      this._filter = {};
+    }
+    if (query.field) {
+      if (query.equalTo) {
+        this._filter[query.field] = {
+          $eq: query.equalTo,
+        };
+      }
+      if (query.greaterThan) {
+        this._filter[query.field] = {
+          $gt: query.greaterThan,
+        };
+      }
+      if (query.greaterThanOrEqualTo) {
+        this._filter[query.field] = {
+          $gte: query.greaterThanOrEqualTo,
+        };
+      }
+      if (query.lessThan) {
+        this._filter[query.field] = {
+          $lt: query.lessThan,
+        };
+      }
+      if (query.lessThanOrEqualTo) {
+        this._filter[query.field] = {
+          $lte: query.lessThanOrEqualTo,
+        };
+      }
+      if (query.notEqualTo) {
+        this._filter[query.field] = {
+          $ne: query.notEqualTo,
+        };
+      }
+      if (query.in) {
+        this._filter[query.field] = {
+          $in: query.in,
+        };
+      }
+      if (query.notIn) {
+        this._filter[query.field] = {
+          $nin: query.notIn,
+        };
+      }
+      if (query.exists) {
+        this._filter[query.field] = {
+          $exists: query.exists,
+        };
+      }
+      if (query.notExists) {
+        this._filter[query.field] = {
+          $exists: query.notExists,
+        };
+      }
     }
 
-    if (query as QueryEqualTo) {
-      let equalTo = query as QueryEqualTo;
-      let filter: Dictionary<any> = {};
-      filter[equalTo.field] = {
-        $eq: equalTo.equalTo,
-      };
-      this._filter.push(filter);
-    } else if (query as QueryGreaterThan) {
-      let greaterThan = query as QueryGreaterThan;
-      let filter: Dictionary<any> = {};
-      filter[greaterThan.field] = {
-        $gt: greaterThan.greaterThan,
-      };
-      this._filter.push(filter);
-    } else if (query as QueryLessThan) {
-      let lessThan = query as QueryLessThan;
-      let filter: Dictionary<any> = {};
-      filter[lessThan.field] = {
-        $lt: lessThan.lessThan,
-      };
-      this._filter.push(filter);
-    } else if (query as QueryGreaterThanOrEqualTo) {
-      let greaterThanOrEqualTo = query as QueryGreaterThanOrEqualTo;
-      let filter: Dictionary<any> = {};
-      filter[greaterThanOrEqualTo.field] = {
-        $gte: greaterThanOrEqualTo.greaterThanOrEqualTo,
-      };
-      this._filter.push(filter);
-    } else if (query as QueryLessThanOrEqualTo) {
-      let lessThanOrEqualTo = query as QueryLessThanOrEqualTo;
-      let filter: Dictionary<any> = {};
-      filter[lessThanOrEqualTo.field] = {
-        $lte: lessThanOrEqualTo.lessThanOrEqualTo,
-      };
-      this._filter.push(filter);
-    } else if (query as QueryNotEqualTo) {
-      let equalTo = query as QueryNotEqualTo;
-      let filter: Dictionary<any> = {};
-      filter[equalTo.field] = {
-        $ne: equalTo.notEqualTo,
-      };
-      this._filter.push(filter);
-    } else if (query as QueryIn) {
-      let inQuery = query as QueryIn;
-      let filter: Dictionary<any> = {};
-      filter[inQuery.field] = {
-        $in: inQuery.in,
-      };
-      this._filter.push(filter);
-    } else if (query as QueryNotIn) {
-      let notInQuery = query as QueryNotIn;
-      let filter: Dictionary<any> = {};
-      filter[notInQuery.field] = {
-        $nin: notInQuery.notIn,
-      };
-      this._filter.push(filter);
-    } else if (query as QueryExists) {
-      let existsQuery = query as QueryExists;
-      let filter: Dictionary<any> = {};
-      filter[existsQuery.field] = {
-        $exists: existsQuery.exists,
-      };
-      this._filter.push(filter);
-    } else if (query as QueryNotExists) {
-      let notExistsQuery = query as QueryNotExists;
-      let filter: Dictionary<any> = {};
-      filter[notExistsQuery.field] = {
-        $exists: notExistsQuery.notExists,
-      };
-      this._filter.push(filter);
-    }
     return this;
   }
 
@@ -218,18 +173,16 @@ export class QueryBuilder {
     request.setDatabase(this.parent.name);
     request.setCollection(this.name);
 
-    let filter: Dictionary<any> = {};
+    let filter: any = {};
     if (options && options.operation) {
       filter["operationType"] = options.operation.valueOf();
     }
 
     if (this._filter) {
-      this._filter.forEach((f) => {
-        filter["fullDocument." + f.Key] = f[f.Key];
+      this._filter.forEach((value: any, key: string) => {
+        filter["fullDocument." + key] = value;
       });
     }
-
-    console.log(filter);
 
     const match = {
       $match: filter,
