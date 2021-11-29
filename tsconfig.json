@@ -1,19 +1,8 @@
 {
-  "include": ["lib"],
-  "compilerOptions": {
-    "declaration": true,
-    "declarationMap": true,
-    "module": "CommonJS",
-    "outDir": "dist",
-    "rootDir": "lib",
-    "sourceMap": true,
-    "target": "ES2015",
-    "strict": true,
-    "esModuleInterop": true,
-    "moduleResolution": "Node",
-    "forceConsistentCasingInFileNames": true,
-    "stripInternal": true,
-    "allowJs": true,
-  },
-  "exclude": ["node_modules"]
+    "compilerOptions": {
+        "module": "commonjs"
+    },
+    "exclude": [
+        "node_modules"
+    ]
 }
