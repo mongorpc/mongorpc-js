@@ -6,11 +6,13 @@ import type { PromiseClient } from '@connectrpc/connect';
 import type { MongoRPC } from './gen/mongorpc/v1/mongorpc_connect.js';
 import { Value, MapValue, ArrayValue, ObjectId as ProtoObjectId } from './gen/mongorpc/v1/value_pb.js';
 import { Document as ProtoDocument } from './gen/mongorpc/v1/document_pb.js';
+import { Filter } from './gen/mongorpc/v1/query_pb.js'; // Import Filter
+import { UpdateSpec, UpdateOperators } from './gen/mongorpc/v1/write_pb.js'; // Import UpdateSpec/Operators
+
 import type {
     Document,
-    Filter,
     FindOptions,
-    UpdateOperators,
+    UpdateOperators as UpdateOperatorsType,
     InsertResult,
     InsertManyResult,
     UpdateResult,
@@ -134,6 +136,58 @@ function toProtoDocument(doc: Document): ProtoDocument {
 }
 
 /**
+ * Convert JS filter to proto Filter.
+ */
+function toProtoFilter(filter: any): Filter {
+    const fields: Record<string, Value> = {};
+    for (const [k, v] of Object.entries(filter)) {
+        fields[k] = toProtoValue(v);
+    }
+    return new Filter({
+        filterType: {
+            case: 'raw',
+            value: new MapValue({ fields })
+        }
+    });
+}
+
+/**
+ * Convert JS update operators to proto UpdateSpec.
+ */
+function toProtoUpdate(update: any): UpdateSpec {
+    const ops = new UpdateOperators();
+
+    if (update.$set) {
+        const setMap: Record<string, Value> = {};
+        for (const [k, v] of Object.entries(update.$set)) {
+            setMap[k] = toProtoValue(v);
+        }
+        ops.set = setMap;
+    }
+    if (update.$unset) {
+        if (Array.isArray(update.$unset)) {
+            ops.unset = update.$unset as string[];
+        } else if (typeof update.$unset === 'object') {
+            ops.unset = Object.keys(update.$unset as object);
+        }
+    }
+    if (update.$inc) {
+        const incMap: Record<string, Value> = {};
+        for (const [k, v] of Object.entries(update.$inc)) {
+            incMap[k] = toProtoValue(v);
+        }
+        ops.inc = incMap;
+    }
+
+    return new UpdateSpec({
+        updateType: {
+            case: 'operators',
+            value: ops
+        }
+    });
+}
+
+/**
  * Collection provides CRUD operations for a MongoDB collection.
  */
 export class Collection<T extends Record<string, unknown> = Document> {
@@ -158,6 +212,7 @@ export class Collection<T extends Record<string, unknown> = Document> {
         const response = await this.grpc.listDocuments({
             database: this.database,
             collection: this.name,
+            filter: options.filter ? toProtoFilter(options.filter) : undefined,
             pageSize: options.limit,
         }, { headers: this.headers });
 
@@ -167,7 +222,7 @@ export class Collection<T extends Record<string, unknown> = Document> {
     /**
      * Find a single document.
      */
-    async findOne(filter: Filter<T>): Promise<T | null> {
+    async findOne(filter: import('./types').Filter<T>): Promise<T | null> {
         const results = await this.find({ filter, limit: 1 });
         return results[0] ?? null;
     }
@@ -220,8 +275,11 @@ export class Collection<T extends Record<string, unknown> = Document> {
             ? Number(response.writeResult.insertedCount)
             : docs.length;
 
+        // Correctly map insertedIds from response if available
+        const insertedIds = response.insertedIds.map(oid => oid.hex);
+
         return {
-            insertedIds: [],
+            insertedIds,
             insertedCount,
             acknowledged: true,
         };
@@ -230,11 +288,12 @@ export class Collection<T extends Record<string, unknown> = Document> {
     /**
      * Update a single document by ID.
      */
-    async updateById(id: ObjectId, update: UpdateOperators<T>): Promise<UpdateResult> {
+    async updateById(id: ObjectId, update: UpdateOperatorsType<T>): Promise<UpdateResult> {
         const response = await this.grpc.updateDocument({
             database: this.database,
             collection: this.name,
             id: new ProtoObjectId({ hex: id }),
+            update: toProtoUpdate(update),
         }, { headers: this.headers });
 
         return {
@@ -247,22 +306,25 @@ export class Collection<T extends Record<string, unknown> = Document> {
     /**
      * Update a single document.
      */
-    async updateOne(filter: Filter<T>, update: UpdateOperators<T>): Promise<UpdateResult> {
+    async updateOne(filter: import('./types').Filter<T>, update: UpdateOperatorsType<T>): Promise<UpdateResult> {
         const id = (filter as any)._id;
         if (id) {
             return this.updateById(id, update);
         }
-        // For non-ID updates, use updateMany with a limit concept
+        // For non-ID updates, use updateMany with a limit concept?
+        // Fallback to updateMany for now as we don't have updateOne RPC
         return this.updateMany(filter, update);
     }
 
     /**
      * Update multiple documents.
      */
-    async updateMany(filter: Filter<T>, update: UpdateOperators<T>): Promise<UpdateResult> {
+    async updateMany(filter: import('./types').Filter<T>, update: UpdateOperatorsType<T>): Promise<UpdateResult> {
         const response = await this.grpc.updateMany({
             database: this.database,
             collection: this.name,
+            filter: toProtoFilter(filter),
+            update: toProtoUpdate(update),
         }, { headers: this.headers });
 
         return {
@@ -291,7 +353,7 @@ export class Collection<T extends Record<string, unknown> = Document> {
     /**
      * Delete a single document.
      */
-    async deleteOne(filter: Filter<T>): Promise<DeleteResult> {
+    async deleteOne(filter: import('./types').Filter<T>): Promise<DeleteResult> {
         const id = (filter as any)._id;
         if (id) {
             return this.deleteById(id);
@@ -303,10 +365,11 @@ export class Collection<T extends Record<string, unknown> = Document> {
     /**
      * Delete multiple documents.
      */
-    async deleteMany(filter: Filter<T>): Promise<DeleteResult> {
+    async deleteMany(filter: import('./types').Filter<T>): Promise<DeleteResult> {
         const response = await this.grpc.deleteMany({
             database: this.database,
             collection: this.name,
+            filter: toProtoFilter(filter),
         }, { headers: this.headers });
 
         return {
@@ -318,10 +381,11 @@ export class Collection<T extends Record<string, unknown> = Document> {
     /**
      * Count documents matching the filter.
      */
-    async countDocuments(filter: Filter<T> = {} as Filter<T>): Promise<number> {
+    async countDocuments(filter: import('./types').Filter<T> = {} as import('./types').Filter<T>): Promise<number> {
         const response = await this.grpc.countDocuments({
             database: this.database,
             collection: this.name,
+            filter: toProtoFilter(filter),
         }, { headers: this.headers });
 
         return Number(response.count);
@@ -330,11 +394,12 @@ export class Collection<T extends Record<string, unknown> = Document> {
     /**
      * Get distinct values for a field.
      */
-    async distinct<K extends keyof T>(field: K, filter: Filter<T> = {} as Filter<T>): Promise<T[K][]> {
+    async distinct<K extends keyof T>(field: K, filter: import('./types').Filter<T> = {} as import('./types').Filter<T>): Promise<T[K][]> {
         const response = await this.grpc.distinct({
             database: this.database,
             collection: this.name,
             field: String(field),
+            filter: toProtoFilter(filter),
         }, { headers: this.headers });
 
         return response.values.map(v => fromProtoValue(v)) as T[K][];
@@ -343,11 +408,34 @@ export class Collection<T extends Record<string, unknown> = Document> {
     /**
      * Run an aggregation pipeline.
      */
-    async aggregate<R = T>(_pipeline: object[]): Promise<R[]> {
+    async aggregate<R = T>(pipeline: object[]): Promise<R[]> {
         const results: R[] = [];
 
-        // TODO: Convert pipeline to AggregationPipeline proto type
-        for await (const response of this.grpc.aggregate({}, { headers: this.headers })) {
+        const stages = pipeline.map(stage => {
+            const protoValue = toProtoValue(stage);
+            // protoValue.valueType.value is MapValue
+            if (protoValue.valueType.case !== 'mapValue') {
+                throw new Error('Pipeline stage must be an object');
+            }
+            return {
+                stageType: {
+                    case: 'raw',
+                    value: protoValue.valueType.value
+                }
+            };
+        });
+
+        const request = {
+            database: this.database,
+            collection: this.name,
+            pipeline: {
+                database: this.database,
+                collection: this.name,
+                stages: stages as any // Type assertion needed due to complex proto types? or assume it matches
+            }
+        };
+
+        for await (const response of this.grpc.aggregate(request, { headers: this.headers })) {
             if (response.document) {
                 results.push(fromProtoDocument(response.document) as R);
             }
