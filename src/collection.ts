@@ -545,6 +545,103 @@ export class Collection<T extends Record<string, unknown> = Document> {
     }
 
     /**
+     * Stream real-time updates for a filtered query.
+     * 
+     * First yields the initial matching documents, then yields updates
+     * whenever documents enter or leave the result set.
+     * 
+     * Note: Uses broad watch with client-side filtering for accuracy.
+     * 
+     * @param filter The filter to match documents against.
+     * @returns An async generator of QuerySnapshot values.
+     * 
+     * @example
+     * ```typescript
+     * for await (const snapshot of collection.onQuerySnapshot({ status: 'active' })) {
+     *     console.log('Count:', snapshot.count);
+     *     console.log('Documents:', snapshot.documents);
+     * }
+     * ```
+     */
+    async *onQuerySnapshot(filter: import('./types').Filter<T>): AsyncGenerator<QuerySnapshot<T>> {
+        // Local state: map of ID -> Document
+        const state = new Map<string, T>();
+
+        // Fetch initial documents
+        const initialDocs = await this.find({ filter });
+        for (const doc of initialDocs) {
+            const id = (doc as any)._id as string;
+            if (id) {
+                state.set(id, doc);
+            }
+        }
+
+        // Emit initial state
+        yield {
+            documents: Array.from(state.values()),
+            count: state.size,
+        };
+
+        // Watch entire collection (broad watch)
+        for await (const event of this.watch()) {
+            const opType = event.operationType;
+            const fullDoc = event.document;
+            const docId = (fullDoc as any)?._id as string | undefined;
+
+            if (!docId) continue;
+
+            let stateChanged = false;
+
+            switch (opType) {
+                case 'insert':
+                case 'update':
+                case 'replace':
+                    if (fullDoc && this.matchesFilter(fullDoc, filter)) {
+                        state.set(docId, fullDoc);
+                        stateChanged = true;
+                    } else if (state.has(docId)) {
+                        state.delete(docId);
+                        stateChanged = true;
+                    }
+                    break;
+                case 'delete':
+                    if (state.has(docId)) {
+                        state.delete(docId);
+                        stateChanged = true;
+                    }
+                    break;
+                case 'invalidate':
+                    state.clear();
+                    stateChanged = true;
+                    break;
+                default:
+                    break;
+            }
+
+            if (stateChanged) {
+                yield {
+                    documents: Array.from(state.values()),
+                    count: state.size,
+                };
+            }
+        }
+    }
+
+    /**
+     * Simple filter matching for top-level field equality.
+     */
+    private matchesFilter(doc: T, filter: import('./types').Filter<T>): boolean {
+        if (!filter || Object.keys(filter).length === 0) return true;
+
+        for (const [key, filterValue] of Object.entries(filter)) {
+            const docValue = (doc as any)[key];
+            if (docValue === undefined) return false;
+            if (String(docValue) !== String(filterValue)) return false;
+        }
+        return true;
+    }
+
+    /**
      * Create a query builder for this collection.
      */
     query(): QueryBuilder<T> {
@@ -562,4 +659,14 @@ export interface DocumentSnapshot<T = Record<string, unknown>> {
     data: T | null;
     /** Whether the document exists. */
     exists: boolean;
+}
+
+/**
+ * Represents the current state of a query result.
+ */
+export interface QuerySnapshot<T = Record<string, unknown>> {
+    /** Documents currently matching the query. */
+    documents: T[];
+    /** Number of documents in the result. */
+    count: number;
 }
