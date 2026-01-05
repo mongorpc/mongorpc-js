@@ -1,8 +1,10 @@
 /**
- * MongoRPC Client
+ * MongoRPC Client using generated Connect-ES gRPC client.
  */
 
-import * as grpc from '@grpc/grpc-js';
+import { createPromiseClient, PromiseClient, Transport } from '@connectrpc/connect';
+import { createGrpcTransport } from '@connectrpc/connect-node';
+import { MongoRPC } from './gen/mongorpc/v1/mongorpc_connect.js';
 import type { MongoRPCClientOptions } from './types';
 import { Collection } from './collection';
 
@@ -10,28 +12,23 @@ import { Collection } from './collection';
  * MongoRPCClient provides a connection to a MongoRPC server.
  */
 export class MongoRPCClient {
-    private readonly address: string;
-    private readonly credentials: grpc.ChannelCredentials;
-    private readonly metadata: grpc.Metadata;
+    private readonly transport: Transport;
+    private readonly client: PromiseClient<typeof MongoRPC>;
     private readonly options: MongoRPCClientOptions;
 
     constructor(options: MongoRPCClientOptions) {
         this.options = options;
-        this.address = options.address;
 
-        // Set up credentials
-        this.credentials = options.secure
-            ? grpc.credentials.createSsl()
-            : grpc.credentials.createInsecure();
+        // Create gRPC transport
+        this.transport = createGrpcTransport({
+            baseUrl: options.secure
+                ? `https://${options.address}`
+                : `http://${options.address}`,
+            httpVersion: '2',
+        });
 
-        // Set up metadata for authentication
-        this.metadata = new grpc.Metadata();
-        if (options.apiKey) {
-            this.metadata.set('x-api-key', options.apiKey);
-        }
-        if (options.token) {
-            this.metadata.set('authorization', `Bearer ${options.token}`);
-        }
+        // Create the gRPC client
+        this.client = createPromiseClient(MongoRPC, this.transport);
     }
 
     /**
@@ -42,31 +39,38 @@ export class MongoRPCClient {
     }
 
     /**
+     * Get the underlying gRPC client for advanced usage.
+     */
+    get grpcClient(): PromiseClient<typeof MongoRPC> {
+        return this.client;
+    }
+
+    /**
      * Get the server address.
      */
-    get serverAddress(): string {
-        return this.address;
+    get address(): string {
+        return this.options.address;
     }
 
     /**
-     * Get gRPC credentials.
+     * Get authentication headers.
      */
-    get channelCredentials(): grpc.ChannelCredentials {
-        return this.credentials;
-    }
-
-    /**
-     * Get authentication metadata.
-     */
-    get authMetadata(): grpc.Metadata {
-        return this.metadata;
+    getHeaders(): Record<string, string> {
+        const headers: Record<string, string> = {};
+        if (this.options.apiKey) {
+            headers['x-api-key'] = this.options.apiKey;
+        }
+        if (this.options.token) {
+            headers['authorization'] = `Bearer ${this.options.token}`;
+        }
+        return headers;
     }
 
     /**
      * Close the client connection.
      */
     async close(): Promise<void> {
-        // gRPC channels are managed automatically
+        // Transport cleanup (if needed)
     }
 }
 
@@ -87,26 +91,47 @@ export class Database {
     }
 
     /**
+     * Get the underlying gRPC client.
+     */
+    get grpcClient() {
+        return this.client.grpcClient;
+    }
+
+    /**
+     * Get authentication headers.
+     */
+    getHeaders() {
+        return this.client.getHeaders();
+    }
+
+    /**
      * List collections in this database.
      */
     async listCollections(): Promise<string[]> {
-        // TODO: Implement via gRPC
-        return [];
+        const response = await this.grpcClient.listCollections({
+            database: this.name,
+        }, { headers: this.getHeaders() });
+        return response.collections.map(c => c.name);
     }
 
     /**
      * Create a new collection.
      */
     async createCollection(name: string): Promise<Collection> {
-        // TODO: Implement via gRPC
+        await this.grpcClient.createCollection({
+            database: this.name,
+            collection: name,
+        }, { headers: this.getHeaders() });
         return this.collection(name);
     }
 
     /**
      * Drop a collection.
      */
-    async dropCollection(name: string): Promise<boolean> {
-        // TODO: Implement via gRPC
-        return true;
+    async dropCollection(name: string): Promise<void> {
+        await this.grpcClient.dropCollection({
+            database: this.name,
+            collection: name,
+        }, { headers: this.getHeaders() });
     }
 }

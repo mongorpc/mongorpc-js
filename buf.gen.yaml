@@ -1,8 +1,14 @@
-version: v1
+version: v2
 plugins:
-  - plugin: es
-    out: gen
+  # Generate TypeScript message types
+  - local: protoc-gen-es
+    out: src/gen
     opt: target=ts
-  - plugin: connect-es
-    out: gen
+
+  # Generate gRPC-Web client
+  - local: protoc-gen-connect-es
+    out: src/gen
     opt: target=ts
+
+inputs:
+  - directory: proto
