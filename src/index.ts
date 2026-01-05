@@ -65,7 +65,6 @@ export {
     QueryRef,
 } from './helpers';
 
-// Field values
 export {
     FieldValue,
     IncrementValue,
@@ -74,3 +73,15 @@ export {
     ServerTimestampValue,
     DeleteValue,
 } from './field_value';
+
+// Admin SDK
+export {
+    MongoRPCAdminClient,
+    AdminDatabase,
+    AdminCollection,
+    type AdminClientConfig,
+    type IndexInfo,
+    type IndexOptions,
+    type CollectionInfo,
+    type CollectionOptions,
+} from './admin';
