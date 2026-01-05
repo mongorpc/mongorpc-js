@@ -462,9 +462,104 @@ export class Collection<T extends Record<string, unknown> = Document> {
     }
 
     /**
+     * Stream real-time updates for a specific document.
+     * 
+     * First yields the current state of the document, then yields updates
+     * whenever the document is modified, replaced, or deleted.
+     * 
+     * @param docId The 24-character hex ObjectId of the document.
+     * @returns An async generator of DocumentSnapshot values.
+     * 
+     * @example
+     * ```typescript
+     * for await (const snapshot of collection.onSnapshot('docId')) {
+     *     if (snapshot.exists) {
+     *         console.log('Document:', snapshot.data);
+     *     } else {
+     *         console.log('Document does not exist');
+     *     }
+     * }
+     * ```
+     */
+    async *onSnapshot(docId: string): AsyncGenerator<DocumentSnapshot<T>> {
+        // Validate docId (24 character hex string)
+        if (docId.length !== 24 || !/^[a-fA-F0-9]+$/.test(docId)) {
+            throw new Error('Invalid document ID: must be 24 character hex string');
+        }
+
+        // Fetch initial state
+        let initialDoc: T | null = null;
+        try {
+            initialDoc = await this.findById(docId);
+        } catch {
+            // Document not found or error
+            initialDoc = null;
+        }
+
+        // Emit initial state
+        yield {
+            id: docId,
+            data: initialDoc,
+            exists: initialDoc !== null,
+        };
+
+        // Start watching with document ID filter
+        // Note: The watch method doesn't support pipeline filters directly,
+        // so we watch all and filter client-side for this document
+        for await (const event of this.watch()) {
+            // Extract document key from the event if available
+            const eventDocId = (event.document as any)?._id;
+
+            // Only process events for our document
+            if (eventDocId === docId) {
+                switch (event.operationType) {
+                    case 'insert':
+                    case 'update':
+                    case 'replace':
+                        yield {
+                            id: docId,
+                            data: event.document ?? null,
+                            exists: event.document !== undefined,
+                        };
+                        break;
+                    case 'delete':
+                        yield {
+                            id: docId,
+                            data: null,
+                            exists: false,
+                        };
+                        break;
+                    case 'invalidate':
+                        yield {
+                            id: docId,
+                            data: null,
+                            exists: false,
+                        };
+                        return; // Stream ends on invalidate
+                    default:
+                        // Ignore unknown event types
+                        break;
+                }
+            }
+        }
+    }
+
+    /**
      * Create a query builder for this collection.
      */
     query(): QueryBuilder<T> {
         return new QueryBuilder<T>(this);
     }
+}
+
+/**
+ * Represents the current state of a document.
+ */
+export interface DocumentSnapshot<T = Record<string, unknown>> {
+    /** The document's unique identifier. */
+    id: string;
+    /** The document's data. Null if the document doesn't exist. */
+    data: T | null;
+    /** Whether the document exists. */
+    exists: boolean;
 }
