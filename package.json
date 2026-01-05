@@ -1,32 +1,57 @@
 {
-  "name": "mongorpc-js",
-  "version": "0.0.1-alpha.8",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "repository": "https://github.com/mongorpc/mongorpc-js.git",
-  "author": "Satish Babariya <satish.babariya@gmail.com>",
-  "license": "MIT",
-  "keywords": [
-    "mongorpc",
-    "mongorpc-js",
-    "mongodb",
-    "grpc"
-  ],
-  "scripts": {
-    "build": "tsc --build",
-    "test": "jest"
+  "name": "@mongorpc/client",
+  "version": "0.1.0",
+  "description": "TypeScript/JavaScript client for MongoRPC",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
   },
-  "devDependencies": {
-    "@types/google-protobuf": "^3.15.5",
-    "@types/jest": "^27.0.2",
-    "esbuild": "^0.13.12",
-    "jest": "^27.3.1",
-    "ts-jest": "^27.0.7",
-    "ts-protoc-gen": "^0.15.0",
-    "typescript": "^4.4.4"
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "pnpm build"
+  },
+  "keywords": [
+    "mongodb",
+    "grpc",
+    "rpc",
+    "client",
+    "typescript"
+  ],
+  "author": "MongoRPC",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mongorpc/mongorpc-js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
   },
   "dependencies": {
-    "google-protobuf": "^3.19.1",
-    "grpc-web": "^1.3.0"
-  }
+    "@grpc/grpc-js": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  },
+  "packageManager": "pnpm@9.15.0"
 }

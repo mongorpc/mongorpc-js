@@ -1,19 +1,35 @@
 {
-  "include": ["lib"],
-  "compilerOptions": {
-    "declaration": true,
-    "declarationMap": true,
-    "module": "CommonJS",
-    "outDir": "dist",
-    "rootDir": "lib",
-    "sourceMap": true,
-    "target": "ES2015",
-    "strict": true,
-    "esModuleInterop": true,
-    "moduleResolution": "Node",
-    "forceConsistentCasingInFileNames": true,
-    "stripInternal": true,
-    "allowJs": true,
-  },
-  "exclude": ["node_modules"]
+    "compilerOptions": {
+        "target": "ES2022",
+        "module": "ESNext",
+        "lib": [
+            "ES2022"
+        ],
+        "moduleResolution": "bundler",
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "types": [
+            "node"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
 }
