@@ -5,72 +5,94 @@ TypeScript/JavaScript client for MongoRPC - a gRPC proxy for MongoDB.
 ## Installation
 
 ```bash
-npm install @mongorpc/client
-# or
-yarn add @mongorpc/client
-# or
 pnpm add @mongorpc/client
+# or npm install @mongorpc/client
 ```
 
 ## Quick Start
 
 ```typescript
-import { MongoRPCClient } from '@mongorpc/client';
+import { MongoRPCClient, where, orderBy, query, addDoc, getDocs } from '@mongorpc/client';
 
-// Create client
-const client = new MongoRPCClient({
-  address: 'localhost:50051',
-  apiKey: 'your-api-key' // optional
-});
+const client = new MongoRPCClient({ address: 'localhost:50051' });
+const db = client.db('mydb');
+```
 
-// Get a collection
-const users = client.db('mydb').collection<User>('users');
+## Two API Styles
 
-// Insert a document
-const result = await users.insertOne({
-  name: 'Alice',
-  email: 'alice@example.com',
-  age: 30
-});
+### Class-based (ORM-like)
 
-// Find documents
-const docs = await users.find({
-  filter: { age: { $gte: 18 } },
-  sort: { name: 1 },
-  limit: 10
-});
+```typescript
+const users = db.collection<User>('users');
 
-// Query builder
-const activeUsers = await users.query()
+// CRUD
+await users.insertOne({ name: 'Alice', age: 30 });
+const user = await users.findById('user-id');
+await users.updateById('user-id', { $set: { verified: true } });
+await users.deleteById('user-id');
+
+// Fluent queries
+const results = await users.query()
   .where('active', true)
   .gte('age', 21)
   .sortDesc('createdAt')
-  .limit(50)
+  .limit(10)
   .toArray();
-
-// Update
-await users.updateOne(
-  { _id: result.insertedId },
-  { $set: { verified: true } }
-);
-
-// Delete
-await users.deleteOne({ _id: result.insertedId });
 ```
 
-## API
-
-### MongoRPCClient
+### Functional (Firebase-like)
 
 ```typescript
-const client = new MongoRPCClient({
-  address: string;      // Server address (host:port)
-  secure?: boolean;     // Use TLS (default: false)
-  apiKey?: string;      // API key for authentication
-  token?: string;       // JWT token for authentication
-  timeout?: number;     // Request timeout in ms
+import { collection, addDoc, getDoc, getDocs, query, where, orderBy, limit } from '@mongorpc/client';
+
+const users = collection<User>(db, 'users');
+
+// Create
+await addDoc(users, { name: 'Alice', age: 30 });
+
+// Query with constraints
+const q = query(users, 
+  where('active', '==', true),
+  where('age', '>=', 21),
+  orderBy('createdAt', 'desc'),
+  limit(10)
+);
+const results = await getDocs(q);
+```
+
+## FieldValue Helpers
+
+```typescript
+import { FieldValue } from '@mongorpc/client';
+
+await users.updateById('user-id', {
+  $set: {
+    views: FieldValue.increment(1),
+    tags: FieldValue.arrayUnion('new-tag'),
+    updatedAt: FieldValue.serverTimestamp(),
+  }
 });
 ```
+
+## API Reference
+
+### Query Constraints
+
+| Function | Description |
+|----------|-------------|
+| `where(field, op, value)` | Filter (==, !=, <, <=, >, >=, in, not-in) |
+| `orderBy(field, dir)` | Sort (asc/desc) |
+| `limit(n)` | Limit results |
+
+### FieldValue
+
+| Method | Description |
+|--------|-------------|
+| `FieldValue.increment(n)` | Increment number |
+| `FieldValue.arrayUnion(...items)` | Add to array |
+| `FieldValue.arrayRemove(...items)` | Remove from array |
+| `FieldValue.serverTimestamp()` | Server timestamp |
+| `FieldValue.delete()` | Delete field |
 
 ### Collection Methods
 
@@ -78,37 +100,17 @@ const client = new MongoRPCClient({
 |--------|-------------|
 | `find(options)` | Find documents |
 | `findOne(filter)` | Find single document |
-| `findById(id)` | Find by ObjectId |
+| `findById(id)` | Find by ID |
 | `insertOne(doc)` | Insert document |
 | `insertMany(docs)` | Insert multiple |
-| `updateOne(filter, update)` | Update one |
-| `updateMany(filter, update)` | Update multiple |
-| `deleteOne(filter)` | Delete one |
-| `deleteMany(filter)` | Delete multiple |
-| `countDocuments(filter)` | Count documents |
-| `aggregate(pipeline)` | Run aggregation |
-| `watch()` | Watch for changes |
-| `query()` | Get fluent query builder |
+| `updateOne/Many(filter, update)` | Update |
+| `deleteOne/Many(filter)` | Delete |
+| `countDocuments(filter)` | Count |
+| `aggregate(pipeline)` | Aggregation |
+| `watch()` | Change stream |
+| `query()` | Fluent query builder |
 
-### Query Builder
-
-```typescript
-collection.query()
-  .where('field', value)
-  .eq('field', value)
-  .gt('field', value)
-  .in('field', [values])
-  .regex('field', 'pattern')
-  .select('field1', 'field2')
-  .sortAsc('field')
-  .limit(10)
-  .skip(20)
-  .toArray();
-```
-
-## Types
-
-Full TypeScript support with type-safe filters and updates:
+## TypeScript
 
 ```typescript
 interface User {
@@ -118,11 +120,9 @@ interface User {
   age: number;
 }
 
-const users = client.db('app').collection<User>('users');
-
 // Type-safe operations
+const users = db.collection<User>('users');
 await users.insertOne({ name: 'Bob', email: 'bob@test.com', age: 25 });
-await users.updateOne({ name: 'Bob' }, { $inc: { age: 1 } });
 ```
 
 ## License
